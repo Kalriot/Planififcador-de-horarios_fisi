@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <title>Planificador de Horarios</title>
+    <link rel="icon" href="images/tuturus.png" type="image/png">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Planificador de Horarios</h1>
+    </div>
+
+    <div class="options-container">
+        <label for="career-select">Carrera:</label>
+        <select id="career-select"></select>
+
+        <label for="cycle-select">Ciclo:</label>
+        <select id="cycle-select"></select>
+
+        <label for="subject-select">Asignatura:</label>
+        <select id="subject-select"></select>
+
+        <label for="section-select">Sección:</label>
+        <select id="section-select"></select>
+        
+        <!-- Botón para abrir el selector de color -->
+        <div class="color-picker-container">
+            <input type="color" id="color-picker" class="color-picker-btn">
+        </div>
+
+        <button id="add-schedule-btn" disabled>Agregar Horario</button>
+        <button id="export-image-btn">Exportar a Imagen</button>
+        <button id="export-excel-btn">Exportar a Excel</button>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <table id="schedule-table"></table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</body>
+</html>

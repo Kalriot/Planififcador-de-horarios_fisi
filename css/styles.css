@@ -1,0 +1,88 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url('../images/FONDOS.png');
+    background-color: #DBF9FC;
+    color: white; 
+}
+body{
+    background-image: url('../images/FONDOS.png');
+    color: white;
+}
+.header {
+    height: 60px; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    margin-top: 20px;
+}
+.options-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.options-container label,
+.options-container select,
+.options-container button,
+.color-picker-container {
+    color: black;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+select, button {
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#schedule-table th, #schedule-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.schedule-cell {
+    cursor: pointer;
+    background-color: #e6f7ff;
+}
+
+.schedule-cell:hover {
+    background-color: #b3e0ff;
+}
+
+.color-picker-btn {
+    appearance: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.color-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
