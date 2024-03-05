@@ -1,0 +1,380 @@
+{
+    "Ingeniería de Sistemas":{
+    "CICLO 1": [
+        {
+            "Asignatura": "INO104 - CÁLCULO I",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "41185268 - ASIS LOPEZ, EFRACIO HERMINIO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                },
+                {
+                    "Horario": "3",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "4",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "41185268 - ASIS LOPEZ, EFRACIO HERMINIO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                },
+                {
+                    "Horario": "3",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "4",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "INO108 - PROGRAMACIÓN Y COMPUTACIÓN",
+            "Créd.": "2",
+            "Sec.": "1",
+            "Docente": "10645375 - USCUCHAHUA FLORES, GELBER CHRISTIAN",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                }
+            ]
+        }
+    ],
+    "CICLO 2": [
+        {
+            "Asignatura": "INO204 - CÁLCULO II",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "17909678 - MORALES VARGAS, ALBERTO WILFREDO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                },
+                {
+                    "Horario": "3",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "4",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "INO204 - CÁLCULO II",
+            "Créd.": "4",
+            "Sec.": "2",
+            "Docente": "17909678 - MORALES VARGAS, ALBERTO WILFREDO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "14:00",
+                    "Fin": "16:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                },
+                {
+                    "Horario": "3",
+                    "Inicio": "13:00",
+                    "Fin": "16:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "4",
+                    "Inicio": "13:00",
+                    "Fin": "16:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "INO205 - FÍSICA I",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "0A0818 - TRUJILLO QUINDE, ALEJANDO LADISLAO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "17:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "17:00",
+                    "Fin": "19:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                },
+                {
+                    "Horario": "3",
+                    "Inicio": "16:00",
+                    "Fin": "19:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "4",
+                    "Inicio": "19:00",
+                    "Fin": "21:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        }
+    ]
+},"Ingeniería de Software": {
+    "CICLO 1": [
+        {
+            "Asignatura": "202SW0104 - CÁLCULO I",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "41185268 - ASIS LOPEZ, EFRACIO HERMINIO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                },
+                {
+                    "Horario": "3",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "4",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0E01 - PROGRAMACIÓN Y COMPUTACIÓN",
+            "Créd.": "2",
+            "Sec.": "1",
+            "Docente": "10645375 - USCUCHAHUA FLORES, GELBER CHRISTIAN",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "14:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                }
+            ]
+        }
+    ],
+    "CICLO 2": [
+        {
+            "Asignatura": "202SW0204 - CÁLCULO II",
+            "Créd.": "4",
+            "Sec.": "4",
+            "Docente": "45296951 - ALEJANDRO AGUILAR, MIGUEL ÁNGEL",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                },
+                {
+                    "Horario": "3",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "4",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0204 - CÁLCULO II",
+            "Créd.": "4",
+            "Sec.": "5",
+            "Docente": "45296951 - ALEJANDRO AGUILAR, MIGUEL ÁNGEL",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                },
+                {
+                    "Horario": "3",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "4",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0205 - FÍSICA I",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "0A0818 - TRUJILLO QUINDE, ALEJANDO LADISLAO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "17:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "17:00",
+                    "Fin": "19:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                },
+                {
+                    "Horario": "3",
+                    "Inicio": "16:00",
+                    "Fin": "19:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "4",
+                    "Inicio": "19:00",
+                    "Fin": "21:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        }
+    ]}
+}
