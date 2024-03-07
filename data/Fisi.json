@@ -206,13 +206,761 @@
             ]
         }
     ]
-},"Ingeniería de Software": {
+},"Ingeniería de Software":{
     "CICLO 1": [
+        {
+            "Asignatura": "202SW0101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
+            "Créd.": "3",
+            "Sec.": "1",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
+            "Créd.": "3",
+            "Sec.": "2",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
+            "Créd.": "3",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
+            "Créd.": "3",
+            "Sec.": "4",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
+            "Créd.": "3",
+            "Sec.": "5",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
+            "Créd.": "3",
+            "Sec.": "6",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0102 - MÉTODOS DE ESTUDIOS UNIVERSITARIOS",
+            "Créd.": "2",
+            "Sec.": "1",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "09:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "09:00",
+                    "Fin": "11:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0102 - MÉTODOS DE ESTUDIOS UNIVERSITARIOS",
+            "Créd.": "2",
+            "Sec.": "2",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "09:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "09:00",
+                    "Fin": "11:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0102 - MÉTODOS DE ESTUDIOS UNIVERSITARIOS",
+            "Créd.": "2",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "15:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "15:00",
+                    "Fin": "17:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0102 - MÉTODOS DE ESTUDIOS UNIVERSITARIOS",
+            "Créd.": "2",
+            "Sec.": "4",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "15:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "15:00",
+                    "Fin": "17:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0102 - MÉTODOS DE ESTUDIOS UNIVERSITARIOS",
+            "Créd.": "2",
+            "Sec.": "5",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "11:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0102 - MÉTODOS DE ESTUDIOS UNIVERSITARIOS",
+            "Créd.": "2",
+            "Sec.": "6",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "11:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0103 - DESARROLLO PERSONAL Y LIDERAZGO",
+            "Créd.": "2",
+            "Sec.": "1",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "11:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0103 - DESARROLLO PERSONAL Y LIDERAZGO",
+            "Créd.": "2",
+            "Sec.": "2",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "11:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0103 - DESARROLLO PERSONAL Y LIDERAZGO",
+            "Créd.": "2",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "09:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "09:00",
+                    "Fin": "11:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0103 - DESARROLLO PERSONAL Y LIDERAZGO",
+            "Créd.": "2",
+            "Sec.": "4",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "09:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "09:00",
+                    "Fin": "11:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0103 - DESARROLLO PERSONAL Y LIDERAZGO",
+            "Créd.": "2",
+            "Sec.": "5",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "15:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "15:00",
+                    "Fin": "17:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0103 - DESARROLLO PERSONAL Y LIDERAZGO",
+            "Créd.": "2",
+            "Sec.": "6",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "15:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "15:00",
+                    "Fin": "17:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
         {
             "Asignatura": "202SW0104 - CÁLCULO I",
             "Créd.": "4",
             "Sec.": "1",
-            "Docente": "41185268 - ASIS LOPEZ, EFRACIO HERMINIO",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0104 - CÁLCULO I",
+            "Créd.": "4",
+            "Sec.": "2",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0104 - CÁLCULO I",
+            "Créd.": "4",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0104 - CÁLCULO I",
+            "Créd.": "4",
+            "Sec.": "4",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0104 - CÁLCULO I",
+            "Créd.": "4",
+            "Sec.": "5",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0104 - CÁLCULO I",
+            "Créd.": "4",
+            "Sec.": "6",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "14:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0105 - BIOLOGÍA PARA CIENCIAS E INGENIERÌA",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0105 - BIOLOGÍA PARA CIENCIAS E INGENIERÌA",
+            "Créd.": "4",
+            "Sec.": "2",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0105 - BIOLOGÍA PARA CIENCIAS E INGENIERÌA",
+            "Créd.": "4",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0105 - BIOLOGÍA PARA CIENCIAS E INGENIERÌA",
+            "Créd.": "4",
+            "Sec.": "4",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0105 - BIOLOGÍA PARA CIENCIAS E INGENIERÌA",
+            "Créd.": "4",
+            "Sec.": "5",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0105 - BIOLOGÍA PARA CIENCIAS E INGENIERÌA",
+            "Créd.": "4",
+            "Sec.": "6",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0106 - ALGEBRA Y GEOMETRÍA ANALÍTICA I",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "071374 - VALLADOLID FACIO, BENITO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0106 - ALGEBRA Y GEOMETRÍA ANALÍTICA I",
+            "Créd.": "4",
+            "Sec.": "2",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0106 - ALGEBRA Y GEOMETRÍA ANALÍTICA I",
+            "Créd.": "4",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0106 - ALGEBRA Y GEOMETRÍA ANALÍTICA I",
+            "Créd.": "4",
+            "Sec.": "4",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "08:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0106 - ALGEBRA Y GEOMETRÍA ANALÍTICA I",
+            "Créd.": "4",
+            "Sec.": "5",
+            "Docente": "--",
             "Horarios": [
                 {
                     "Horario": "1",
@@ -227,19 +975,159 @@
                     "Fin": "14:00",
                     "Día": "MARTES",
                     "Tipo": "Práctica"
-                },
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0106 - ALGEBRA Y GEOMETRÍA ANALÍTICA I",
+            "Créd.": "4",
+            "Sec.": "6",
+            "Docente": "--",
+            "Horarios": [
                 {
-                    "Horario": "3",
+                    "Horario": "1",
                     "Inicio": "08:00",
                     "Fin": "10:00",
-                    "Día": "JUEVES",
+                    "Día": "MARTES",
                     "Tipo": "Teoría"
                 },
                 {
-                    "Horario": "4",
+                    "Horario": "2",
                     "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
+            "Créd.": "3",
+            "Sec.": "1",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
                     "Fin": "14:00",
-                    "Día": "JUEVES",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
+            "Créd.": "3",
+            "Sec.": "2",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
+            "Créd.": "3",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
+            "Créd.": "3",
+            "Sec.": "4",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
+            "Créd.": "3",
+            "Sec.": "5",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
+            "Créd.": "3",
+            "Sec.": "6",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
                     "Tipo": "Práctica"
                 }
             ]
@@ -248,21 +1136,131 @@
             "Asignatura": "202SW0E01 - PROGRAMACIÓN Y COMPUTACIÓN",
             "Créd.": "2",
             "Sec.": "1",
-            "Docente": "10645375 - USCUCHAHUA FLORES, GELBER CHRISTIAN",
+            "Docente": "0A0182 - RUIZ RIVERA, MARIA ELENA",
             "Horarios": [
                 {
                     "Horario": "1",
-                    "Inicio": "08:00",
-                    "Fin": "11:00",
-                    "Día": "SABADO",
+                    "Inicio": "14:00",
+                    "Fin": "15:00",
+                    "Día": "VIERNES",
                     "Tipo": "Teoría"
                 },
                 {
                     "Horario": "2",
-                    "Inicio": "11:00",
-                    "Fin": "14:00",
-                    "Día": "SABADO",
+                    "Inicio": "15:00",
+                    "Fin": "17:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0E01 - PROGRAMACIÓN Y COMPUTACIÓN",
+            "Créd.": "2",
+            "Sec.": "2",
+            "Docente": "09571E - TRUJILLO TREJO, JOHNLEDGARD",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "15:00",
+                    "Día": "VIERNES",
                     "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "15:00",
+                    "Fin": "17:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0E01 - PROGRAMACIÓN Y COMPUTACIÓN",
+            "Créd.": "2",
+            "Sec.": "3",
+            "Docente": "0A0182 - RUIZ RIVERA, MARIA ELENA",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "11:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "12:00",
+                    "Fin": "14:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0E01 - PROGRAMACIÓN Y COMPUTACIÓN",
+            "Créd.": "2",
+            "Sec.": "4",
+            "Docente": "09571E - TRUJILLO TREJO, JOHNLEDGARD",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "15:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "15:00",
+                    "Fin": "17:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0E01 - PROGRAMACIÓN Y COMPUTACIÓN",
+            "Créd.": "2",
+            "Sec.": "5",
+            "Docente": "08803A - ROMERO NAUPARI, PABLO JESUS",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "09:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "09:00",
+                    "Fin": "11:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0E01 - PROGRAMACIÓN Y COMPUTACIÓN",
+            "Créd.": "2",
+            "Sec.": "6",
+            "Docente": "085774 - VERA POMALAZA, VIRGINIA",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "09:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "09:00",
+                    "Fin": "11:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
                 }
             ]
         }
@@ -271,70 +1269,20 @@
         {
             "Asignatura": "202SW0204 - CÁLCULO II",
             "Créd.": "4",
-            "Sec.": "4",
-            "Docente": "45296951 - ALEJANDRO AGUILAR, MIGUEL ÁNGEL",
+            "Sec.": "1",
+            "Docente": "--",
             "Horarios": [
                 {
                     "Horario": "1",
-                    "Inicio": "08:00",
-                    "Fin": "10:00",
-                    "Día": "MARTES",
-                    "Tipo": "Teoría"
-                },
-                {
-                    "Horario": "2",
-                    "Inicio": "10:00",
-                    "Fin": "14:00",
-                    "Día": "MARTES",
-                    "Tipo": "Práctica"
-                },
-                {
-                    "Horario": "3",
-                    "Inicio": "08:00",
-                    "Fin": "10:00",
-                    "Día": "JUEVES",
-                    "Tipo": "Teoría"
-                },
-                {
-                    "Horario": "4",
-                    "Inicio": "10:00",
-                    "Fin": "14:00",
-                    "Día": "JUEVES",
-                    "Tipo": "Práctica"
-                }
-            ]
-        },
-        {
-            "Asignatura": "202SW0204 - CÁLCULO II",
-            "Créd.": "4",
-            "Sec.": "5",
-            "Docente": "45296951 - ALEJANDRO AGUILAR, MIGUEL ÁNGEL",
-            "Horarios": [
-                {
-                    "Horario": "1",
-                    "Inicio": "08:00",
-                    "Fin": "10:00",
+                    "Inicio": "14:00",
+                    "Fin": "16:00",
                     "Día": "MIERCOLES",
                     "Tipo": "Teoría"
                 },
                 {
                     "Horario": "2",
-                    "Inicio": "10:00",
-                    "Fin": "14:00",
-                    "Día": "MIERCOLES",
-                    "Tipo": "Práctica"
-                },
-                {
-                    "Horario": "3",
-                    "Inicio": "08:00",
-                    "Fin": "10:00",
-                    "Día": "VIERNES",
-                    "Tipo": "Teoría"
-                },
-                {
-                    "Horario": "4",
-                    "Inicio": "10:00",
-                    "Fin": "14:00",
+                    "Inicio": "14:00",
+                    "Fin": "18:00",
                     "Día": "VIERNES",
                     "Tipo": "Práctica"
                 }
@@ -344,39 +1292,580 @@
             "Asignatura": "202SW0205 - FÍSICA I",
             "Créd.": "4",
             "Sec.": "1",
-            "Docente": "0A0818 - TRUJILLO QUINDE, ALEJANDO LADISLAO",
+            "Docente": "090476 - SÁNCHEZ ORTIZ, JESÚS FÉLIX",
             "Horarios": [
                 {
                     "Horario": "1",
                     "Inicio": "14:00",
                     "Fin": "17:00",
-                    "Día": "LUNES",
+                    "Día": "SABADO",
                     "Tipo": "Teoría"
                 },
                 {
                     "Horario": "2",
                     "Inicio": "17:00",
                     "Fin": "19:00",
-                    "Día": "LUNES",
-                    "Tipo": "Práctica"
-                },
-                {
-                    "Horario": "3",
-                    "Inicio": "16:00",
-                    "Fin": "19:00",
-                    "Día": "JUEVES",
-                    "Tipo": "Teoría"
-                },
-                {
-                    "Horario": "4",
-                    "Inicio": "19:00",
-                    "Fin": "21:00",
-                    "Día": "JUEVES",
+                    "Día": "SABADO",
                     "Tipo": "Práctica"
                 }
             ]
         }
-    ]}
+    ],
+    "CICLO 3": [
+        {
+            "Asignatura": "202SW0301 - ALGORÍTMICA I",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "09454245 - TAPIA CARBAJAL, JUAN RICARDO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "13:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0301 - ALGORÍTMICA I",
+            "Créd.": "4",
+            "Sec.": "2",
+            "Docente": "0A1982 - ARREDONDO CASTILLO, GUSTAVO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "13:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0301 - ALGORÍTMICA I",
+            "Créd.": "4",
+            "Sec.": "3",
+            "Docente": "09571E - TRUJILLO TREJO, JOHNLEDGARD",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "13:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0302 - ESTADÍSTICA Y PROBABILIDADES",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "13:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0302 - ESTADÍSTICA Y PROBABILIDADES",
+            "Créd.": "4",
+            "Sec.": "2",
+            "Docente": "044814 - MIRANDA ROBLES, MARY YRIS",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "14:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0302 - ESTADÍSTICA Y PROBABILIDADES",
+            "Créd.": "4",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "13:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0302 - ESTADÍSTICA Y PROBABILIDADES",
+            "Créd.": "4",
+            "Sec.": "4",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "13:00",
+                    "Día": "JUEVES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0303 - FISICA ELÉCTRÓNICA",
+            "Créd.": "3",
+            "Sec.": "1",
+            "Docente": "0A1200 - YACTAYO YACTAYO, GILBERTO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0303 - FISICA ELÉCTRÓNICA",
+            "Créd.": "3",
+            "Sec.": "2",
+            "Docente": "0A2051 - MORI ESCOBAR, FANNY ESMERALDA",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0303 - FISICA ELÉCTRÓNICA",
+            "Créd.": "3",
+            "Sec.": "3",
+            "Docente": "0A7587 - PAREJA QUISPE, DAVID",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0303 - FISICA ELÉCTRÓNICA",
+            "Créd.": "3",
+            "Sec.": "4",
+            "Docente": "0A2086 - TESILLO QUISPE, MABEL ERLINDA",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0304 - INGENIERÍA ECONÓMICA",
+            "Créd.": "3",
+            "Sec.": "1",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0304 - INGENIERÍA ECONÓMICA",
+            "Créd.": "3",
+            "Sec.": "2",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0304 - INGENIERÍA ECONÓMICA",
+            "Créd.": "3",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0304 - INGENIERÍA ECONÓMICA",
+            "Créd.": "3",
+            "Sec.": "4",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0305 - INTRODUCCIÓN AL DESARROLLO DE SOFTWARE",
+            "Créd.": "3",
+            "Sec.": "1",
+            "Docente": "0A1982 - ARREDONDO CASTILLO, GUSTAVO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "10:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0305 - INTRODUCCIÓN AL DESARROLLO DE SOFTWARE",
+            "Créd.": "3",
+            "Sec.": "2",
+            "Docente": "0A4525 - MENÉNDEZ MUERAS, ROSA",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "10:00",
+                    "Fin": "12:00",
+                    "Día": "SABADO",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0305 - INTRODUCCIÓN AL DESARROLLO DE SOFTWARE",
+            "Créd.": "3",
+            "Sec.": "3",
+            "Docente": "0A0037 - HUAYNA DUEÑAS, ANA MARIA",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "16:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "16:00",
+                    "Fin": "18:00",
+                    "Día": "MIERCOLES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0306 - MATEMÁTICA BÁSICA",
+            "Créd.": "4",
+            "Sec.": "1",
+            "Docente": "0A0283 - ARBAÑIL RIVADENEIRA, RUBEN ORLANDO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "17:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "17:00",
+                    "Fin": "19:00",
+                    "Día": "VIERNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0306 - MATEMÁTICA BÁSICA",
+            "Créd.": "4",
+            "Sec.": "2",
+            "Docente": "0A0261 - CHUPAYO EVANGELISTA, HEIDI MARLENE",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "13:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0306 - MATEMÁTICA BÁSICA",
+            "Créd.": "4",
+            "Sec.": "3",
+            "Docente": "0A1331 - LUNA VALDEZ, JUAN HONORATO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "13:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0306 - MATEMÁTICA BÁSICA",
+            "Créd.": "4",
+            "Sec.": "4",
+            "Docente": "091103 - PEÑA FLORES, ROLAND HUBER",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "08:00",
+                    "Fin": "11:00",
+                    "Día": "MARTES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "11:00",
+                    "Fin": "13:00",
+                    "Día": "MARTES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        }
+    ],
+    "CICLO 4": [
+        {
+            "Asignatura": "202SW0403 - ORGANIZACIÓN Y ADMINISTRACIÓN",
+            "Créd.": "3",
+            "Sec.": "1",
+            "Docente": "0A1871 - CHÁVEZ HERRERA , CARLOS ERNESTO",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "16:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "16:00",
+                    "Fin": "18:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0403 - ORGANIZACIÓN Y ADMINISTRACIÓN",
+            "Créd.": "3",
+            "Sec.": "2",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "16:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "16:00",
+                    "Fin": "18:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        },
+        {
+            "Asignatura": "202SW0403 - ORGANIZACIÓN Y ADMINISTRACIÓN",
+            "Créd.": "3",
+            "Sec.": "3",
+            "Docente": "--",
+            "Horarios": [
+                {
+                    "Horario": "1",
+                    "Inicio": "14:00",
+                    "Fin": "16:00",
+                    "Día": "LUNES",
+                    "Tipo": "Teoría"
+                },
+                {
+                    "Horario": "2",
+                    "Inicio": "16:00",
+                    "Fin": "18:00",
+                    "Día": "LUNES",
+                    "Tipo": "Práctica"
+                }
+            ]
+        }
+    ]
+}
 },
 "2018": {
     "Ingeniería de Sistemas":{
