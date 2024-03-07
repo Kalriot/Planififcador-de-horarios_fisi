@@ -111,7 +111,7 @@ button {
     font-size: 12px;
     cursor: pointer;
     position: absolute;
-    top: 5%; 
+    top: 1%; 
     left: 5%;
     transform: translateX(-50%);
     display: none;
@@ -129,4 +129,22 @@ button {
 
 .visible {
     display: block;
+}
+#total-credits {
+    position: absolute;
+    top: 30px;
+    font-size: 30px; 
+    left: 20px;
+    font-family:'Times New Roman', Times, serif; 
+    color: white;
+}
+footer {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+
+
+    background-color: #333;
+    color: white;
+    justify-content: space-between; 
 }
