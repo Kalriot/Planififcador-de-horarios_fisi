@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    min-height: 100vh;
     background-image: url('../images/FONDOS.png');
     background-color: #DBF9FC;
     color: white; 
@@ -146,12 +146,27 @@ button {
     font-size: 1em;
 }
 footer {
+    box-sizing: border-box;
     text-align: center;
     display: flex;
-    padding: 10px;
+    padding: 1em;
+    width: 100vw;
+    margin-top: auto;
 
 
     background-color: #333;
     color: white;
     justify-content: space-between; 
+}
+footer a {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    text-decoration: none;
+    background-color: #222;
+    padding: 0px 0.4em;
+    border-radius: 5px;
+}
+footer a:hover {
+    color:#b3e0ff;
 }
