@@ -9,43 +9,41 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <div class="header">
+    <header>
+        <div id="total-credits"><h1>Total de Créditos: 0</h1></div>
         <h1>Planificador de Horarios</h1>
-    </div>
-
-    <div class="options-container">
-
-
-        <label for="career-select">Plan de estudios:</label>
-        <select id="career-select"></select>
-
-        <label for="year-select">Carrera:</label> 
-        <select id="year-select"></select> 
-
-        <label for="cycle-select">Ciclo:</label>
-        <select id="cycle-select"></select>
-
-        <label for="subject-select">Asignatura:</label>
-        <select id="subject-select"></select>
-
-        <label for="section-select">Sección:</label>
-        <select id="section-select"></select>
-        
-        <div class="color-picker-container">
-            <input type="color" id="color-picker" class="color-picker-btn">
+    </header>
+    <main>
+        <div class="options-container">
+            <label for="career-select">Plan de estudios:</label>
+            <select id="career-select"></select>
+    
+            <label for="year-select">Carrera:</label> 
+            <select id="year-select"></select> 
+    
+            <label for="cycle-select">Ciclo:</label>
+            <select id="cycle-select"></select>
+    
+            <label for="subject-select">Asignatura:</label>
+            <select id="subject-select"></select>
+    
+            <label for="section-select">Sección:</label>
+            <select id="section-select"></select>
+            
+            <div class="color-picker-container">
+                <input type="color" id="color-picker" class="color-picker-btn">
+            </div>
+    
+            <button id="add-schedule-btn" disabled>Agregar Horario</button>
+            <button id="export-image-btn">Exportar a Imagen</button>
+            <button id="export-excel-btn">Exportar a Excel</button>
         </div>
-
-        <button id="add-schedule-btn" disabled>Agregar Horario</button>
-        <button id="export-image-btn">Exportar a Imagen</button>
-        <button id="export-excel-btn">Exportar a Excel</button>
-    </div>
-    <div id="total-credits">Total de Créditos: 0</div>
-    <div class="wrapper">
-        <div class="container">
-            <table id="schedule-table"></table>
+        <div class="wrapper">
+            <div class="container">
+                <table id="schedule-table"></table>
+            </div>
         </div>
-    </div>
+    </main>
     <footer>
         <p>Última fecha de actualización: 07/03/24 23:40</p>
         <p>Plan de estudios por actualizar: Malla 18 (Sistemas)</p>
