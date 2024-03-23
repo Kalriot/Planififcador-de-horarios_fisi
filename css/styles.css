@@ -27,14 +27,21 @@ header {
 header h1 {
     margin: 0px;
 }
+main {
+    box-sizing: border-box;
+    max-width: 90vw;
+    margin-bottom: 3em;
+}
+
 .options-container {
     text-align: center;
     margin-bottom: 20px;
     background-color: white;
-    padding: 10px;
+    padding: 1em;
     border-radius: 8px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex; 
+    flex-direction: row;
     justify-content: space-around;
     align-items: center; 
 }
@@ -44,8 +51,13 @@ header h1 {
 .options-container button,
 .color-picker-container {
     color: black;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    background-color: #ddd;
+    border-width: 0px;
+    border-radius: 4px;
+    margin: 0px 0.5em;
+}
+.options-container label {
+    background-color: white;
 }
 
 select, button {
@@ -84,15 +96,29 @@ button {
     width: 60px;
     height: 24px;
     cursor: pointer;
+    background-color: #ddd;
+    border-radius: 4px;
 }
 
 .color-picker-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
-
 }
+
+#export-image-btn {
+    background-color: #ddf;
+}
+#export-image-btn:hover {
+    background-color: #ccf;
+}
+#export-excel-btn {
+    background-color: #cec;
+}
+#export-excel-btn:hover {
+    background-color: #beb;
+}
+
 .schedule-cell {
     cursor: pointer;
     background-color: #e6f7ff;
@@ -121,9 +147,9 @@ button {
     display: none;
 }
     
-    .schedule-cell:hover .delete-button {
-        display: block; 
-    }
+.schedule-cell:hover .delete-button {
+    display: block; 
+}
     
 
 
