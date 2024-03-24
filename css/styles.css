@@ -161,13 +161,12 @@ button {
     display: block;
 }
 #total-credits {
-    position: absolute;
-    left: 1em;
-    display: inline-block;
-    font-size: 2em;
-    color: white;
-}
-#total-credits h1 {
+    display: block;
+    font-size: 1rem;
+    color: black;
+    background-color: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 8px 8px 0px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1em;
 }
