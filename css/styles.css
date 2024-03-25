@@ -1,36 +1,47 @@
-.body {
+body {
+    box-sizing: content-box;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    background-image: url('../images/FONDOS.png');
+    min-height: 100vh;
+    background-image: url('../images/FONDOS.jpg');
     background-color: #DBF9FC;
     color: white; 
 }
-body{
-    background-image: url('../images/FONDOS.png');
-    color: white;
-}
-.header {
-    height: 60px; 
+header {
+    box-sizing: border-box;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #333;
 }
-.header h1 {
-    margin-top: 20px;
+header h1 {
+    margin: 0px;
 }
+main {
+    box-sizing: border-box;
+    max-width: 90vw;
+    margin-bottom: 3em;
+}
+
 .options-container {
     text-align: center;
     margin-bottom: 20px;
     background-color: white;
-    padding: 10px;
+    padding: 1em;
     border-radius: 8px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex; 
+    flex-direction: row;
     justify-content: space-around;
     align-items: center; 
 }
@@ -40,8 +51,13 @@ body{
 .options-container button,
 .color-picker-container {
     color: black;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    background-color: #ddd;
+    border-width: 0px;
+    border-radius: 4px;
+    margin: 0px 0.5em;
+}
+.options-container label {
+    background-color: white;
 }
 
 select, button {
@@ -80,15 +96,29 @@ button {
     width: 60px;
     height: 24px;
     cursor: pointer;
+    background-color: #ddd;
+    border-radius: 4px;
 }
 
 .color-picker-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
-
 }
+
+#export-image-btn {
+    background-color: #ddf;
+}
+#export-image-btn:hover {
+    background-color: #ccf;
+}
+#export-excel-btn {
+    background-color: #cec;
+}
+#export-excel-btn:hover {
+    background-color: #beb;
+}
+
 .schedule-cell {
     cursor: pointer;
     background-color: #e6f7ff;
@@ -117,9 +147,9 @@ button {
     display: none;
 }
     
-    .schedule-cell:hover .delete-button {
-        display: block; 
-    }
+.schedule-cell:hover .delete-button {
+    display: block; 
+}
     
 
 
@@ -131,20 +161,37 @@ button {
     display: block;
 }
 #total-credits {
-    position: absolute;
-    top: 30px;
-    font-size: 30px; 
-    left: 20px;
-    font-family:'Times New Roman', Times, serif; 
-    color: white;
+    display: block;
+    font-size: 1rem;
+    color: black;
+    background-color: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 8px 8px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
 }
 footer {
+    box-sizing: border-box;
     text-align: center;
     display: flex;
-    padding: 10px;
+    padding: 1em;
+    width: 100%;
+    margin-top: auto;
 
 
     background-color: #333;
     color: white;
     justify-content: space-between; 
+}
+footer a {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    text-decoration: none;
+    background-color: #222;
+    padding: 0px 0.4em;
+    border-radius: 5px;
+}
+footer a:hover {
+    color:#b3e0ff;
 }
