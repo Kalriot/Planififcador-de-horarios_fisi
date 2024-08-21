@@ -105,20 +105,28 @@ button {
 
 .wrapper .container {
     overflow: auto;
-    overflow-x: scroll;
     white-space: no-wrap;
 }
 #schedule-table {
     color:black;
     background-color: white;
     width: 100%;
+    border-color: transparent;
     border-collapse: collapse;
+    border-radius: 0px 0px 0.5rem 0.5rem;
 }
 
 #schedule-table th, #schedule-table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
+}
+#schedule-table tr:last-child td:last-child {
+    border: 0px;
+    border-radius: 0 0 0.5rem 0;
+}
+#schedule-table tr:last-child td:first-child {
+    border: 0px;
 }
 
 .schedule-cell {
