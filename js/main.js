@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const selectedCourses = {};
     const days = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
+    // imma refactor this =)
     fetch('data/Fisi.json')
         .then(response => response.json())
         .then(horariosData => {
@@ -29,34 +30,33 @@ document.addEventListener('DOMContentLoaded', function () {
                 careerData[career] = horariosData[career];
             }
 
-            careerSelect.addEventListener('change', updateYears);
-
-            yearSelect.addEventListener('change', updateCycles);
-
-            cycleSelect.addEventListener('change', updateSubjects);
-
-            subjectSelect.addEventListener('change', updateSections);
-
-            sectionSelect.addEventListener('change', () => {
-                addScheduleBtn.disabled = !(cycleSelect.value && subjectSelect.value && sectionSelect.value);
-            });
-
-            colorPicker.addEventListener('input', () => {
-                const selectedColor = colorPicker.value;
-            });
-            addScheduleBtn.addEventListener('click', addSchedule);
-
-            exportImageBtn.addEventListener('click', exportToImage);
-
-            exportExcelBtn.addEventListener('click', exportToExcel);
+            initializeEventListeners();
+            function initializeEventListeners() {
+                careerSelect.addEventListener('change', updateYears);
+                yearSelect.addEventListener('change', updateCycles);
+                cycleSelect.addEventListener('change', updateSubjects);
+                subjectSelect.addEventListener('change', updateSections);
+                addScheduleBtn.addEventListener('click', addSchedule);
+                exportImageBtn.addEventListener('click', exportToImage);
+                exportExcelBtn.addEventListener('click', exportToExcel);
+                
+                sectionSelect.addEventListener('change', () => {
+                    addScheduleBtn.disabled = !(
+                        cycleSelect.value &&
+                        subjectSelect.value &&
+                        sectionSelect.value);
+                });
+            }
 
             function updateYears() {
-                const selectedCareer = careerSelect.value;
-                const selectedYear = yearSelect.value;  
+                const selectedCareer = careerSelect.value;  
                 yearSelect.innerHTML = '';
             
                 if (selectedCareer) {
-                    const uniqueYears = [...new Set(Object.keys(horariosData[selectedCareer]).filter(year => year !== 'Año'))];
+                    const uniqueYears = [...new Set(
+                        Object.keys(horariosData[selectedCareer])
+                        .filter(year => year !== 'Año')
+                    )];
                     uniqueYears.forEach(year => {
                         const option = document.createElement('option');
                         option.value = year;
@@ -69,21 +69,26 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             function updateCycles() {
-                const selectedCareer = careerSelect.value;
                 const selectedYear = yearSelect.value;
-                const selectedCareerData = careerData[selectedCareer];
-            
+                const selectedCareerData = careerData[careerSelect.value];
+                // de-select previously selected cycle
                 cycleSelect.innerHTML = '';
+
+                // add default empty option to the list
                 const defaultCycleOption = document.createElement('option');
                 defaultCycleOption.value = '';
                 defaultCycleOption.textContent = '---';
                 cycleSelect.appendChild(defaultCycleOption);
-            
+                
+                // de-select subject and section
                 subjectSelect.innerHTML = '';
                 sectionSelect.innerHTML = '';
-            
-                if (selectedCareerData && selectedYear && selectedCareerData[selectedYear]) {
+                
+                // if everything fetched correctly add every option
+                if (selectedCareerData && selectedYear &&
+                    selectedCareerData[selectedYear]) {
                     for (const cycle in selectedCareerData[selectedYear]) {
+                        // create every option and append it to the list
                         const option = document.createElement('option');
                         option.value = cycle;
                         option.textContent = cycle;
@@ -99,25 +104,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 const selectedCareer = careerSelect.value;
                 const selectedYear = yearSelect.value;
                 const selectedCycle = cycleSelect.value;
-
+                // reset subject and section values
                 subjectSelect.innerHTML = '';
                 sectionSelect.innerHTML = '';
 
-                const subjectsSet = new Set();
-
+                // if everything has been chosen correctly load the courses
                 if (selectedCareer && selectedYear && selectedCycle) {
                     const coursesInCycle = careerData[selectedCareer][selectedYear][selectedCycle];
-
+                    
+                    // if there are courses add them to the set
                     if (coursesInCycle) {
+                        const subjectsSet = new Set();
+                        
                         coursesInCycle.forEach(courseSection => {
                             subjectsSet.add(courseSection['Asignatura'].match(/-(.+)/)[1].trim());
                         });
-
+                        // add default empty option
                         const defaultOption = document.createElement('option');
                         defaultOption.value = '';
                         defaultOption.textContent = '---';
                         subjectSelect.appendChild(defaultOption);
 
+                        // add every other option
                         subjectsSet.forEach(subject => {
                             const subjectOption = document.createElement('option');
                             subjectOption.value = subject;

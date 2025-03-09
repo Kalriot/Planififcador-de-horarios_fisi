@@ -9,64 +9,75 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <div class="header">
+    <header>
         <h1>Planificador de Horarios</h1>
-    </div>
-
-    <div class="options-container">
-
-
-        <label for="career-select">Plan de estudios:</label>
-        <select id="career-select"></select>
-
-        <label for="year-select">Carrera:</label> 
-        <select id="year-select"></select> 
-
-        <label for="cycle-select">Ciclo:</label>
-        <select id="cycle-select"></select>
-
-        <label for="subject-select">Asignatura:</label>
-        <select id="subject-select"></select>
-
-        <label for="section-select">Sección:</label>
-        <select id="section-select"></select>
-        
-        <div class="color-picker-container">
-            <input type="color" id="color-picker" class="color-picker-btn">
+    </header>
+    <main>
+        <section class="options-container">
+            <label for="career-select">Plan de estudios:</label>
+            <select id="career-select"></select>
+    
+            <label for="year-select">Carrera:</label> 
+            <select id="year-select"></select> 
+    
+            <label for="cycle-select">Ciclo:</label>
+            <select id="cycle-select"></select>
+    
+            <label for="subject-select">Asignatura:</label>
+            <select id="subject-select"></select>
+    
+            <label for="section-select">Sección:</label>
+            <select id="section-select"></select>
+            
+            <div class="color-picker-container">
+                <input type="color" id="color-picker" class="color-picker-btn">
+            </div>
+    
+            <button id="add-schedule-btn" disabled>Agregar Horario</button>
+            
+        </section>
+        <div class="total-credits-container">
+            <span id="total-credits">Total de Créditos: 0</span>
+            <div class="subcontainer">
+                <button id="export-image-btn">Exportar a Imagen</button>
+                <button id="export-excel-btn">Exportar a Excel</button>
+            </div>
         </div>
-
-        <button id="add-schedule-btn" disabled>Agregar Horario</button>
-        <button id="export-image-btn">Exportar a Imagen</button>
-        <button id="export-excel-btn">Exportar a Excel</button>
-    </div>
-    <div id="total-credits">Total de Créditos: 0</div>
-    <div class="wrapper">
-        <div class="container">
-            <table id="schedule-table"></table>
+        <div class="wrapper">
+            <div class="container">
+                <table id="schedule-table"></table>
+            </div>
         </div>
-    </div>
+    </main>
     <footer>
         <div class="footer-container">
             <p>Última actualización: 09/03/25 a las 09:00</p>
             <p>Estado del plan de estudios: Actualizado</p>
-            <div class="contact-block">
-                Contacto: <a href="tel:973727288" class="contact-link">973727288</a> <br>
-                Sígueme en: 
+        </div>
+        <h3>Contacto</h3>
+        <div class="contact-block">
+            <div class="contact-profile" id="tuturu-contact">
+                <h4>Kalriot (creador)</h4>
+                <a href="tel:973727288" class="contact-link">973727288</a> <br>
                 <a href="https://www.linkedin.com/in/edu-joseph-sanchez-gotea-a14492267/" target="_blank">
                     <img src="images/linkendin_image.jpg" alt="LinkedIn" class="social-icon"> LinkedIn
+                </a> <br>
+                <a href="https://github.com/Kalriot" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="github logo" class="social-icon"> github
+                </a>
+            </div>
+            <div class="contact-profile" id="randomguy16-contact">
+                <h4>RandomGuy16 (colaborador)</h4>
+                <a href="https://github.com/RandomGuy16" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="github logo" class="social-icon"> github
                 </a>
             </div>
         </div>
     </footer>
     
-    
-    
-    
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-
 </body>
 </html>
 
