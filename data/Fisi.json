@@ -1168,6 +1168,571 @@
                     ]
                 }
             ],
+            "CICLO 3": [
+                {
+                    "Asignatura": "201230301 - INTRODUCCIÓN A LA COMPUTACIÓN",
+                    "Créd.": "4.0",
+                    "Sec.": "1.0",
+                    "Docente": "0A1612 - ANGULO CALDERÓN, CÉSAR AUGUSTO",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230301 - INTRODUCCIÓN A LA COMPUTACIÓN",
+                    "Créd.": "4.0",
+                    "Sec.": "2.0",
+                    "Docente": "0A06295 - USCUCHAGUA FLORES, GELBER CHRISTIAN",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "MARTES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "MARTES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230301 - INTRODUCCIÓN A LA COMPUTACIÓN",
+                    "Créd.": "4.0",
+                    "Sec.": "3.0",
+                    "Docente": "0A1612 - ANGULO CALDERÓN, CÉSAR AUGUSTO",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "14:00",
+                            "Fin": "17:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "17:00",
+                            "Fin": "19:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230302 - SERIES Y ECUACIONES DIFERENCIALES",
+                    "Créd.": "4.0",
+                    "Sec.": "1.0",
+                    "Docente": "092991 - RUBIO GALLARDAY, MARCO ANTONIO",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "MARTES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "MARTES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230302 - SERIES Y ECUACIONES DIFERENCIALES",
+                    "Créd.": "4.0",
+                    "Sec.": "2.0",
+                    "Docente": "--",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "MARTES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "MARTES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230302 - SERIES Y ECUACIONES DIFERENCIALES",
+                    "Créd.": "4.0",
+                    "Sec.": "3.0",
+                    "Docente": "0A1331 - LUNA VALDEZ, JUAN HONORATO",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "LUNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "LUNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230302 - SERIES Y ECUACIONES DIFERENCIALES",
+                    "Créd.": "4.0",
+                    "Sec.": "4.0",
+                    "Docente": "--",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "LUNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "LUNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230303 - ELECTROMAGNETISMO Y ÓPTICA",
+                    "Créd.": "4.0",
+                    "Sec.": "1.0",
+                    "Docente": "0A9115 - VICTORIA BARROS, CÉSAR GUALBERTO",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "LUNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "LUNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230303 - ELECTROMAGNETISMO Y ÓPTICA",
+                    "Créd.": "4.0",
+                    "Sec.": "2.0",
+                    "Docente": "0A1440 - CASTILLO CORZO, MIGUEL ÁNGEL",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "LUNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "LUNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230303 - ELECTROMAGNETISMO Y ÓPTICA",
+                    "Créd.": "4.0",
+                    "Sec.": "3.0",
+                    "Docente": "0A0920 - LLOSA DEMARTINI, MELCHOR NICOLÁS",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "VIERNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "VIERNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230303 - ELECTROMAGNETISMO Y ÓPTICA",
+                    "Créd.": "4.0",
+                    "Sec.": "4.0",
+                    "Docente": "0A1859 - SAAVEDRA JUAN DE DIOS, MIGUEL FIDENCIO",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "VIERNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "VIERNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
+                    "Créd.": "4.0",
+                    "Sec.": "1.0",
+                    "Docente": "010162 - CABRERA DÍAZ, JAVIER ELMER",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "10:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "10:00",
+                            "Fin": "12:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Práctica"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "12:00",
+                            "Fin": "14:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
+                    "Créd.": "4.0",
+                    "Sec.": "2.0",
+                    "Docente": "085774 - VERA POMALAZA, VIRGINIA",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "10:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "10:00",
+                            "Fin": "12:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Práctica"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "12:00",
+                            "Fin": "14:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
+                    "Créd.": "4.0",
+                    "Sec.": "3.0",
+                    "Docente": "0A0419 - GUERRA GRADOS, LUIS ANGEL",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "10:00",
+                            "Día": "MARTES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "10:00",
+                            "Fin": "12:00",
+                            "Día": "MARTES",
+                            "Tipo": "Práctica"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "12:00",
+                            "Fin": "14:00",
+                            "Día": "MARTES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
+                    "Créd.": "4.0",
+                    "Sec.": "4.0",
+                    "Docente": "08803A - ROMERO NAUPARI, PABLO JESUS",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "10:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "10:00",
+                            "Fin": "12:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Práctica"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "12:00",
+                            "Fin": "14:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
+                    "Créd.": "4.0",
+                    "Sec.": "5.0",
+                    "Docente": "07240690 - DAMASO RIOS, MARIA ROSA",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "10:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "10:00",
+                            "Fin": "12:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Práctica"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "12:00",
+                            "Fin": "14:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230305 - FUNDAMENTOS DE SISTEMAS DE INFORMACIÓN",
+                    "Créd.": "2.0",
+                    "Sec.": "1.0",
+                    "Docente": "055123 - PRÓ CONCEPCIÓN, LUZMILA ELISA",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "09:00",
+                            "Día": "VIERNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "09:00",
+                            "Fin": "11:00",
+                            "Día": "VIERNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230305 - FUNDAMENTOS DE SISTEMAS DE INFORMACIÓN",
+                    "Créd.": "2.0",
+                    "Sec.": "2.0",
+                    "Docente": "037605 - LEÓN FERNÁNDEZ, CAYO VÍCTOR",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "14:00",
+                            "Fin": "15:00",
+                            "Día": "LUNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "15:00",
+                            "Fin": "17:00",
+                            "Día": "LUNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230305 - FUNDAMENTOS DE SISTEMAS DE INFORMACIÓN",
+                    "Créd.": "2.0",
+                    "Sec.": "3.0",
+                    "Docente": "09831E - ALCÁNTARA LOAYZA, CÉSAR AUGUSTO",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "14:00",
+                            "Fin": "15:00",
+                            "Día": "VIERNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "15:00",
+                            "Fin": "17:00",
+                            "Día": "VIERNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230305 - FUNDAMENTOS DE SISTEMAS DE INFORMACIÓN",
+                    "Créd.": "2.0",
+                    "Sec.": "4.0",
+                    "Docente": "037605 - LEÓN FERNÁNDEZ, CAYO VÍCTOR",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "09:00",
+                            "Día": "LUNES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "09:00",
+                            "Fin": "11:00",
+                            "Día": "LUNES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230306 - MATEMÁTICAS DISCRETAS",
+                    "Créd.": "4.0",
+                    "Sec.": "1.0",
+                    "Docente": "018686 - CORTEZ VÁSQUEZ, AUGUSTO PARCEMON",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "10:00",
+                            "Día": "MARTES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "10:00",
+                            "Fin": "14:00",
+                            "Día": "MARTES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230306 - MATEMÁTICAS DISCRETAS",
+                    "Créd.": "4.0",
+                    "Sec.": "2.0",
+                    "Docente": "055867 - QUINTO PAZCE, DANIEL",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "10:00",
+                            "Día": "MARTES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "10:00",
+                            "Fin": "14:00",
+                            "Día": "MARTES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230306 - MATEMÁTICAS DISCRETAS",
+                    "Créd.": "4.0",
+                    "Sec.": "3.0",
+                    "Docente": "08954E - ROMAN CONCHA, NORBERTO ULISES",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "14:00",
+                            "Fin": "16:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "16:00",
+                            "Fin": "20:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "201230306 - MATEMÁTICAS DISCRETAS",
+                    "Créd.": "4.0",
+                    "Sec.": "4.0",
+                    "Docente": "055867 - QUINTO PAZCE, DANIEL",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "10:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "10:00",
+                            "Fin": "14:00",
+                            "Día": "MIERCOLES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                }
+            ],
             "CICLO 4": [
                 {
                     "Asignatura": "201230401 - ORGANIZACIÓN EMPRESARIAL",
