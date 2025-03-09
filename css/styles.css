@@ -110,7 +110,7 @@ button {
 #schedule-table {
     color:black;
     background-color: white;
-    width: 100%;
+    min-width: 100%;
     border: 1px;
     border-color: transparent;
     border-collapse: collapse;
