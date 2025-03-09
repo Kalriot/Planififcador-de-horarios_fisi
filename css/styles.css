@@ -139,12 +139,54 @@ button {
     color: white;
 }
 footer {
-    text-align: center;
-    display: flex;
-    padding: 10px;
-
-
     background-color: #333;
     color: white;
-    justify-content: space-between; 
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Espacio horizontal entre los elementos */
+    align-items: center;
+}
+
+footer p {
+    margin: 0 10px;
+}
+
+.contact-block {
+    text-align: center; /* Centra el bloque de contacto */
+}
+
+.contact-link {
+    color: #87CEEB;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: #87CEEB;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
 }
