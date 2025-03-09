@@ -199,6 +199,7 @@ footer {
     margin-top: auto;
     text-align: center;
     display: flex;
+    flex-direction: column;
     background-color: #333;
     color: white;
     padding: 20px;
@@ -208,16 +209,20 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-around; /* Espacio horizontal entre los elementos */
+    justify-content: space-between; /* Espacio horizontal entre los elementos */
     align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
-footer p {
-    margin: 0 10px;
+footer h3 {
+    text-align: left;
 }
 
 .contact-block {
-    text-align: center; /* Centra el bloque de contacto */
+    text-align: start; /* Centra el bloque de contacto */
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact-link {
@@ -227,6 +232,16 @@ footer p {
 
 .contact-link:hover {
     text-decoration: underline;
+}
+
+.contact-profile {
+    margin: 1rem 0px;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #222;
+    min-width: 24rem;
+    display: inline-block;
+    width: 48%;
 }
 
 footer a {
