@@ -13,7 +13,20 @@
     <div class="header">
         <h1>Planificador de Horarios</h1>
     </div>
-
+    <div class="pdf-upload-block">
+        <h2>En caso sea otra facultad, insertar su Programación de Asignaturas:</h2>
+        <label class="upload-label" for="upload-pdf">
+            Subir PDF
+        </label>
+        <input type="file" id="upload-pdf" class="hidden" accept=".pdf">
+        <button class="send-button" id="send-button">Enviar</button>
+    </div>
+    
+    
+    
+    
+    
+    
     <div class="options-container">
 
 
@@ -35,7 +48,7 @@
         <div class="color-picker-container">
             <input type="color" id="color-picker" class="color-picker-btn">
         </div>
-
+        
         <button id="add-schedule-btn" disabled>Agregar Horario</button>
         <button id="export-image-btn">Exportar a Imagen</button>
         <button id="export-excel-btn">Exportar a Excel</button>

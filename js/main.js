@@ -10,15 +10,158 @@ document.addEventListener('DOMContentLoaded', function () {
     const exportExcelBtn = document.getElementById('export-excel-btn');
     const careerSelect = document.getElementById('career-select');
     const yearSelect = document.getElementById('year-select');
-    const careerData = {};
-    const selectedCourses = {};
+    const uploadInput = document.getElementById('upload-pdf');
+    const uploadLabel = document.querySelector('.upload-label');
+    const sendButton = document.getElementById("send-button");
+    const contenedor = document.getElementById("contenedorDatos");
+        uploadInput.addEventListener('change', () => {
+            if (uploadInput.files.length > 0) {
+                const fileName = uploadInput.files[0].name;
+                uploadLabel.textContent = `📄 ${fileName}`;
+            }
+        });
+    
+
+    let careerData = {};
+    let selectedCourses = {};
     const days = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
     fetch('data/Fisi.json')
         .then(response => response.json())
         .then(horariosData => {
-            createScheduleTable();
 
+            async function mergePdfData() {
+                        const file = uploadInput.files[0];
+                        if (!file) {
+                            alert("¡Por favor, sube un PDF primero!");
+                            return;
+                        }
+            
+                        const formData = new FormData();
+                        formData.append("pdf", file);
+            
+                        try {
+                            const respuesta = await fetch("'https://Cicilis.pythonanywhere.com/upload", {
+                                method: "POST",
+                                body: formData
+                            });
+            
+                            if (!respuesta.ok) {
+                                console.error("Error en la respuesta:", respuesta.status, respuesta.statusText);
+                                alert("Hubo un error al enviar el PDF. Código: " + respuesta.status);
+                                return;
+                            }
+            
+                            const data = await respuesta.json();
+            
+                            if (data) {
+                                alert("¡PDF subido y procesado con éxito!");
+            
+                                horariosData = mergeData(horariosData, data); 
+            
+                                console.log("Datos combinados:", horariosData);
+                                 careerData = {};
+                                 selectedCourses = {};   
+                                initializeSchedulePage(horariosData);  
+                            } else {
+                                console.error("Error en el procesamiento del PDF:", data.error || "Error desconocido");
+                                alert("Hubo un error al procesar el PDF: " + (data.error || "Error desconocido"));
+                            }
+                        } catch (error) {
+                            console.error("Error al enviar el PDF:", error);
+                            alert("Error de conexión con el servidor. Revisa la consola para más detalles.");
+                        }
+                    }
+
+        function mergeData(horariosData, data) {
+            const mergedData = {};
+        
+            for (let year in data) {
+                if (!mergedData[year]) {
+                    mergedData[year] = {};  
+                }
+        
+                for (let career in data[year]) {
+                    if (!mergedData[year][career]) {
+                        mergedData[year][career] = {};  
+                    }
+        
+                    for (let cycle in data[year][career]) {
+                        if (!mergedData[year][career][cycle]) {
+                            mergedData[year][career][cycle] = []; 
+                        }
+        
+                        data[year][career][cycle].forEach(assignature => {
+                            const existingAssignatureIndex = mergedData[year][career][cycle].findIndex(
+                                existingAssignature => existingAssignature["Asignatura"] === assignature["Asignatura"]
+                            );
+        
+                            if (existingAssignatureIndex === -1) {
+                                mergedData[year][career][cycle].push(assignature);
+                            } else {
+                                mergedData[year][career][cycle][existingAssignatureIndex].Horarios = [
+                                    ...mergedData[year][career][cycle][existingAssignatureIndex].Horarios,
+                                    ...assignature.Horarios
+                                ];
+                            }
+                        });
+                    }
+                }
+            }
+        
+            for (let year in horariosData) {
+                if (!mergedData[year]) {
+                    mergedData[year] = {};  
+                }
+        
+                for (let career in horariosData[year]) {
+                    if (!mergedData[year][career]) {
+                        mergedData[year][career] = {};  
+                    }
+        
+                    for (let cycle in horariosData[year][career]) {
+                        if (!mergedData[year][career][cycle]) {
+                            mergedData[year][career][cycle] = [];   
+                        }
+        
+                        horariosData[year][career][cycle].forEach(assignature => {
+                            const existingAssignatureIndex = mergedData[year][career][cycle].findIndex(
+                                existingAssignature => existingAssignature["Asignatura"] === assignature["Asignatura"]
+                            );
+        
+                            if (existingAssignatureIndex === -1) {
+                                mergedData[year][career][cycle].push(assignature);
+                            } else {
+                                mergedData[year][career][cycle][existingAssignatureIndex].Horarios = [
+                                    ...mergedData[year][career][cycle][existingAssignatureIndex].Horarios,
+                                    ...assignature.Horarios
+                                ];
+                            }
+                        });
+                    }
+                }
+            }
+        
+            return mergedData;
+        }
+        
+
+        sendButton.addEventListener("click", mergePdfData);
+
+        // Inicializar la página con los datos de horarios
+        function clearScheduleData() {
+            careerSelect.innerHTML = '';
+            yearSelect.innerHTML = '';
+            cycleSelect.innerHTML = '';
+            subjectSelect.innerHTML = '';
+            sectionSelect.innerHTML = '';
+            totalCredits = 0;
+            careerData = {};  
+        }
+        function initializeSchedulePage(horariosData) {
+            clearScheduleData(); 
+
+            careerSelect.innerHTML = '';  
             careerSelect.insertAdjacentHTML('afterbegin', '<option value="">---</option>');
             for (const career in horariosData) {
                 const option = document.createElement('option');
@@ -30,11 +173,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             careerSelect.addEventListener('change', updateYears);
-
             yearSelect.addEventListener('change', updateCycles);
-
             cycleSelect.addEventListener('change', updateSubjects);
-
             subjectSelect.addEventListener('change', updateSections);
 
             sectionSelect.addEventListener('change', () => {
@@ -44,123 +184,136 @@ document.addEventListener('DOMContentLoaded', function () {
             colorPicker.addEventListener('input', () => {
                 const selectedColor = colorPicker.value;
             });
+
             addScheduleBtn.addEventListener('click', addSchedule);
 
             exportImageBtn.addEventListener('click', exportToImage);
-
             exportExcelBtn.addEventListener('click', exportToExcel);
+            createScheduleTable();
+            totalCredits = 0;
+        }
+        let totalCredits = 0;
+        initializeSchedulePage(horariosData);
 
-            function updateYears() {
-                const selectedCareer = careerSelect.value;
-                const selectedYear = yearSelect.value;  
-                yearSelect.innerHTML = '';
-            
-                if (selectedCareer) {
-                    const uniqueYears = [...new Set(Object.keys(horariosData[selectedCareer]).filter(year => year !== 'Año'))];
-                    uniqueYears.forEach(year => {
-                        const option = document.createElement('option');
-                        option.value = year;
-                        option.textContent = year;
-                        yearSelect.appendChild(option);
-                    });
-                }
-
-                updateCycles();
+        function updateYears() {
+            const selectedCareer = careerSelect.value;
+        
+            yearSelect.innerHTML = '';  
+        
+            if (selectedCareer) {
+                const uniqueYears = [...new Set(Object.keys(horariosData[selectedCareer]).filter(year => year !== 'Año'))];
+        
+                uniqueYears.forEach(year => {
+                    const option = document.createElement('option');
+                    option.value = year;
+                    option.textContent = year;
+                    yearSelect.appendChild(option);
+                });
             }
+        
+            updateCycles();
+        }
+        
 
-            function updateCycles() {
-                const selectedCareer = careerSelect.value;
-                const selectedYear = yearSelect.value;
-                const selectedCareerData = careerData[selectedCareer];
+        function updateCycles() {
+            const selectedCareer = careerSelect.value;
+            const selectedYear = yearSelect.value;
+            const selectedCareerData = careerData[selectedCareer];
             
-                cycleSelect.innerHTML = '';
-                const defaultCycleOption = document.createElement('option');
-                defaultCycleOption.value = '';
-                defaultCycleOption.textContent = '---';
-                cycleSelect.appendChild(defaultCycleOption);
+            cycleSelect.innerHTML = '';  
+            const defaultCycleOption = document.createElement('option');
+            defaultCycleOption.value = '';
+            defaultCycleOption.textContent = '---';
+            cycleSelect.appendChild(defaultCycleOption);
             
-                subjectSelect.innerHTML = '';
-                sectionSelect.innerHTML = '';
-            
-                if (selectedCareerData && selectedYear && selectedCareerData[selectedYear]) {
-                    for (const cycle in selectedCareerData[selectedYear]) {
+            subjectSelect.innerHTML = ''; 
+            sectionSelect.innerHTML = '';  
+        
+            if (selectedCareerData && selectedYear && selectedCareerData[selectedYear]) {
+                const uniqueCycles = new Set();  
+        
+                for (const cycle in selectedCareerData[selectedYear]) {
+                    if (!uniqueCycles.has(cycle)) {
+                        uniqueCycles.add(cycle);
                         const option = document.createElement('option');
                         option.value = cycle;
                         option.textContent = cycle;
                         cycleSelect.appendChild(option);
                     }
                 }
-            
-                updateSubjects();
             }
-
-            
-            function updateSubjects() {
-                const selectedCareer = careerSelect.value;
-                const selectedYear = yearSelect.value;
-                const selectedCycle = cycleSelect.value;
-
-                subjectSelect.innerHTML = '';
-                sectionSelect.innerHTML = '';
-
-                const subjectsSet = new Set();
-
-                if (selectedCareer && selectedYear && selectedCycle) {
-                    const coursesInCycle = careerData[selectedCareer][selectedYear][selectedCycle];
-
-                    if (coursesInCycle) {
-                        coursesInCycle.forEach(courseSection => {
-                            subjectsSet.add(courseSection['Asignatura'].match(/-(.+)/)[1].trim());
-                        });
-
-                        const defaultOption = document.createElement('option');
-                        defaultOption.value = '';
-                        defaultOption.textContent = '---';
-                        subjectSelect.appendChild(defaultOption);
-
-                        subjectsSet.forEach(subject => {
-                            const subjectOption = document.createElement('option');
-                            subjectOption.value = subject;
-                            subjectOption.textContent = subject;
-                            subjectSelect.appendChild(subjectOption);
-                        });
-                    }
+        
+            updateSubjects();
+        }
+        function updateSubjects() {
+            const selectedCareer = careerSelect.value;
+            const selectedYear = yearSelect.value;
+            const selectedCycle = cycleSelect.value;
+        
+            subjectSelect.innerHTML = '';
+            sectionSelect.innerHTML = '';
+        
+            const subjectsSet = new Set();
+        
+            if (selectedCareer && selectedYear && selectedCycle) {
+                const coursesInCycle = careerData[selectedCareer][selectedYear][selectedCycle];
+        
+                if (coursesInCycle) {
+                    coursesInCycle.forEach(courseSection => {
+                        const subjectName = courseSection['Asignatura'].match(/-(.+)/)[1].trim();
+                        subjectsSet.add(subjectName); 
+                    });
+        
+                    const defaultOption = document.createElement('option');
+                    defaultOption.value = '';
+                    defaultOption.textContent = '---';
+                    subjectSelect.appendChild(defaultOption);
+        
+                    subjectsSet.forEach(subject => {
+                        const subjectOption = document.createElement('option');
+                        subjectOption.value = subject;
+                        subjectOption.textContent = subject;
+                        subjectSelect.appendChild(subjectOption);
+                    });
                 }
-
-                updateSections();
             }
-            let totalCredits = 0;
-            function updateSections() {
-                const selectedCareer = careerSelect.value;
-                const selectedYear = yearSelect.value;
-                const selectedCycle = cycleSelect.value;
-                const selectedSubject = subjectSelect.value;
+        
+            updateSections();
+        }
+        function updateSections() {
+            const selectedCareer = careerSelect.value;
+            const selectedYear = yearSelect.value;
+            const selectedCycle = cycleSelect.value;
+            const selectedSubject = subjectSelect.value;
             
-                sectionSelect.innerHTML = '';
-            
-                const sectionsSet = new Set();
-            
-                if (selectedCareer && selectedYear && selectedCycle && selectedSubject) {
-                    const coursesInCycle = careerData[selectedCareer][selectedYear][selectedCycle];
-            
-                    if (coursesInCycle) {
-                        coursesInCycle.forEach(courseSection => {
-                            if (courseSection['Asignatura'].match(/-(.+)/)[1].trim() === selectedSubject) {
-                                sectionsSet.add(courseSection['Sec.']);
-                            }
-                        });
-            
-                        sectionsSet.forEach(section => {
-                            const sectionOption = document.createElement('option');
-                            sectionOption.value = section;
-                            sectionOption.textContent = section;
-                            sectionSelect.appendChild(sectionOption);
-                        });
-                    }
+            sectionSelect.innerHTML = '';  
+        
+            const sectionsSet = new Set();
+        
+            if (selectedCareer && selectedYear && selectedCycle && selectedSubject) {
+                const coursesInCycle = careerData[selectedCareer][selectedYear][selectedCycle];
+        
+                if (coursesInCycle) {
+                    coursesInCycle.forEach(courseSection => {
+                        const subjectName = courseSection['Asignatura'].match(/-(.+)/)[1].trim();
+                        if (subjectName === selectedSubject) {
+                            sectionsSet.add(courseSection['Sec.']);
+                        }
+                    });
+        
+                    sectionsSet.forEach(section => {
+                        const sectionOption = document.createElement('option');
+                        sectionOption.value = section;
+                        sectionOption.textContent = section;
+                        sectionSelect.appendChild(sectionOption);
+                    });
                 }
-            
-                addScheduleBtn.disabled = !(selectedYear && selectedCycle && selectedSubject && sectionSelect.value);
             }
+        
+            addScheduleBtn.disabled = !(selectedYear && selectedCycle && selectedSubject && sectionSelect.value);
+        }
+            
+
     
             function addSchedule() {
                 const selectedCareer = careerSelect.value;
@@ -313,6 +466,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             function createScheduleTable() {
+                const scheduleTable = document.getElementById('schedule-table');  // Suponiendo que esta es tu tabla
+    
+                scheduleTable.innerHTML = '';
                 const intervals = Array.from({ length: 14 }, (_, i) => i + 8);
             
                 const headerRow = scheduleTable.insertRow(0);

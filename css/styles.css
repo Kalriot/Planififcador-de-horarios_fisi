@@ -23,6 +23,86 @@ body{
 .header h1 {
     margin-top: 20px;
 }
+.pdf-upload-block {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: none;
+    width: 100%;
+    display: flex;                  /* Alinear en una fila */
+    align-items: center;            /* Centrar verticalmente los elementos */
+    justify-content:flex-start; /* Espacio entre elementos */
+    gap: 15px;                      /* Espacio entre cada elemento */
+    text-align: left;               /* Alineación de texto a la izquierda */
+}
+
+.pdf-upload-block h2 {
+    color: #333;
+    margin: 0;                      /* Elimina margen inferior */
+    font-size: 18px;                /* Ajusta tamaño si es necesario */
+}
+
+.upload-label {
+    background-color: #87CEEB;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+    white-space: nowrap;            /* Evita saltos de línea en el botón */
+}
+
+.upload-label:hover {
+    background-color: #00BFFF;
+}
+
+.send-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    white-space: nowrap;            /* Evita saltos de línea en el botón */
+}
+
+.send-button:hover {
+    background-color: #007bb5;
+}
+
+.upload-label, .send-button, .pdf-upload-block h2 {
+    display: inline-block;
+    margin: 0;                      /* Elimina márgenes verticales */
+}
+
+.hidden {
+    display: none;
+}
+
+/* 🟢 Mueve "Subir Programación de Asignaturas" a la esquina derecha */
+.program-upload-btn {
+    margin-left: auto;              /* Empuja el botón a la derecha */
+    background-color: #FF7F50;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.program-upload-btn:hover {
+    background-color: #FF6347;
+}
+
+
+
 .options-container {
     text-align: center;
     margin-bottom: 20px;
