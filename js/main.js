@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         formData.append("pdf", file);
             
                         try {
-                            const respuesta = await fetch("'https://Cicilis.pythonanywhere.com/upload", {
+                            const respuesta = await fetch("https://Cicilis.pythonanywhere.com/upload", {
                                 method: "POST",
                                 body: formData
                             });
