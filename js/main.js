@@ -296,121 +296,135 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
     
-            function addSchedule() {
-                const selectedCareer = careerSelect.value;
-                const selectedYear = yearSelect.value; 
-                const selectedCycle = cycleSelect.value;
-                const selectedSubject = subjectSelect.value;
-                const selectedSection = sectionSelect.value;
-                const selectedColor = colorPicker.value;
-  
-                let conflictoEncontrado = false;
-                const auxiliarvar=true;
-                const coursesInCycle = careerData[selectedCareer][selectedYear][selectedCycle];
-                if (coursesInCycle) {
-                    coursesInCycle.forEach(courseInfo => {
-                        if (courseInfo['Asignatura'].match(/-(.+)/)[1].trim() === selectedSubject && courseInfo['Sec.'] === selectedSection && courseInfo.Horarios) {
-                            let storedCourse;
+        let cellColors = {};  // Diccionario para almacenar los colores de las celdas
 
-                            for (const courseKey in selectedCourses) {
-                                storedCourse = selectedCourses[courseKey];
-
-                                if (storedCourse.asig === courseInfo['Asignatura'].match(/-(.+)/)[1].trim()) {
-                                    console.error('Este curso ya ha sido agregado', storedCourse.asig);
-                                    alert(`Este curso ya ha sido agregado`);
-                                    conflictoEncontrado = true;
-                                    
-                                    break;
-                                }
-                            }
-                            if(!conflictoEncontrado){
-                                const courseKey = `${selectedSubject}-${selectedSection}X`;
-                                selectedCourses[courseKey] = {
-                                asig: `${selectedSubject}`,
-                                credits: parseInt(courseInfo['Créd.'], 10)
-                                };
-                                const SelectedCourse=parseInt(courseInfo['Créd.'], 10)
-                                totalCredits += SelectedCourse;
-                                updateTotalCredits();
-                                
-                                courseInfo.Horarios.forEach(schedule => {
-                                    const dayName = schedule.Día.trim().toUpperCase();
-                                    const dayIndex = days.findIndex(day => day.toUpperCase() === dayName || day.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase() === dayName);
-
-                                    if (dayIndex !== -1) {
-                                        const startTime = parseInt(schedule.Inicio.split(':')[0], 10) + 1;
-                                        const endTime = parseInt(schedule.Fin.split(':')[0], 10) + 1;
-
-                                        
-                                        
-                                        for (let hour = startTime; hour < endTime; hour++) {
-                                            const cell = scheduleTable.rows[hour - 8].cells[dayIndex + 1];
-
-                                            if (cell.textContent.trim().length > 0) {
-                                                console.error(`Conflicto de horarios. No se pudo agregar el horario para ${selectedSubject} - ${selectedSection} el ${days[dayIndex]} a las ${hour}:00.`);
-                                                alert(`Conflicto de horarios. No se pudo agregar el horario para ${selectedSubject} - ${selectedSection} el ${days[dayIndex]} a las ${hour}:00.`);
-                                                conflictoEncontrado = true;
-                                                if(auxiliarvar==true){
-                                                    
-                                                    console.log(SelectedCourse)
-                                                    totalCredits -= SelectedCourse;
-                                                    updateTotalCredits();
-                                                    delete selectedCourses[courseKey];
-                                                    auxiliarvar=false;
-                                                }
-                                                
-                                                break;
-                                            }
-                                        }
-                                        
-                                    } else {
-                                        console.error('Día no válido en el horario:', schedule.Día);
-                                        alert(`Error al agregar el horario. Día no válido: ${schedule.Día}`);
-                                        return;
-                                    }
-                                });
-                            
+        function colNumToLetter(colNum) {
+            let letter = '';
+            while (colNum > 0) {
+                let modulo = (colNum ) % 26;
+                letter = String.fromCharCode(modulo + 65) + letter;
+                colNum = Math.floor((colNum - modulo-1) / 26);
+            }
+            return letter;
+        }
+        
+        function addSchedule() {
+            const selectedCareer = careerSelect.value;
+            const selectedYear = yearSelect.value;
+            const selectedCycle = cycleSelect.value;
+            const selectedSubject = subjectSelect.value;
+            const selectedSection = sectionSelect.value;
+            const selectedColor = colorPicker.value;
+        
+            let conflictoEncontrado = false;
+            const auxiliarvar = true;
+            const coursesInCycle = careerData[selectedCareer][selectedYear][selectedCycle];
+            if (coursesInCycle) {
+                coursesInCycle.forEach(courseInfo => {
+                    if (courseInfo['Asignatura'].match(/-(.+)/)[1].trim() === selectedSubject && courseInfo['Sec.'] === selectedSection && courseInfo.Horarios) {
+                        let storedCourse;
+        
+                        for (const courseKey in selectedCourses) {
+                            storedCourse = selectedCourses[courseKey];
+        
+                            if (storedCourse.asig === courseInfo['Asignatura'].match(/-(.+)/)[1].trim()) {
+                                console.error('Este curso ya ha sido agregado', storedCourse.asig);
+                                alert(`Este curso ya ha sido agregado`);
+                                conflictoEncontrado = true;
+        
+                                break;
                             }
                         }
-
-                    });
-                }
-
-                if (!conflictoEncontrado) {
-                    
-                    coursesInCycle.forEach(courseInfo => {
-                        if (courseInfo['Asignatura'].match(/-(.+)/)[1].trim() === selectedSubject && courseInfo['Sec.'] === selectedSection && courseInfo.Horarios) {
+                        if (!conflictoEncontrado) {
+                            const courseKey = `${selectedSubject}-${selectedSection}X`;
+                            selectedCourses[courseKey] = {
+                                asig: `${selectedSubject}`,
+                                credits: parseInt(courseInfo['Créd.'], 10)
+                            };
+                            const SelectedCourse = parseInt(courseInfo['Créd.'], 10);
+                            totalCredits += SelectedCourse;
+                            updateTotalCredits();
+        
                             courseInfo.Horarios.forEach(schedule => {
                                 const dayName = schedule.Día.trim().toUpperCase();
                                 const dayIndex = days.findIndex(day => day.toUpperCase() === dayName || day.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase() === dayName);
-
+        
                                 if (dayIndex !== -1) {
                                     const startTime = parseInt(schedule.Inicio.split(':')[0], 10) + 1;
                                     const endTime = parseInt(schedule.Fin.split(':')[0], 10) + 1;
-
+        
                                     for (let hour = startTime; hour < endTime; hour++) {
                                         const cell = scheduleTable.rows[hour - 8].cells[dayIndex + 1];
-
-                                        cell.textContent = `${selectedSubject} - ${selectedSection}`;
-                                        cell.classList.add('schedule-cell');
-                                        cell.style.backgroundColor = selectedColor;
-                                        cell.dataset.color = selectedColor;
-
+        
                                         if (cell.textContent.trim().length > 0) {
-                                            const deleteBtn = document.createElement('button');
-                                            deleteBtn.classList.add('delete-button');
-                                            deleteBtn.innerHTML = 'X';
-                                            deleteBtn.addEventListener('click', () => deleteSchedule(cell));
-
-                                            cell.appendChild(deleteBtn);
+                                            console.error(`Conflicto de horarios. No se pudo agregar el horario para ${selectedSubject} - ${selectedSection} el ${days[dayIndex]} a las ${hour}:00.`);
+                                            alert(`Conflicto de horarios. No se pudo agregar el horario para ${selectedSubject} - ${selectedSection} el ${days[dayIndex]} a las ${hour}:00.`);
+                                            conflictoEncontrado = true;
+                                            if (auxiliarvar == true) {
+                                                totalCredits -= SelectedCourse;
+                                                updateTotalCredits();
+                                                delete selectedCourses[courseKey];
+                                                auxiliarvar = false;
+                                            }
+        
+                                            break;
                                         }
                                     }
+        
+                                } else {
+                                    console.error('Día no válido en el horario:', schedule.Día);
+                                    alert(`Error al agregar el horario. Día no válido: ${schedule.Día}`);
+                                    return;
                                 }
                             });
+        
                         }
-                    });
-                }
+                    }
+        
+                });
             }
+        
+            if (!conflictoEncontrado) {
+                coursesInCycle.forEach(courseInfo => {
+                    if (courseInfo['Asignatura'].match(/-(.+)/)[1].trim() === selectedSubject && courseInfo['Sec.'] === selectedSection && courseInfo.Horarios) {
+                        courseInfo.Horarios.forEach(schedule => {
+                            const dayName = schedule.Día.trim().toUpperCase();
+                            const dayIndex = days.findIndex(day => day.toUpperCase() === dayName || day.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase() === dayName);
+        
+                            if (dayIndex !== -1) {
+                                const startTime = parseInt(schedule.Inicio.split(':')[0], 10) + 1;
+                                const endTime = parseInt(schedule.Fin.split(':')[0], 10) + 1;
+        
+                                for (let hour = startTime; hour < endTime; hour++) {
+                                    const cell = scheduleTable.rows[hour - 8].cells[dayIndex + 1];
+        
+                                    // Guardar el color en el diccionario usando la posición de la celda
+                                    const cellPosition = `${colNumToLetter(dayIndex + 1)}${hour - 7}`;  // Ejemplo: "D2"
+                                    cellColors[cellPosition] = selectedColor;
+                                    console.log("Guardando color para la celda:", cellPosition, "Color:", selectedColor);
+        
+                                    cell.textContent = `${selectedSubject} - ${selectedSection}`;
+                                    cell.classList.add('schedule-cell');
+                                    cell.style.backgroundColor = selectedColor;
+                                    cell.dataset.color = selectedColor;
+        
+                                    if (cell.textContent.trim().length > 0) {
+                                        const deleteBtn = document.createElement('button');
+                                        deleteBtn.classList.add('delete-button');
+                                        deleteBtn.innerHTML = 'X';
+                                        deleteBtn.addEventListener('click', () => deleteSchedule(cell));
+        
+                                        cell.appendChild(deleteBtn);
+                                    }
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        }
+        
+        
             
 
             function exportToImage() {
@@ -441,13 +455,39 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
 
+                        
             function exportToExcel() {
                 const wb = XLSX.utils.table_to_book(scheduleTable, { sheet: 'Horarios' });
-                XLSX.writeFile(wb, 'horarios.xlsx');
+            
+                // Crear un archivo Excel en memoria
+                const excelFile = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+            
+                const formData = new FormData();
+                formData.append('file', new Blob([excelFile], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }), 'horarios_sin_colores.xlsx');
+            
+                formData.append('cellColors', JSON.stringify(cellColors)); 
+            
+                fetch('http://Cicilis.pythonanywhere.com/excel', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.blob())  
+                .then(blob => {
+
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);  
+                    link.download = 'horarios_con_colores.xlsx';  
+                    link.click();  
+                })
+                .catch(error => {
+                    console.error('Error al enviar el archivo:', error);
+                });
             }
 
+            
+
             function createScheduleTable() {
-                const scheduleTable = document.getElementById('schedule-table');  // Suponiendo que esta es tu tabla
+                const scheduleTable = document.getElementById('schedule-table');  
     
                 scheduleTable.innerHTML = '';
                 const intervals = Array.from({ length: 14 }, (_, i) => i + 8);
@@ -493,26 +533,35 @@ document.addEventListener('DOMContentLoaded', function () {
                 const selectedSection = courseInfo[1].trim();
                 
                 const courseKey = `${selectedSubject}-${selectedSection}`;
-
+            
                 const selectedCourse = selectedCourses[courseKey];
-                const selectedCredits=selectedCourse.credits;
-                            
+                const selectedCredits = selectedCourse.credits;
+                                        
                 totalCredits -= selectedCredits;
-
-                updateTotalCredits();
+                updateTotalCredits(); 
+            
                 delete selectedCourses[courseKey];
-                for (let i = 1; i < scheduleTable.rows.length; i++) {
+            
+                for (let i = 1; i < scheduleTable.rows.length; i++) { 
                     const currentRow = scheduleTable.rows[i];
-            
-                    for (let j = 1; j < currentRow.cells.length; j++) {
+                
+                    for (let j = 1; j < currentRow.cells.length; j++) { 
                         const currentCell = currentRow.cells[j];
-            
+                
                         if (currentCell.textContent.includes(selectedSubject) && currentCell.textContent.includes(selectedSection)) {
                             currentCell.textContent = '';
-                            currentCell.style.backgroundColor = '#E6F7FF';
-                            currentCell.dataset.color = '';
                             
-
+                            currentCell.style.backgroundColor = '#E6F7FF'; 
+                            currentCell.dataset.color = ''; 
+            
+                            const colLetter = colNumToLetter(j); 
+                            const rowNumber = i+1; 
+                            const cellId = `${colLetter}${rowNumber}`; 
+                            
+                            if (cellColors[cellId]) {
+                                delete cellColors[cellId]; 
+                            }
+            
                             const deleteBtn = currentCell.querySelector('.delete-button');
                             if (deleteBtn) {
                                 currentCell.removeChild(deleteBtn);
@@ -521,6 +570,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 }
             }
+            
+
+            
+            
             
             
         })
