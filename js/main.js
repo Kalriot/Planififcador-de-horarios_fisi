@@ -73,77 +73,63 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     }
 
-        function mergeData(horariosData, data) {
-            const mergedData = {};
-        
-            for (let year in data) {
-                if (!mergedData[year]) {
-                    mergedData[year] = {};  
-                }
-        
-                for (let career in data[year]) {
-                    if (!mergedData[year][career]) {
-                        mergedData[year][career] = {};  
-                    }
-        
-                    for (let cycle in data[year][career]) {
-                        if (!mergedData[year][career][cycle]) {
-                            mergedData[year][career][cycle] = []; 
-                        }
-        
-                        data[year][career][cycle].forEach(assignature => {
-                            const existingAssignatureIndex = mergedData[year][career][cycle].findIndex(
-                                existingAssignature => existingAssignature["Asignatura"] === assignature["Asignatura"]
-                            );
-        
-                            if (existingAssignatureIndex === -1) {
-                                mergedData[year][career][cycle].push(assignature);
-                            } else {
-                                mergedData[year][career][cycle][existingAssignatureIndex].Horarios = [
-                                    ...mergedData[year][career][cycle][existingAssignatureIndex].Horarios,
-                                    ...assignature.Horarios
-                                ];
+                    function mergeData(horariosData, data) {
+                        const mergedData = {};
+                    
+                        // Función para agregar asignaturas y horarios
+                        const addAssignments = (targetCycle, sourceAssignments) => {
+                            sourceAssignments.forEach(assignature => {
+                                targetCycle.push(assignature);  // Agrega la asignatura sin comprobación adicional
+                            });
+                        };
+                    
+                        // Iterar sobre `data` para fusionar los datos
+                        for (let year in data) {
+                            if (!mergedData[year]) {
+                                mergedData[year] = {};
                             }
-                        });
-                    }
-                }
-            }
-        
-            for (let year in horariosData) {
-                if (!mergedData[year]) {
-                    mergedData[year] = {};  
-                }
-        
-                for (let career in horariosData[year]) {
-                    if (!mergedData[year][career]) {
-                        mergedData[year][career] = {};  
-                    }
-        
-                    for (let cycle in horariosData[year][career]) {
-                        if (!mergedData[year][career][cycle]) {
-                            mergedData[year][career][cycle] = [];   
-                        }
-        
-                        horariosData[year][career][cycle].forEach(assignature => {
-                            const existingAssignatureIndex = mergedData[year][career][cycle].findIndex(
-                                existingAssignature => existingAssignature["Asignatura"] === assignature["Asignatura"]
-                            );
-        
-                            if (existingAssignatureIndex === -1) {
-                                mergedData[year][career][cycle].push(assignature);
-                            } else {
-                                mergedData[year][career][cycle][existingAssignatureIndex].Horarios = [
-                                    ...mergedData[year][career][cycle][existingAssignatureIndex].Horarios,
-                                    ...assignature.Horarios
-                                ];
+                    
+                            for (let career in data[year]) {
+                                if (!mergedData[year][career]) {
+                                    mergedData[year][career] = {};
+                                }
+                    
+                                for (let cycle in data[year][career]) {
+                                    if (!mergedData[year][career][cycle]) {
+                                        mergedData[year][career][cycle] = [];
+                                    }
+                    
+                                    // Agregar asignaturas y horarios sin verificación de duplicados
+                                    addAssignments(mergedData[year][career][cycle], data[year][career][cycle]);
+                                }
                             }
-                        });
+                        }
+                    
+                        // Iterar sobre `horariosData` para fusionar los datos
+                        for (let year in horariosData) {
+                            if (!mergedData[year]) {
+                                mergedData[year] = {};
+                            }
+                    
+                            for (let career in horariosData[year]) {
+                                if (!mergedData[year][career]) {
+                                    mergedData[year][career] = {};
+                                }
+                    
+                                for (let cycle in horariosData[year][career]) {
+                                    if (!mergedData[year][career][cycle]) {
+                                        mergedData[year][career][cycle] = [];
+                                    }
+                    
+                                    // Agregar asignaturas y horarios sin verificación de duplicados
+                                    addAssignments(mergedData[year][career][cycle], horariosData[year][career][cycle]);
+                                }
+                            }
+                        }
+                    
+                        return mergedData;
                     }
-                }
-            }
-        
-            return mergedData;
-        }
+                    
         
 
         sendButton.addEventListener("click", mergePdfData);
