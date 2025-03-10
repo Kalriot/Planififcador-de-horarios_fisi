@@ -1,4 +1,5 @@
-.body {
+/* Estilo para el body */
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -6,44 +7,47 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    min-height: 100vh;
     background-image: url('../images/FONDOS.png');
     background-color: #DBF9FC;
-    color: white; 
-}
-body{
-    background-image: url('../images/FONDOS.png');
     color: white;
 }
+
+/* Estilo para la cabecera */
 .header {
     height: 60px; 
     text-align: center;
     margin-bottom: 20px;
 }
+
 .header h1 {
     margin-top: 20px;
 }
+
+/* Estilo para el bloque de carga de PDF */
 .pdf-upload-block {
     background-color: #f0f8ff;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    max-width: none;
+    max-width: 100%;
     width: 100%;
-    display: flex;                  /* Alinear en una fila */
-    align-items: center;            /* Centrar verticalmente los elementos */
-    justify-content:flex-start; /* Espacio entre elementos */
-    gap: 15px;                      /* Espacio entre cada elemento */
-    text-align: left;               /* Alineación de texto a la izquierda */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    text-align: left;
 }
 
+/* Títulos dentro del bloque */
 .pdf-upload-block h2 {
     color: #333;
-    margin: 0;                      /* Elimina margen inferior */
-    font-size: 18px;                /* Ajusta tamaño si es necesario */
+    margin: 0;
+    font-size: 18px;
 }
 
+/* Estilos para el botón de carga */
 .upload-label {
     background-color: #87CEEB;
     color: white;
@@ -52,14 +56,14 @@ body{
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
-    display: inline-block;
-    white-space: nowrap;            /* Evita saltos de línea en el botón */
+    white-space: nowrap;
 }
 
 .upload-label:hover {
     background-color: #00BFFF;
 }
 
+/* Estilo para el botón de enviar */
 .send-button {
     background-color: #008CBA;
     color: white;
@@ -68,25 +72,22 @@ body{
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
-    white-space: nowrap;            /* Evita saltos de línea en el botón */
+    white-space: nowrap;
 }
 
 .send-button:hover {
     background-color: #007bb5;
 }
 
+/* Estilos para los botones y títulos */
 .upload-label, .send-button, .pdf-upload-block h2 {
     display: inline-block;
-    margin: 0;                      /* Elimina márgenes verticales */
+    margin: 0;
 }
 
-.hidden {
-    display: none;
-}
-
-/* 🟢 Mueve "Subir Programación de Asignaturas" a la esquina derecha */
+/* Estilos para el botón de carga de programación */
 .program-upload-btn {
-    margin-left: auto;              /* Empuja el botón a la derecha */
+    margin-left: auto;
     background-color: #FF7F50;
     color: white;
     padding: 5px 15px;
@@ -101,59 +102,144 @@ body{
     background-color: #FF6347;
 }
 
-
-
+/* Estilos para el contenedor de opciones */
 .options-container {
     text-align: center;
     margin-bottom: 20px;
     background-color: white;
     padding: 10px;
-    border-radius: 8px; 
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex; 
-    justify-content: space-around;
-    align-items: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
+/* Estilos para los selectores y botones */
 .options-container label,
 .options-container select,
 .options-container button,
 .color-picker-container {
     color: black;
-    margin-right: 5px;
     margin-bottom: 10px;
+    margin-right: 5px; /* Este margen se puede ajustar, si es necesario */
 }
 
 select, button {
     padding: 8px;
+    min-width: 150px;
+    font-size: 14px; /* Se añadió el tamaño de la fuente para una mejor visibilidad */
 }
 
 button {
     cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.color-picker-container {
+    display: flex;
+    align-items: center; /* Para alinear los elementos del color picker */
+    margin-top: 10px;
+}
+
+.color-picker-btn {
+    width: 40px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px; /* Para separar ligeramente el botón y el texto */
+}
+
+#color-picker-label {
+    margin: 0; /* Eliminar margen alrededor del label */
+    font-size: 14px; /* Ajuste de tamaño de la fuente */
 }
 
 #schedule-table {
-    color:black;
+    color: black;
     background-color: white;
     width: 100%;
+    table-layout: fixed; /* Hace que las celdas tengan un tamaño fijo */
     border-collapse: collapse;
+    overflow: hidden; /* Evita que se desborde contenido */
 }
 
 #schedule-table th, #schedule-table td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;  
     text-align: center;
+    word-wrap: break-word; 
 }
 
 .schedule-cell {
     cursor: pointer;
     background-color: #e6f7ff;
+    position: relative;
 }
 
 .schedule-cell:hover {
     background-color: #b3e0ff;
 }
+.schedule-cell .delete-button {
+    all: unset;
+    width: 16px;
+    height: 80%;
+    font-size: 10px;
+    display: none;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    background-color: #FF6347;
+    color: white;
+    border-radius: 0%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
 
+.schedule-cell:hover .delete-button {
+    display: block;
+    background-color: #FF4500;
+    transform: scale(1.2);
+}
+
+.schedule-cell .delete-button:active {
+    background-color: #FF3333;
+    transform: scale(0.9);
+}
+
+.schedule-cell .delete-button:hover {
+    background-color: #FF5733;
+}
+
+.schedule-cell {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 100%;
+}
+
+.schedule-cell .delete-button {
+    z-index: 10;
+}
+
+
+
+/* Estilo para el color picker */
 .color-picker-btn {
     appearance: none;
     border: none;
@@ -162,47 +248,17 @@ button {
     cursor: pointer;
 }
 
+/* Estilos para el contenedor del color picker */
 .color-picker-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-
-}
-.schedule-cell {
-    cursor: pointer;
-    background-color: #e6f7ff;
-    position: relative; 
-}
-
-.schedule-cell:hover {
-    background-color: #b3e0ff;
 }
 
 
-.delete-button {
-    width: 30px;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    background-color: #FF6666;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    cursor: pointer;
-    position: absolute;
-    top: 1%; 
-    left: 5%;
-    transform: translateX(-50%);
-    display: none;
-}
-    
-    .schedule-cell:hover .delete-button {
-        display: block; 
-    }
-    
 
-
+/* Ocultar elementos */
 .hidden {
     display: none;
 }
@@ -210,38 +266,46 @@ button {
 .visible {
     display: block;
 }
+
+/* Estilo para el contador de créditos */
 #total-credits {
     position: absolute;
     top: 30px;
-    font-size: 30px; 
+    font-size: 30px;
     left: 20px;
-    font-family:'Times New Roman', Times, serif; 
+    font-family: 'Times New Roman', Times, serif;
     color: white;
-}footer {
+}
+
+/* Estilos para el pie de página */
+footer {
     background-color: #333;
     color: white;
-    padding: 40px 20px; /* Aumenta el espacio interior */
+    padding: 40px 20px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
     width: 100%;
-    font-size: 20px;  /* Aumenta el tamaño de la fuente */
+    font-size: 20px;
 }
 
+/* Contenedor del pie de página */
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Mejor distribución de los elementos */
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;  /* Hace que se ajusten los elementos en pantallas pequeñas */
-    max-width: 1200px; /* Limita el ancho máximo */
-    margin: 0 auto;   /* Centra el contenido */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Estilos para los párrafos en el pie de página */
 footer p {
     margin: 0 15px;
-    font-size: 18px;  /* Ajusta el tamaño de texto */
+    font-size: 18px;
 }
 
+/* Estilos para los enlaces de contacto */
 .contact-block {
-    text-align: left;  /* Alinea el texto a la izquierda */
+    text-align: left;
 }
 
 .contact-link {
@@ -254,6 +318,7 @@ footer p {
     text-decoration: underline;
 }
 
+/* Estilos para los íconos sociales */
 .social-icon {
     width: 30px;
     height: 30px;
@@ -263,7 +328,7 @@ footer p {
 }
 
 .social-icon:hover {
-    transform: scale(1.2); /* Efecto de hover */
+    transform: scale(1.2);
 }
 
 footer a {
@@ -275,3 +340,34 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .options-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+    }
+
+    select, button {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    #schedule-table th, #schedule-table td {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .program-upload-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+}
