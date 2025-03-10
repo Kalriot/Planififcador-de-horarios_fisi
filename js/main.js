@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     
                         const addAssignments = (targetCycle, sourceAssignments) => {
                             sourceAssignments.forEach(assignature => {
-                                targetCycle.push(assignature);  
+                                targetCycle.push(assignature);
                             });
                         };
                     
@@ -88,6 +88,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             }
                     
                             for (let career in data[year]) {
+                                if (horariosData[year] && horariosData[year][career]) {
+                                    delete horariosData[year][career]; 
+                                }
+                    
                                 if (!mergedData[year][career]) {
                                     mergedData[year][career] = {};
                                 }
@@ -125,11 +129,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         return mergedData;
                     }
                     
+                    
         
 
         sendButton.addEventListener("click", mergePdfData);
 
-        // Inicializar la página con los datos de horarios
         function clearScheduleData() {
             careerSelect.innerHTML = '';
             yearSelect.innerHTML = '';
@@ -296,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
     
-        let cellColors = {};  // Diccionario para almacenar los colores de las celdas
+        let cellColors = {};  
 
         function colNumToLetter(colNum) {
             let letter = '';
