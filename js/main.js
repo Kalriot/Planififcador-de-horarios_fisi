@@ -76,14 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     function mergeData(horariosData, data) {
                         const mergedData = {};
                     
-                        // Función para agregar asignaturas y horarios
                         const addAssignments = (targetCycle, sourceAssignments) => {
                             sourceAssignments.forEach(assignature => {
-                                targetCycle.push(assignature);  // Agrega la asignatura sin comprobación adicional
+                                targetCycle.push(assignature);  
                             });
                         };
                     
-                        // Iterar sobre `data` para fusionar los datos
                         for (let year in data) {
                             if (!mergedData[year]) {
                                 mergedData[year] = {};
@@ -99,13 +97,11 @@ document.addEventListener('DOMContentLoaded', function () {
                                         mergedData[year][career][cycle] = [];
                                     }
                     
-                                    // Agregar asignaturas y horarios sin verificación de duplicados
                                     addAssignments(mergedData[year][career][cycle], data[year][career][cycle]);
                                 }
                             }
                         }
                     
-                        // Iterar sobre `horariosData` para fusionar los datos
                         for (let year in horariosData) {
                             if (!mergedData[year]) {
                                 mergedData[year] = {};
@@ -121,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                         mergedData[year][career][cycle] = [];
                                     }
                     
-                                    // Agregar asignaturas y horarios sin verificación de duplicados
                                     addAssignments(mergedData[year][career][cycle], horariosData[year][career][cycle]);
                                 }
                             }
