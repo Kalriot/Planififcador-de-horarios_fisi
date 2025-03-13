@@ -1,10 +1,11 @@
 {"2023":{
     "Ingeniería De Sistemas": {
+        "Ingeniería De Sistemas": {
             "CICLO 1": [
                 {
                     "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "1",
+                    "Créd.": 3,
+                    "Sec.": 1,
                     "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
                     "Horarios": [
                         {
@@ -25,8 +26,8 @@
                 },
                 {
                     "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "2",
+                    "Créd.": 3,
+                    "Sec.": 2,
                     "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
                     "Horarios": [
                         {
@@ -47,8 +48,8 @@
                 },
                 {
                     "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "3",
+                    "Créd.": 3,
+                    "Sec.": 3,
                     "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
                     "Horarios": [
                         {
@@ -69,8 +70,8 @@
                 },
                 {
                     "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "4",
+                    "Créd.": 3,
+                    "Sec.": 4,
                     "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
                     "Horarios": [
                         {
@@ -91,8 +92,8 @@
                 },
                 {
                     "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "5",
+                    "Créd.": 3,
+                    "Sec.": 5,
                     "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
                     "Horarios": [
                         {
@@ -113,8 +114,8 @@
                 },
                 {
                     "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "6",
+                    "Créd.": 3,
+                    "Sec.": 6,
                     "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
                     "Horarios": [
                         {
@@ -135,8 +136,8 @@
                 },
                 {
                     "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "1",
+                    "Créd.": 2,
+                    "Sec.": 1,
                     "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
                     "Horarios": [
                         {
@@ -157,8 +158,8 @@
                 },
                 {
                     "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "2",
+                    "Créd.": 2,
+                    "Sec.": 2,
                     "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
                     "Horarios": [
                         {
@@ -179,8 +180,8 @@
                 },
                 {
                     "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "3",
+                    "Créd.": 2,
+                    "Sec.": 3,
                     "Docente": "09620253 - COLCA GARCIA, HEDDY LILIANA",
                     "Horarios": [
                         {
@@ -201,8 +202,8 @@
                 },
                 {
                     "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "4",
+                    "Créd.": 2,
+                    "Sec.": 4,
                     "Docente": "06122577 - FANOLA MERINO, PETRONILA MERIDA",
                     "Horarios": [
                         {
@@ -223,30 +224,30 @@
                 },
                 {
                     "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "5",
-                    "Docente": "09620253 - COLCA GARCIA, HEDDY LILIANA",
+                    "Créd.": 2,
+                    "Sec.": 5,
+                    "Docente": "--",
                     "Horarios": [
                         {
                             "Horario": "1",
                             "Inicio": "14:00",
                             "Fin": "15:00",
-                            "Día": "JUEVES",
+                            "Día": "MIERCOLES",
                             "Tipo": "Teoría"
                         },
                         {
                             "Horario": "2",
                             "Inicio": "15:00",
                             "Fin": "17:00",
-                            "Día": "JUEVES",
+                            "Día": "MIERCOLES",
                             "Tipo": "Práctica"
                         }
                     ]
                 },
                 {
                     "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "6",
+                    "Créd.": 2,
+                    "Sec.": 6,
                     "Docente": "06326376 - COSME FÉLIX, MIRYAM MILAGROS",
                     "Horarios": [
                         {
@@ -267,8 +268,8 @@
                 },
                 {
                     "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "1",
+                    "Créd.": 2,
+                    "Sec.": 1,
                     "Docente": "45286733 - MELGAREJO SOLIS, RONALD ALONSO",
                     "Horarios": [
                         {
@@ -289,8 +290,8 @@
                 },
                 {
                     "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "2",
+                    "Créd.": 2,
+                    "Sec.": 2,
                     "Docente": "10275035 - ORELLANA MANRIQUE, YOLANDA OLIVIA",
                     "Horarios": [
                         {
@@ -311,8 +312,8 @@
                 },
                 {
                     "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "3",
+                    "Créd.": 2,
+                    "Sec.": 3,
                     "Docente": "09620253 - COLCA GARCIA, HEDDY LILIANA",
                     "Horarios": [
                         {
@@ -333,8 +334,8 @@
                 },
                 {
                     "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "4",
+                    "Créd.": 2,
+                    "Sec.": 4,
                     "Docente": "06122577 - FANOLA MERINO, PETRONILA MERIDA",
                     "Horarios": [
                         {
@@ -355,8 +356,8 @@
                 },
                 {
                     "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "5",
+                    "Créd.": 2,
+                    "Sec.": 5,
                     "Docente": "10275035 - ORELLANA MANRIQUE, YOLANDA OLIVIA",
                     "Horarios": [
                         {
@@ -377,8 +378,8 @@
                 },
                 {
                     "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "6",
+                    "Créd.": 2,
+                    "Sec.": 6,
                     "Docente": "41388541 - AGUILAR CORONEL, JHONATHAN",
                     "Horarios": [
                         {
@@ -399,8 +400,30 @@
                 },
                 {
                     "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
+                    "Docente": "06180110 - ATOCHE ESPINOZA, VICENTE AGUSTIN",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "10:00",
+                            "Día": "MARTES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "08:00",
+                            "Fin": "12:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
+                    "Asignatura": "INO104 - CÁLCULO I",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "--",
                     "Horarios": [
                         {
@@ -421,31 +444,9 @@
                 },
                 {
                     "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "2",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "3",
-                    "Docente": "--",
+                    "Créd.": 4,
+                    "Sec.": 3,
+                    "Docente": "06180110 - ATOCHE ESPINOZA, VICENTE AGUSTIN",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -465,8 +466,8 @@
                 },
                 {
                     "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "4",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "--",
                     "Horarios": [
                         {
@@ -478,17 +479,17 @@
                         },
                         {
                             "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "VIERNES",
+                            "Inicio": "14:00",
+                            "Fin": "18:00",
+                            "Día": "MIERCOLES",
                             "Tipo": "Práctica"
                         }
                     ]
                 },
                 {
                     "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "5",
+                    "Créd.": 4,
+                    "Sec.": 5,
                     "Docente": "0A2021 - LLERENA LUCERO, TEODORO ALFREDO",
                     "Horarios": [
                         {
@@ -509,8 +510,8 @@
                 },
                 {
                     "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "6",
+                    "Créd.": 4,
+                    "Sec.": 6,
                     "Docente": "--",
                     "Horarios": [
                         {
@@ -531,8 +532,8 @@
                 },
                 {
                     "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "43091255 - HUAMAN TINCO, BORJA LUIS",
                     "Horarios": [
                         {
@@ -560,8 +561,8 @@
                 },
                 {
                     "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "2",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "08458590 - ARIAS RAMIREZ, ANGELA RENEE",
                     "Horarios": [
                         {
@@ -589,8 +590,8 @@
                 },
                 {
                     "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "3",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "43091255 - HUAMAN TINCO, BORJA LUIS",
                     "Horarios": [
                         {
@@ -618,8 +619,8 @@
                 },
                 {
                     "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "4",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "43368044 - ACUÑA TARAZONA, MARGOTH ELIZABETH",
                     "Horarios": [
                         {
@@ -647,8 +648,8 @@
                 },
                 {
                     "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "5",
+                    "Créd.": 4,
+                    "Sec.": 5,
                     "Docente": "43091255 - HUAMAN TINCO, BORJA LUIS",
                     "Horarios": [
                         {
@@ -676,8 +677,8 @@
                 },
                 {
                     "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "6",
+                    "Créd.": 4,
+                    "Sec.": 6,
                     "Docente": "08458590 - ARIAS RAMIREZ, ANGELA RENEE",
                     "Horarios": [
                         {
@@ -705,9 +706,9 @@
                 },
                 {
                     "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "1",
-                    "Docente": "--",
+                    "Créd.": 4,
+                    "Sec.": 1,
+                    "Docente": "21571331 - BARBOZA CARAPE, LUIS LEONCIO",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -727,21 +728,21 @@
                 },
                 {
                     "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "2",
-                    "Docente": "--",
+                    "Créd.": 4,
+                    "Sec.": 2,
+                    "Docente": "40667934 - TERREROS NAVARRO, HELLEN GLORIA",
                     "Horarios": [
                         {
                             "Horario": "1",
                             "Inicio": "08:00",
                             "Fin": "10:00",
-                            "Día": "MIERCOLES",
+                            "Día": "VIERNES",
                             "Tipo": "Teoría"
                         },
                         {
                             "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
+                            "Inicio": "10:00",
+                            "Fin": "14:00",
                             "Día": "VIERNES",
                             "Tipo": "Práctica"
                         }
@@ -749,9 +750,9 @@
                 },
                 {
                     "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "3",
-                    "Docente": "--",
+                    "Créd.": 4,
+                    "Sec.": 3,
+                    "Docente": "21571331 - BARBOZA CARAPE, LUIS LEONCIO",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -771,9 +772,9 @@
                 },
                 {
                     "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "4",
-                    "Docente": "--",
+                    "Créd.": 4,
+                    "Sec.": 4,
+                    "Docente": "40667934 - TERREROS NAVARRO, HELLEN GLORIA",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -793,9 +794,9 @@
                 },
                 {
                     "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "5",
-                    "Docente": "--",
+                    "Créd.": 4,
+                    "Sec.": 5,
+                    "Docente": "43313669 - SALAZAR FLORES, ELIZABETH RUTH",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -815,30 +816,30 @@
                 },
                 {
                     "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "6",
-                    "Docente": "--",
+                    "Créd.": 4,
+                    "Sec.": 6,
+                    "Docente": "40667934 - TERREROS NAVARRO, HELLEN GLORIA",
                     "Horarios": [
                         {
                             "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
+                            "Inicio": "14:00",
+                            "Fin": "16:00",
                             "Día": "LUNES",
                             "Tipo": "Teoría"
                         },
                         {
                             "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "JUEVES",
+                            "Inicio": "14:00",
+                            "Fin": "18:00",
+                            "Día": "MARTES",
                             "Tipo": "Práctica"
                         }
                     ]
                 },
                 {
                     "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "1",
+                    "Créd.": 3,
+                    "Sec.": 1,
                     "Docente": "06122577 - FANOLA MERINO, PETRONILA MERIDA",
                     "Horarios": [
                         {
@@ -859,8 +860,8 @@
                 },
                 {
                     "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "2",
+                    "Créd.": 3,
+                    "Sec.": 2,
                     "Docente": "45286733 - MELGAREJO SOLIS, RONALD ALONSO",
                     "Horarios": [
                         {
@@ -881,8 +882,8 @@
                 },
                 {
                     "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "3",
+                    "Créd.": 3,
+                    "Sec.": 3,
                     "Docente": "--",
                     "Horarios": [
                         {
@@ -903,9 +904,9 @@
                 },
                 {
                     "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "4",
-                    "Docente": "07493618 - INGA ALVA, ALEXANDER EDUARDO",
+                    "Créd.": 3,
+                    "Sec.": 4,
+                    "Docente": "--",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -925,8 +926,8 @@
                 },
                 {
                     "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "5",
+                    "Créd.": 3,
+                    "Sec.": 5,
                     "Docente": "45286733 - MELGAREJO SOLIS, RONALD ALONSO",
                     "Horarios": [
                         {
@@ -947,9 +948,9 @@
                 },
                 {
                     "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "6",
-                    "Docente": "07493618 - INGA ALVA, ALEXANDER EDUARDO",
+                    "Créd.": 3,
+                    "Sec.": 6,
+                    "Docente": "--",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -969,8 +970,8 @@
                 },
                 {
                     "Asignatura": "INO108 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "1",
+                    "Créd.": 2,
+                    "Sec.": 1,
                     "Docente": "0A0037 - HUAYNA DUEÑAS, ANA MARIA",
                     "Horarios": [
                         {
@@ -991,8 +992,8 @@
                 },
                 {
                     "Asignatura": "INO108 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "2",
+                    "Créd.": 2,
+                    "Sec.": 2,
                     "Docente": "0A0182 - RUIZ RIVERA, MARIA ELENA",
                     "Horarios": [
                         {
@@ -1013,8 +1014,8 @@
                 },
                 {
                     "Asignatura": "INO108 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "3",
+                    "Créd.": 2,
+                    "Sec.": 3,
                     "Docente": "07240690 - DAMASO RIOS, MARIA ROSA",
                     "Horarios": [
                         {
@@ -1035,8 +1036,8 @@
                 },
                 {
                     "Asignatura": "INO108 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "4",
+                    "Créd.": 2,
+                    "Sec.": 4,
                     "Docente": "0A0182 - RUIZ RIVERA, MARIA ELENA",
                     "Horarios": [
                         {
@@ -1057,9 +1058,9 @@
                 },
                 {
                     "Asignatura": "INO108 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "5",
-                    "Docente": "085774 - VERA POMALAZA, VIRGINIA",
+                    "Créd.": 2,
+                    "Sec.": 5,
+                    "Docente": "07240690 - DAMASO RIOS, MARIA ROSA",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -1079,8 +1080,8 @@
                 },
                 {
                     "Asignatura": "INO108 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "6",
+                    "Créd.": 2,
+                    "Sec.": 6,
                     "Docente": "10645375 - USCUCHAGUA FLORES, GELBER CHRISTIAN",
                     "Horarios": [
                         {
@@ -1101,9 +1102,9 @@
                 },
                 {
                     "Asignatura": "INO108 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "7",
-                    "Docente": "07240690 - DAMASO RIOS, MARIA ROSA",
+                    "Créd.": 2,
+                    "Sec.": 7,
+                    "Docente": "085774 - VERA POMALAZA, VIRGINIA",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -1125,8 +1126,8 @@
             "CICLO 2": [
                 {
                     "Asignatura": "INO204 - CÁLCULO II",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "--",
                     "Horarios": [
                         {
@@ -1147,9 +1148,9 @@
                 },
                 {
                     "Asignatura": "INO205 - FÍSICA I",
-                    "Créd.": "4",
-                    "Sec.": "1",
-                    "Docente": "0A4049 - ADRIANO  PEÑA, ROLANDO WILDER",
+                    "Créd.": 4,
+                    "Sec.": 1,
+                    "Docente": "0A4049 - ADRIANO PEÑA, ROLANDO WILDER",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -1171,8 +1172,8 @@
             "CICLO 3": [
                 {
                     "Asignatura": "201230301 - INTRODUCCIÓN A LA COMPUTACIÓN",
-                    "Créd.": "4.0",
-                    "Sec.": "1.0",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "0A1612 - ANGULO CALDERÓN, CÉSAR AUGUSTO",
                     "Horarios": [
                         {
@@ -1193,8 +1194,8 @@
                 },
                 {
                     "Asignatura": "201230301 - INTRODUCCIÓN A LA COMPUTACIÓN",
-                    "Créd.": "4.0",
-                    "Sec.": "2.0",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "0A06295 - USCUCHAGUA FLORES, GELBER CHRISTIAN",
                     "Horarios": [
                         {
@@ -1215,8 +1216,8 @@
                 },
                 {
                     "Asignatura": "201230301 - INTRODUCCIÓN A LA COMPUTACIÓN",
-                    "Créd.": "4.0",
-                    "Sec.": "3.0",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "0A1612 - ANGULO CALDERÓN, CÉSAR AUGUSTO",
                     "Horarios": [
                         {
@@ -1237,8 +1238,8 @@
                 },
                 {
                     "Asignatura": "201230302 - SERIES Y ECUACIONES DIFERENCIALES",
-                    "Créd.": "4.0",
-                    "Sec.": "1.0",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "092991 - RUBIO GALLARDAY, MARCO ANTONIO",
                     "Horarios": [
                         {
@@ -1259,9 +1260,9 @@
                 },
                 {
                     "Asignatura": "201230302 - SERIES Y ECUACIONES DIFERENCIALES",
-                    "Créd.": "4.0",
-                    "Sec.": "2.0",
-                    "Docente": "--",
+                    "Créd.": 4,
+                    "Sec.": 2,
+                    "Docente": "43313669 - SALAZAR FLORES, ELIZABETH RUTH",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -1281,8 +1282,8 @@
                 },
                 {
                     "Asignatura": "201230302 - SERIES Y ECUACIONES DIFERENCIALES",
-                    "Créd.": "4.0",
-                    "Sec.": "3.0",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "0A1331 - LUNA VALDEZ, JUAN HONORATO",
                     "Horarios": [
                         {
@@ -1303,9 +1304,9 @@
                 },
                 {
                     "Asignatura": "201230302 - SERIES Y ECUACIONES DIFERENCIALES",
-                    "Créd.": "4.0",
-                    "Sec.": "4.0",
-                    "Docente": "--",
+                    "Créd.": 4,
+                    "Sec.": 4,
+                    "Docente": "40667934 - TERREROS NAVARRO, HELLEN GLORIA",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -1325,8 +1326,8 @@
                 },
                 {
                     "Asignatura": "201230303 - ELECTROMAGNETISMO Y ÓPTICA",
-                    "Créd.": "4.0",
-                    "Sec.": "1.0",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "0A9115 - VICTORIA BARROS, CÉSAR GUALBERTO",
                     "Horarios": [
                         {
@@ -1347,8 +1348,8 @@
                 },
                 {
                     "Asignatura": "201230303 - ELECTROMAGNETISMO Y ÓPTICA",
-                    "Créd.": "4.0",
-                    "Sec.": "2.0",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "0A1440 - CASTILLO CORZO, MIGUEL ÁNGEL",
                     "Horarios": [
                         {
@@ -1369,8 +1370,8 @@
                 },
                 {
                     "Asignatura": "201230303 - ELECTROMAGNETISMO Y ÓPTICA",
-                    "Créd.": "4.0",
-                    "Sec.": "3.0",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "0A0920 - LLOSA DEMARTINI, MELCHOR NICOLÁS",
                     "Horarios": [
                         {
@@ -1391,8 +1392,8 @@
                 },
                 {
                     "Asignatura": "201230303 - ELECTROMAGNETISMO Y ÓPTICA",
-                    "Créd.": "4.0",
-                    "Sec.": "4.0",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "0A1859 - SAAVEDRA JUAN DE DIOS, MIGUEL FIDENCIO",
                     "Horarios": [
                         {
@@ -1413,8 +1414,8 @@
                 },
                 {
                     "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
-                    "Créd.": "4.0",
-                    "Sec.": "1.0",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "010162 - CABRERA DÍAZ, JAVIER ELMER",
                     "Horarios": [
                         {
@@ -1442,37 +1443,37 @@
                 },
                 {
                     "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
-                    "Créd.": "4.0",
-                    "Sec.": "2.0",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "085774 - VERA POMALAZA, VIRGINIA",
                     "Horarios": [
                         {
                             "Horario": "1",
                             "Inicio": "08:00",
                             "Fin": "10:00",
-                            "Día": "MIERCOLES",
+                            "Día": "VIERNES",
                             "Tipo": "Teoría"
                         },
                         {
                             "Horario": "2",
                             "Inicio": "10:00",
                             "Fin": "12:00",
-                            "Día": "MIERCOLES",
+                            "Día": "VIERNES",
                             "Tipo": "Práctica"
                         },
                         {
                             "Horario": "2",
                             "Inicio": "12:00",
                             "Fin": "14:00",
-                            "Día": "MIERCOLES",
+                            "Día": "VIERNES",
                             "Tipo": "Práctica"
                         }
                     ]
                 },
                 {
                     "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
-                    "Créd.": "4.0",
-                    "Sec.": "3.0",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "0A0419 - GUERRA GRADOS, LUIS ANGEL",
                     "Horarios": [
                         {
@@ -1500,8 +1501,8 @@
                 },
                 {
                     "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
-                    "Créd.": "4.0",
-                    "Sec.": "4.0",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "08803A - ROMERO NAUPARI, PABLO JESUS",
                     "Horarios": [
                         {
@@ -1529,8 +1530,8 @@
                 },
                 {
                     "Asignatura": "201230304 - PROGRAMACIÓN DE COMPUTADORAS I",
-                    "Créd.": "4.0",
-                    "Sec.": "5.0",
+                    "Créd.": 4,
+                    "Sec.": 5,
                     "Docente": "07240690 - DAMASO RIOS, MARIA ROSA",
                     "Horarios": [
                         {
@@ -1558,30 +1559,30 @@
                 },
                 {
                     "Asignatura": "201230305 - FUNDAMENTOS DE SISTEMAS DE INFORMACIÓN",
-                    "Créd.": "2.0",
-                    "Sec.": "1.0",
+                    "Créd.": 2,
+                    "Sec.": 1,
                     "Docente": "055123 - PRÓ CONCEPCIÓN, LUZMILA ELISA",
                     "Horarios": [
                         {
                             "Horario": "1",
                             "Inicio": "08:00",
                             "Fin": "09:00",
-                            "Día": "VIERNES",
+                            "Día": "MIERCOLES",
                             "Tipo": "Teoría"
                         },
                         {
                             "Horario": "2",
                             "Inicio": "09:00",
                             "Fin": "11:00",
-                            "Día": "VIERNES",
+                            "Día": "MIERCOLES",
                             "Tipo": "Práctica"
                         }
                     ]
                 },
                 {
                     "Asignatura": "201230305 - FUNDAMENTOS DE SISTEMAS DE INFORMACIÓN",
-                    "Créd.": "2.0",
-                    "Sec.": "2.0",
+                    "Créd.": 2,
+                    "Sec.": 2,
                     "Docente": "037605 - LEÓN FERNÁNDEZ, CAYO VÍCTOR",
                     "Horarios": [
                         {
@@ -1602,8 +1603,8 @@
                 },
                 {
                     "Asignatura": "201230305 - FUNDAMENTOS DE SISTEMAS DE INFORMACIÓN",
-                    "Créd.": "2.0",
-                    "Sec.": "3.0",
+                    "Créd.": 2,
+                    "Sec.": 3,
                     "Docente": "09831E - ALCÁNTARA LOAYZA, CÉSAR AUGUSTO",
                     "Horarios": [
                         {
@@ -1624,8 +1625,8 @@
                 },
                 {
                     "Asignatura": "201230305 - FUNDAMENTOS DE SISTEMAS DE INFORMACIÓN",
-                    "Créd.": "2.0",
-                    "Sec.": "4.0",
+                    "Créd.": 2,
+                    "Sec.": 4,
                     "Docente": "037605 - LEÓN FERNÁNDEZ, CAYO VÍCTOR",
                     "Horarios": [
                         {
@@ -1646,8 +1647,8 @@
                 },
                 {
                     "Asignatura": "201230306 - MATEMÁTICAS DISCRETAS",
-                    "Créd.": "4.0",
-                    "Sec.": "1.0",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "018686 - CORTEZ VÁSQUEZ, AUGUSTO PARCEMON",
                     "Horarios": [
                         {
@@ -1668,8 +1669,8 @@
                 },
                 {
                     "Asignatura": "201230306 - MATEMÁTICAS DISCRETAS",
-                    "Créd.": "4.0",
-                    "Sec.": "2.0",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "055867 - QUINTO PAZCE, DANIEL",
                     "Horarios": [
                         {
@@ -1690,8 +1691,8 @@
                 },
                 {
                     "Asignatura": "201230306 - MATEMÁTICAS DISCRETAS",
-                    "Créd.": "4.0",
-                    "Sec.": "3.0",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "08954E - ROMAN CONCHA, NORBERTO ULISES",
                     "Horarios": [
                         {
@@ -1712,8 +1713,8 @@
                 },
                 {
                     "Asignatura": "201230306 - MATEMÁTICAS DISCRETAS",
-                    "Créd.": "4.0",
-                    "Sec.": "4.0",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "055867 - QUINTO PAZCE, DANIEL",
                     "Horarios": [
                         {
@@ -1736,8 +1737,8 @@
             "CICLO 4": [
                 {
                     "Asignatura": "201230401 - ORGANIZACIÓN EMPRESARIAL",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "0A0037 - HUAYNA DUEÑAS, ANA MARIA",
                     "Horarios": [
                         {
@@ -1765,8 +1766,8 @@
                 },
                 {
                     "Asignatura": "201230402 - PROGRAMACIÓN DE COMPUTADORAS II",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "089575 - SALINAS AZAÑA, GILBERTO ANÍBAL",
                     "Horarios": [
                         {
@@ -1794,8 +1795,8 @@
                 },
                 {
                     "Asignatura": "201230402 - PROGRAMACIÓN DE COMPUTADORAS II",
-                    "Créd.": "4",
-                    "Sec.": "2",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "06326376 - COSME FÉLIX, MIRYAM MILAGROS",
                     "Horarios": [
                         {
@@ -1823,8 +1824,8 @@
                 },
                 {
                     "Asignatura": "201230403 - MÉTODOS NUMÉRICOS",
-                    "Créd.": "3",
-                    "Sec.": "1",
+                    "Créd.": 3,
+                    "Sec.": 1,
                     "Docente": "097543 - AVENDAÑO QUIROZ, JOHNNY ROBERTO",
                     "Horarios": [
                         {
@@ -1845,8 +1846,8 @@
                 },
                 {
                     "Asignatura": "201230404 - ARQUITECTURA DE COMPUTADORAS",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "030228 - GONZÁLES SUÁREZ, JUAN CARLOS",
                     "Horarios": [
                         {
@@ -1867,8 +1868,8 @@
                 },
                 {
                     "Asignatura": "201230404 - ARQUITECTURA DE COMPUTADORAS",
-                    "Créd.": "4",
-                    "Sec.": "2",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "017779 - CONTRERAS FLORES, WALTER PEDRO",
                     "Horarios": [
                         {
@@ -1889,8 +1890,8 @@
                 },
                 {
                     "Asignatura": "201230404 - ARQUITECTURA DE COMPUTADORAS",
-                    "Créd.": "4",
-                    "Sec.": "3",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "017779 - CONTRERAS FLORES, WALTER PEDRO",
                     "Horarios": [
                         {
@@ -1910,10 +1911,32 @@
                     ]
                 },
                 {
+                    "Asignatura": "201230405 - ESTADÍSTICA I",
+                    "Créd.": 4,
+                    "Sec.": 1,
+                    "Docente": "088048 - HUAMAN DEL PINO, LILIANA CONCEPCION",
+                    "Horarios": [
+                        {
+                            "Horario": "1",
+                            "Inicio": "08:00",
+                            "Fin": "11:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Teoría"
+                        },
+                        {
+                            "Horario": "2",
+                            "Inicio": "11:00",
+                            "Fin": "13:00",
+                            "Día": "JUEVES",
+                            "Tipo": "Práctica"
+                        }
+                    ]
+                },
+                {
                     "Asignatura": "201230406 - INGENIERÍA ECONÓMICA",
-                    "Créd.": "3",
-                    "Sec.": "1",
-                    "Docente": "--",
+                    "Créd.": 3,
+                    "Sec.": 1,
+                    "Docente": "057622 - REÁTEGUI SÁNCHEZ DE SÁNCHEZ, LLEYNI",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -1935,8 +1958,8 @@
             "CICLO 5": [
                 {
                     "Asignatura": "201230501 - ANÁLISIS DE SISTEMAS DE INFORMACIÓN",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "098329 - LUZA MONTERO, CÉSAR",
                     "Horarios": [
                         {
@@ -1957,8 +1980,8 @@
                 },
                 {
                     "Asignatura": "201230501 - ANÁLISIS DE SISTEMAS DE INFORMACIÓN",
-                    "Créd.": "4",
-                    "Sec.": "2",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "0A1232 - CORAL YGNACIO, MARCO ANTONIO",
                     "Horarios": [
                         {
@@ -1979,8 +2002,8 @@
                 },
                 {
                     "Asignatura": "201230501 - ANÁLISIS DE SISTEMAS DE INFORMACIÓN",
-                    "Créd.": "4",
-                    "Sec.": "3",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "095745 - MUÑOZ CASILDO, NEHIL INDALICIO",
                     "Horarios": [
                         {
@@ -2001,8 +2024,8 @@
                 },
                 {
                     "Asignatura": "201230501 - ANÁLISIS DE SISTEMAS DE INFORMACIÓN",
-                    "Créd.": "4",
-                    "Sec.": "4",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "0A1613 - SOTO SOTO, LUIS",
                     "Horarios": [
                         {
@@ -2023,8 +2046,8 @@
                 },
                 {
                     "Asignatura": "201230502 - DISEÑO DE BASE DE DATOS",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "095729 - CHÁVEZ SOTO, JORGE LUIS",
                     "Horarios": [
                         {
@@ -2045,8 +2068,8 @@
                 },
                 {
                     "Asignatura": "201230502 - DISEÑO DE BASE DE DATOS",
-                    "Créd.": "4",
-                    "Sec.": "2",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "095702 - BUSTAMANTE OLIVERA, VÍCTOR HUGO",
                     "Horarios": [
                         {
@@ -2067,8 +2090,8 @@
                 },
                 {
                     "Asignatura": "201230502 - DISEÑO DE BASE DE DATOS",
-                    "Créd.": "4",
-                    "Sec.": "3",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "010162 - CABRERA DÍAZ, JAVIER ELMER",
                     "Horarios": [
                         {
@@ -2089,8 +2112,8 @@
                 },
                 {
                     "Asignatura": "201230502 - DISEÑO DE BASE DE DATOS",
-                    "Créd.": "4",
-                    "Sec.": "4",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "02099E - DEL PINO RODRÍGUEZ, LUZ CORINA",
                     "Horarios": [
                         {
@@ -2111,8 +2134,8 @@
                 },
                 {
                     "Asignatura": "201230503 - ESTRUCTURA DE DATOS",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "055123 - PRÓ CONCEPCIÓN, LUZMILA ELISA",
                     "Horarios": [
                         {
@@ -2140,8 +2163,8 @@
                 },
                 {
                     "Asignatura": "201230503 - ESTRUCTURA DE DATOS",
-                    "Créd.": "4",
-                    "Sec.": "2",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "089575 - SALINAS AZAÑA, GILBERTO ANÍBAL",
                     "Horarios": [
                         {
@@ -2169,8 +2192,8 @@
                 },
                 {
                     "Asignatura": "201230503 - ESTRUCTURA DE DATOS",
-                    "Créd.": "4",
-                    "Sec.": "3",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "02099E - DEL PINO RODRÍGUEZ, LUZ CORINA",
                     "Horarios": [
                         {
@@ -2198,8 +2221,8 @@
                 },
                 {
                     "Asignatura": "201230503 - ESTRUCTURA DE DATOS",
-                    "Créd.": "4",
-                    "Sec.": "4",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "07578149 - CANDELA ARCE, DAVID FELIX",
                     "Horarios": [
                         {
@@ -2227,9 +2250,9 @@
                 },
                 {
                     "Asignatura": "201230504 - ESTADÍSTICA II",
-                    "Créd.": "4",
-                    "Sec.": "1",
-                    "Docente": "033936 - HUAROTO  SUMARI, JUSTA CARIDAD",
+                    "Créd.": 4,
+                    "Sec.": 1,
+                    "Docente": "033936 - HUAROTO SUMARI, JUSTA CARIDAD",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -2249,8 +2272,8 @@
                 },
                 {
                     "Asignatura": "201230504 - ESTADÍSTICA II",
-                    "Créd.": "4",
-                    "Sec.": "2",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "04189E - MARTINEZ PORTUGUEZ, BLANCA ALICIA",
                     "Horarios": [
                         {
@@ -2271,8 +2294,8 @@
                 },
                 {
                     "Asignatura": "201230504 - ESTADÍSTICA II",
-                    "Créd.": "4",
-                    "Sec.": "3",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "029351 - GIRALDO LAGUNA, SUIBERTO ORLANDO",
                     "Horarios": [
                         {
@@ -2293,9 +2316,9 @@
                 },
                 {
                     "Asignatura": "201230504 - ESTADÍSTICA II",
-                    "Créd.": "4",
-                    "Sec.": "4",
-                    "Docente": "043788 - MENDOZA  SOLIS, JACINTO PEDRO",
+                    "Créd.": 4,
+                    "Sec.": 4,
+                    "Docente": "043788 - MENDOZA SOLIS, JACINTO PEDRO",
                     "Horarios": [
                         {
                             "Horario": "1",
@@ -2315,8 +2338,8 @@
                 },
                 {
                     "Asignatura": "201230505 - SISTEMAS OPERATIVOS",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "051934 - PARIONA QUISPE, JAIME RUBEN",
                     "Horarios": [
                         {
@@ -2344,8 +2367,8 @@
                 },
                 {
                     "Asignatura": "201230505 - SISTEMAS OPERATIVOS",
-                    "Créd.": "4",
-                    "Sec.": "2",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "0A1232 - CORAL YGNACIO, MARCO ANTONIO",
                     "Horarios": [
                         {
@@ -2373,8 +2396,8 @@
                 },
                 {
                     "Asignatura": "201230505 - SISTEMAS OPERATIVOS",
-                    "Créd.": "4",
-                    "Sec.": "3",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "09795E - DIAZ MUÑANTE, JORGE RAÚL",
                     "Horarios": [
                         {
@@ -2402,8 +2425,8 @@
                 },
                 {
                     "Asignatura": "201230505 - SISTEMAS OPERATIVOS",
-                    "Créd.": "4",
-                    "Sec.": "4",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "051934 - PARIONA QUISPE, JAIME RUBEN",
                     "Horarios": [
                         {
@@ -2431,8 +2454,8 @@
                 },
                 {
                     "Asignatura": "201230506 - INVESTIGACIÓN OPERATIVA",
-                    "Créd.": "4",
-                    "Sec.": "1",
+                    "Créd.": 4,
+                    "Sec.": 1,
                     "Docente": "071552 - VALVERDE AYALA, GIOVANA MELVA",
                     "Horarios": [
                         {
@@ -2460,8 +2483,8 @@
                 },
                 {
                     "Asignatura": "201230506 - INVESTIGACIÓN OPERATIVA",
-                    "Créd.": "4",
-                    "Sec.": "2",
+                    "Créd.": 4,
+                    "Sec.": 2,
                     "Docente": "071552 - VALVERDE AYALA, GIOVANA MELVA",
                     "Horarios": [
                         {
@@ -2489,8 +2512,8 @@
                 },
                 {
                     "Asignatura": "201230506 - INVESTIGACIÓN OPERATIVA",
-                    "Créd.": "4",
-                    "Sec.": "3",
+                    "Créd.": 4,
+                    "Sec.": 3,
                     "Docente": "0A6225 - PUELLES BULNES, MARÍA ELIZABETH",
                     "Horarios": [
                         {
@@ -2518,8 +2541,8 @@
                 },
                 {
                     "Asignatura": "201230506 - INVESTIGACIÓN OPERATIVA",
-                    "Créd.": "4",
-                    "Sec.": "4",
+                    "Créd.": 4,
+                    "Sec.": 4,
                     "Docente": "0A4148 - GUTIERREZ CURO, ROCIO SOLEDAD",
                     "Horarios": [
                         {
@@ -2546,7 +2569,8 @@
                     ]
                 }
             ]
-        },  
+        }
+    },  
             "Ingeniería De Software": {
                 "CICLO 1": [
                     {
