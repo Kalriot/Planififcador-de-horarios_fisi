@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
             delete selectedCourses[courseKey];
 
             const scheduleTable = document.getElementById('schedule-table');
-            for (let i = 1; i < scheduleTable.rows.length; i++) { 
+            for (let i = 1; i < scheduleTable.rows.length ; i++) { 
                 const currentRow = scheduleTable.rows[i];
             
                 for (let j = 1; j < currentRow.cells.length; j++) { 
@@ -208,10 +208,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         
                         currentCell.style.backgroundColor = '#E6F7FF'; 
                         currentCell.dataset.color = ''; 
+                        const hour = i + 8; // ← fila real de la tabla visual
 
                         // Eliminar de ambos formatos
                         const dayIndex = j - 1; // j-1 porque j empieza en 1 (después de la columna de horas)
-                        const hour = i + 7; // i+7 porque i empieza en 1 y las horas empiezan en 8
                         
                         // Formato simple
                         const cellId = `${dayIndex}-${hour}`;
@@ -220,7 +220,6 @@ document.addEventListener('DOMContentLoaded', function () {
                             console.log("Eliminando color simple:", cellId, "Día:", days[dayIndex], "Hora:", hour + ":00");
                         }
                         
-                        // Formato Excel
                         const excelId = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;
                         if (excelCellColors[excelId]) {
                             delete excelCellColors[excelId];
