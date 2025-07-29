@@ -716,7 +716,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log('Enviando colores Excel:', excelCellColors);
                 console.log('Enviando textos Excel:', excelCellTexts);
             
-                fetch('http://cicilis.pythonanywhere.com/excel', {  // Cambiar a HTTP
+                fetch('https://cicilis.pythonanywhere.com/excel', {  // Cambiar a HTTP
                     method: 'POST',
                     body: formData
                 })
