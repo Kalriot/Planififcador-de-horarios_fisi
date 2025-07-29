@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let cellColors = {};  // Formato simple para lógica interna (día-hora)
     let excelCellColors = {};  // Formato Excel para exportación (A1, B2, etc.)
     let excelCellTexts = {};  // Formato Excel para los textos de los cursos
-    let totalCredits = 0; // Mover totalCredits aquí para scope global
+    let totalCredits = 0; 
     const days = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
     // Cargar el color guardado en localStorage o usar el color por defecto
@@ -77,12 +77,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (savedExcelTexts) {
             excelCellTexts = JSON.parse(savedExcelTexts);
-            // Restaurar la tabla visual basándose en excelCellTexts
             restoreVisualSchedule();
         }
         if (savedCredits) {
             totalCredits = parseInt(savedCredits) || 0;
-            // Verificar si la función updateTotalCredits existe antes de llamarla
             if (typeof updateTotalCredits === 'function') {
                 updateTotalCredits();
             }
@@ -91,58 +89,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para restaurar la visualización del horario
     function restoreVisualSchedule() {
-        console.log("Iniciando restauración del horario");
-        
         // Usar cellColors para iterar las posiciones y excelCellTexts para obtener el texto
         for (const cellPosition in cellColors) {
             const color = cellColors[cellPosition];
             const [dayIndex, hour] = cellPosition.split('-').map(Number);
             
-            // Convertir a formato Excel usando la misma fórmula que addSchedule
-            const excelCol = colNumToLetter(dayIndex + 2); // Usar la misma función que addSchedule
-            const excelRow = hour - 7; // Usar la misma fórmula que addSchedule
+            // Convertir a formato Excel
+            const excelCol = colNumToLetter(dayIndex + 2);
+            const excelRow = hour - 7;
             const excelPosition = `${excelCol}${excelRow}`;
             const courseText = excelCellTexts[excelPosition];
             
-            console.log(`Posición ${cellPosition} -> Excel ${excelPosition}: ${courseText}`);
-            
             if (courseText) {
-                // Calcular posición en la tabla HTML
-                const rowIndex = hour - 8; // Las horas empiezan en 8, fila 0 = hora 8
-                const colIndex = dayIndex + 1; // Columna 1 = primer día (columna 0 es horas)
+                const rowIndex = hour - 8; 
+                const colIndex = dayIndex + 1; 
                 
-                console.log(`Tabla: fila ${rowIndex}, columna ${colIndex}`);
-                
-                // Verificar que la tabla existe y tiene las celdas necesarias
                 if (scheduleTable && scheduleTable.rows[rowIndex] && scheduleTable.rows[rowIndex].cells[colIndex]) {
                     const cell = scheduleTable.rows[rowIndex].cells[colIndex];
                     
-                    // Solo restaurar si la celda está vacía
                     if (!cell.textContent.trim()) {
                         cell.textContent = courseText;
                         cell.classList.add('schedule-cell');
                         cell.style.backgroundColor = color;
                         cell.dataset.color = color;
                         
-                        // Agregar botón de eliminar
                         const deleteBtn = document.createElement('button');
                         deleteBtn.classList.add('delete-button');
                         deleteBtn.innerHTML = 'X';
                         deleteBtn.addEventListener('click', () => deleteSchedule(cell));
                         cell.appendChild(deleteBtn);
-                        
-                        console.log(`✓ Restaurado: ${courseText} en ${days[dayIndex]} ${hour}:00`);
                     }
-                } else {
-                    console.log(`✗ No se encontró celda en fila ${rowIndex}, columna ${colIndex}`);
                 }
             }
         }
     }
 
-    // Función para limpiar completamente el horario
     function clearCompleteSchedule() {
-        // Limpiar la tabla visual
         for (let i = 1; i < scheduleTable.rows.length; i++) {
             const currentRow = scheduleTable.rows[i];
             for (let j = 1; j < currentRow.cells.length; j++) {
@@ -158,7 +140,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
         
-        // Limpiar datos y localStorage
         selectedCourses = {};
         cellColors = {};
         excelCellColors = {};
@@ -177,7 +158,6 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Horario guardado limpiado exitosamente');
     }
 
-    // Función auxiliar para convertir número de columna a letra
     function colNumToLetter(colNum) {
         let letter = '';
         while (colNum > 0) {
@@ -217,26 +197,21 @@ document.addEventListener('DOMContentLoaded', function () {
                         
                         currentCell.style.backgroundColor = '#E6F7FF'; 
                         currentCell.dataset.color = ''; 
-                        const hour = i + 8; // ← fila real de la tabla visual
+                        const hour = i + 8; 
 
-                        // Eliminar de ambos formatos
-                        const dayIndex = j - 1; // j-1 porque j empieza en 1 (después de la columna de horas)
+                        const dayIndex = j - 1; 
                         
-                        // Formato simple
                         const cellId = `${dayIndex}-${hour}`;
                         if (cellColors[cellId]) {
                             delete cellColors[cellId]; 
-                            console.log("Eliminando color simple:", cellId, "Día:", days[dayIndex], "Hora:", hour + ":00");
                         }
                         
                         const excelId = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;
                         if (excelCellColors[excelId]) {
                             delete excelCellColors[excelId];
-                            console.log("Eliminando color Excel:", excelId);
                         }
                         if (excelCellTexts[excelId]) {
                             delete excelCellTexts[excelId];
-                            console.log("Eliminando texto Excel:", excelId);
                         }
 
                         const deleteBtn = currentCell.querySelector('.delete-button');
@@ -247,12 +222,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
             
-            // Guardar los cambios en localStorage después de eliminar
             saveCoursesToLocalStorage();
         }
     }
 
-    // Agregar event listener para el botón de limpiar
     clearScheduleBtn.addEventListener('click', clearCompleteSchedule);
 
     fetch('data/Fisi.json')
@@ -371,13 +344,6 @@ document.addEventListener('DOMContentLoaded', function () {
             sectionSelect.innerHTML = '';
             totalCredits = 0;
             careerData = {};
-            
-            // NO limpiar el localStorage aquí para mantener los cursos guardados
-            // selectedCourses = {};
-            // cellColors = {};
-            // localStorage.removeItem('savedCourses');
-            // localStorage.removeItem('savedCellColors');
-            // localStorage.removeItem('savedTotalCredits');
         }
         function initializeSchedulePage(horariosData) {
             clearScheduleData(); 
@@ -412,15 +378,13 @@ document.addEventListener('DOMContentLoaded', function () {
             exportImageBtn.addEventListener('click', exportToImage);
             exportExcelBtn.addEventListener('click', exportToExcel);
             createScheduleTable();
-            totalCredits = 0; // Reset but don't redeclare
+            totalCredits = 0;
         }
-        // totalCredits ya está declarado globalmente
         initializeSchedulePage(horariosData);
         
-        // Cargar cursos guardados después de que todo esté inicializado
         setTimeout(() => {
             loadCoursesFromLocalStorage();
-        }, 500); // Aumentar el tiempo para asegurar que la tabla esté lista
+        }, 500);
 
         function updateYears() {
             const selectedCareer = careerSelect.value;
@@ -542,10 +506,6 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
     
-        // cellColors ya está declarado globalmente arriba
-
-        // colNumToLetter ya está definida globalmente
-        
         function addSchedule() {
             const selectedCareer = careerSelect.value;
             const selectedYear = yearSelect.value;
@@ -645,8 +605,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                     const excelPosition = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;  // Corrección: hour - 7 para filas correctas
                                     excelCellColors[excelPosition] = selectedColor;
                                     excelCellTexts[excelPosition] = `${selectedSubject} - ${selectedSection}`;
-                                    
-                                    console.log("Guardando color - Simple:", cellPosition, "Excel:", excelPosition, "Color:", selectedColor, "Texto:", `${selectedSubject} - ${selectedSection}`, "Día:", days[dayIndex], "Hora:", hour + ":00");
         
                                     cell.textContent = `${selectedSubject} - ${selectedSection}`;
                                     cell.classList.add('schedule-cell');
@@ -668,7 +626,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
             
-            // Guardar los cursos en localStorage después de agregar
             saveCoursesToLocalStorage();
         }
         
@@ -703,7 +660,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         
             function exportToExcel() {
-                // Verificar que existen colores para exportar
                 if (Object.keys(excelCellColors).length === 0) {
                     alert('No hay cursos con colores para exportar');
                     return;
@@ -711,20 +667,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const wb = XLSX.utils.table_to_book(scheduleTable, { sheet: 'Horarios' });
             
-                // Crear un archivo Excel en memoria
                 const excelFile = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
             
                 const formData = new FormData();
                 formData.append('file', new Blob([excelFile], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }), 'horarios_sin_colores.xlsx');
             
-                // Enviar tanto colores como textos
                 formData.append('cellColors', JSON.stringify(excelCellColors)); 
                 formData.append('cellTexts', JSON.stringify(excelCellTexts)); 
                 
                 console.log('Enviando colores Excel:', excelCellColors);
                 console.log('Enviando textos Excel:', excelCellTexts);
             
-                fetch('https://cicilis.pythonanywhere.com/excel', {  // Cambiar a HTTP
+                fetch('https://cicilis.pythonanywhere.com/excel', {  
                     method: 'POST',
                     body: formData
                 })
