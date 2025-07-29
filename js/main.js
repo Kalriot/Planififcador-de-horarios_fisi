@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const section = sectionWithX.replace('X', '');
                 
                 // Calcular la posición en la tabla
-                const rowIndex = hour - 8; // hour - 8 porque las horas empiezan en 8 y la primera fila de datos es 0
+                const rowIndex = hour - 9; // hour - 8 porque las horas empiezan en 8 y la primera fila de datos es 0
                 const colIndex = dayIndex + 1; // dayIndex + 1 porque la primera columna es para las horas
                 
                 // Buscar la celda en la tabla
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                         
                         // Formato Excel
-                        const excelId = `${colNumToLetter(dayIndex + 2)}${hour - 6}`;
+                        const excelId = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;
                         if (excelCellColors[excelId]) {
                             delete excelCellColors[excelId];
                             console.log("Eliminando color Excel:", excelId);
@@ -634,7 +634,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                     cellColors[cellPosition] = selectedColor;
                                     
                                     // Formato Excel para exportación
-                                    const excelPosition = `${colNumToLetter(dayIndex + 2)}${hour - 6}`;  // Cambio: hour - 6 en lugar de hour - 7
+                                    const excelPosition = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;  // Corrección: hour - 7 para filas correctas
                                     excelCellColors[excelPosition] = selectedColor;
                                     excelCellTexts[excelPosition] = `${selectedSubject} - ${selectedSection}`;
                                     
