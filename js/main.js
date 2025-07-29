@@ -232,13 +232,26 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(horariosData => {
 
+            let isProcessing = false;
+
             async function mergePdfData() {
+                        // Verificar si ya se está procesando
+                        if (isProcessing) {
+                            alert("Ya se está procesando una solicitud. Por favor espera.");
+                            return;
+                        }
+
                         const file = uploadInput.files[0];
                         if (!file) {
                             alert("¡Por favor, sube un PDF primero!");
                             return;
                         }
             
+                        // Bloquear el botón y cambiar texto
+                        isProcessing = true;
+                        sendButton.disabled = true;
+                        sendButton.textContent = "Enviando...";
+
                         const formData = new FormData();
                         formData.append("pdf", file);
             
@@ -272,6 +285,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         } catch (error) {
                             console.error("Error al enviar el PDF:", error);
                             alert("Error de conexión con el servidor. Revisa la consola para más detalles.");
+                        } finally {
+                            // Rehabilitar el botón
+                            isProcessing = false;
+                            sendButton.disabled = false;
+                            sendButton.textContent = "Enviar";
                         }
                     }
 
