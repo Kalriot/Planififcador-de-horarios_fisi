@@ -1,0 +1,8 @@
+ 
+# Ignorar archivos de configuración y temporales
+*.pyc
+__pycache__/
+*.pyo
+*.py
+flask_app.py
+pdf_processor.py 
