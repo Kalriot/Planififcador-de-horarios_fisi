@@ -71,14 +71,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (savedCellColors) {
             cellColors = JSON.parse(savedCellColors);
-            // Restaurar la tabla visual basándose en cellColors
-            restoreVisualSchedule();
         }
         if (savedExcelColors) {
             excelCellColors = JSON.parse(savedExcelColors);
         }
         if (savedExcelTexts) {
             excelCellTexts = JSON.parse(savedExcelTexts);
+            // Restaurar la tabla visual basándose en excelCellTexts
+            restoreVisualSchedule();
         }
         if (savedCredits) {
             totalCredits = parseInt(savedCredits) || 0;
@@ -91,27 +91,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para restaurar la visualización del horario
     function restoreVisualSchedule() {
-        // Recorrer todas las posiciones guardadas en cellColors
+        console.log("Iniciando restauración del horario");
+        
+        // Usar cellColors para iterar las posiciones y excelCellTexts para obtener el texto
         for (const cellPosition in cellColors) {
             const color = cellColors[cellPosition];
             const [dayIndex, hour] = cellPosition.split('-').map(Number);
             
-            // Encontrar qué curso corresponde a esta posición
-            for (const courseKey in selectedCourses) {
-                const course = selectedCourses[courseKey];
-                const [subject, sectionWithX] = courseKey.split('-');
-                const section = sectionWithX.replace('X', '');
+            // Convertir a formato Excel usando la misma fórmula que addSchedule
+            const excelCol = colNumToLetter(dayIndex + 2); // Usar la misma función que addSchedule
+            const excelRow = hour - 7; // Usar la misma fórmula que addSchedule
+            const excelPosition = `${excelCol}${excelRow}`;
+            const courseText = excelCellTexts[excelPosition];
+            
+            console.log(`Posición ${cellPosition} -> Excel ${excelPosition}: ${courseText}`);
+            
+            if (courseText) {
+                // Calcular posición en la tabla HTML
+                const rowIndex = hour - 8; // Las horas empiezan en 8, fila 0 = hora 8
+                const colIndex = dayIndex + 1; // Columna 1 = primer día (columna 0 es horas)
                 
-                // Calcular la posición en la tabla
-                const rowIndex = hour - 9; // hour - 8 porque las horas empiezan en 8 y la primera fila de datos es 0
-                const colIndex = dayIndex + 1; // dayIndex + 1 porque la primera columna es para las horas
+                console.log(`Tabla: fila ${rowIndex}, columna ${colIndex}`);
                 
-                // Buscar la celda en la tabla
-                if (scheduleTable.rows[rowIndex + 1] && scheduleTable.rows[rowIndex + 1].cells[colIndex]) {
-                    const cell = scheduleTable.rows[rowIndex + 1].cells[colIndex];
+                // Verificar que la tabla existe y tiene las celdas necesarias
+                if (scheduleTable && scheduleTable.rows[rowIndex] && scheduleTable.rows[rowIndex].cells[colIndex]) {
+                    const cell = scheduleTable.rows[rowIndex].cells[colIndex];
                     
+                    // Solo restaurar si la celda está vacía
                     if (!cell.textContent.trim()) {
-                        cell.textContent = `${subject} - ${section}`;
+                        cell.textContent = courseText;
                         cell.classList.add('schedule-cell');
                         cell.style.backgroundColor = color;
                         cell.dataset.color = color;
@@ -123,9 +131,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         deleteBtn.addEventListener('click', () => deleteSchedule(cell));
                         cell.appendChild(deleteBtn);
                         
-                        console.log("Restaurando:", subject, section, "en", days[dayIndex], hour + ":00", "Color:", color);
-                        break;
+                        console.log(`✓ Restaurado: ${courseText} en ${days[dayIndex]} ${hour}:00`);
                     }
+                } else {
+                    console.log(`✗ No se encontró celda en fila ${rowIndex}, columna ${colIndex}`);
                 }
             }
         }
