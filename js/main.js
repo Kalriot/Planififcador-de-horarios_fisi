@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let careerData = {};
     let selectedCourses = {};
-    let cellColors = {};  // Formato simple para lógica interna (día-hora)
-    let excelCellColors = {};  // Formato Excel para exportación (A1, B2, etc.)
-    let excelCellTexts = {};  // Formato Excel para los textos de los cursos
+    let cellColors = {}; 
+    let excelCellColors = {};  
+    let excelCellTexts = {};  
     let totalCredits = 0; 
     const days = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
@@ -152,8 +152,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (savedCredits) {
             totalCredits = parseInt(savedCredits) || 0;
-            updateTotalCredits();
+        } else {
+            totalCredits = 0; // Asegurar que sea 0 si no hay datos guardados
         }
+        
+        // Actualizar la visualización de créditos
+        updateTotalCredits();
         
         // Restaurar la visualización del horario después de cargar los datos
         setTimeout(() => {
@@ -324,6 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
             subjectSelect.innerHTML = '';
             sectionSelect.innerHTML = '';
             totalCredits = 0;
+            updateTotalCredits();
             careerData = {};  
         }
         function initializeSchedulePage(horariosData) {
@@ -361,7 +366,6 @@ document.addEventListener('DOMContentLoaded', function () {
             createScheduleTable();
             totalCredits = 0;
         }
-        let totalCredits = 0;
         initializeSchedulePage(horariosData);
         
         // Cargar datos guardados después de inicializar la página
@@ -489,7 +493,6 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
     
-        let cellColors = {};  
 
         function addSchedule() {
             const selectedCareer = careerSelect.value;
@@ -638,11 +641,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.body.removeChild(link);
                 });
             }
-            function updateTotalCredits() {
-                const totalCreditsElement = document.getElementById('total-credits');
-                totalCreditsElement.textContent = `Total de Créditos: ${totalCredits}`;
-            }
-            
             
 
 
