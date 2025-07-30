@@ -224,6 +224,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             return;
                         }
             
+                        // Desactivar el botón de enviar
+                        sendButton.disabled = true;
+                        sendButton.textContent = "Enviando...";
+            
                         const formData = new FormData();
                         formData.append("pdf", file);
             
@@ -257,6 +261,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         } catch (error) {
                             console.error("Error al enviar el PDF:", error);
                             alert("Error de conexión con el servidor. Revisa la consola para más detalles.");
+                        } finally {
+                            // Reactivar el botón de enviar al finalizar (éxito o error)
+                            sendButton.disabled = false;
+                            sendButton.textContent = "Enviar";
                         }
                     }
 
