@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const exportExcelBtn = document.getElementById('export-excel-btn');
     const careerSelect = document.getElementById('career-select');
     const yearSelect = document.getElementById('year-select');
-    const clearScheduleBtn = document.getElementById('clear-schedule-btn');
     const uploadInput = document.getElementById('upload-pdf');
     const uploadLabel = document.querySelector('.upload-label');
     const sendButton = document.getElementById("send-button");
     const contenedor = document.getElementById("contenedorDatos");
+    const clearScheduleBtn = document.getElementById('clear-schedule-btn');
         uploadInput.addEventListener('change', () => {
             if (uploadInput.files.length > 0) {
                 const fileName = uploadInput.files[0].name;
@@ -25,238 +25,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let careerData = {};
     let selectedCourses = {};
-    let cellColors = {};  // Formato simple para lógica interna (día-hora)
-    let excelCellColors = {};  // Formato Excel para exportación (A1, B2, etc.)
-    let excelCellTexts = {};  // Formato Excel para los textos de los cursos
-    let totalCredits = 0; 
     const days = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
-
-    // Cargar el color guardado en localStorage o usar el color por defecto
-    const savedColor = localStorage.getItem('selectedColor') || '#90EE90';
-    colorPicker.value = savedColor;
-
-    // Guardar el color seleccionado en localStorage cuando cambie
-    colorPicker.addEventListener('input', function() {
-        const selectedColor = colorPicker.value;
-        localStorage.setItem('selectedColor', selectedColor);
-    });
-
-    // Función para actualizar el total de créditos
-    function updateTotalCredits() {
-        const totalCreditsElement = document.getElementById('total-credits');
-        if (totalCreditsElement) {
-            totalCreditsElement.textContent = `Total de Créditos: ${totalCredits}`;
-        }
-    }
-
-    // Función para guardar cursos en localStorage
-    function saveCoursesToLocalStorage() {
-        localStorage.setItem('savedCourses', JSON.stringify(selectedCourses));
-        localStorage.setItem('savedCellColors', JSON.stringify(cellColors));
-        localStorage.setItem('savedExcelColors', JSON.stringify(excelCellColors)); // Guardar también formato Excel
-        localStorage.setItem('savedExcelTexts', JSON.stringify(excelCellTexts)); // Guardar también textos Excel
-        localStorage.setItem('savedTotalCredits', totalCredits.toString());
-    }
-
-    // Función para cargar cursos desde localStorage
-    function loadCoursesFromLocalStorage() {
-        const savedCourses = localStorage.getItem('savedCourses');
-        const savedCellColors = localStorage.getItem('savedCellColors');
-        const savedExcelColors = localStorage.getItem('savedExcelColors');
-        const savedExcelTexts = localStorage.getItem('savedExcelTexts');
-        const savedCredits = localStorage.getItem('savedTotalCredits');
-        
-        if (savedCourses) {
-            selectedCourses = JSON.parse(savedCourses);
-        }
-        if (savedCellColors) {
-            cellColors = JSON.parse(savedCellColors);
-        }
-        if (savedExcelColors) {
-            excelCellColors = JSON.parse(savedExcelColors);
-        }
-        if (savedExcelTexts) {
-            excelCellTexts = JSON.parse(savedExcelTexts);
-            restoreVisualSchedule();
-        }
-        if (savedCredits) {
-            totalCredits = parseInt(savedCredits) || 0;
-            if (typeof updateTotalCredits === 'function') {
-                updateTotalCredits();
-            }
-        }
-    }
-
-    // Función para restaurar la visualización del horario
-    function restoreVisualSchedule() {
-        // Usar cellColors para iterar las posiciones y excelCellTexts para obtener el texto
-        for (const cellPosition in cellColors) {
-            const color = cellColors[cellPosition];
-            const [dayIndex, hour] = cellPosition.split('-').map(Number);
-            
-            // Convertir a formato Excel
-            const excelCol = colNumToLetter(dayIndex + 2);
-            const excelRow = hour - 7;
-            const excelPosition = `${excelCol}${excelRow}`;
-            const courseText = excelCellTexts[excelPosition];
-            
-            if (courseText) {
-                const rowIndex = hour - 8; 
-                const colIndex = dayIndex + 1; 
-                
-                if (scheduleTable && scheduleTable.rows[rowIndex] && scheduleTable.rows[rowIndex].cells[colIndex]) {
-                    const cell = scheduleTable.rows[rowIndex].cells[colIndex];
-                    
-                    if (!cell.textContent.trim()) {
-                        cell.textContent = courseText;
-                        cell.classList.add('schedule-cell');
-                        cell.style.backgroundColor = color;
-                        cell.dataset.color = color;
-                        
-                        const deleteBtn = document.createElement('button');
-                        deleteBtn.classList.add('delete-button');
-                        deleteBtn.innerHTML = 'X';
-                        deleteBtn.addEventListener('click', () => deleteSchedule(cell));
-                        cell.appendChild(deleteBtn);
-                    }
-                }
-            }
-        }
-    }
-
-    function clearCompleteSchedule() {
-        for (let i = 1; i < scheduleTable.rows.length; i++) {
-            const currentRow = scheduleTable.rows[i];
-            for (let j = 1; j < currentRow.cells.length; j++) {
-                const currentCell = currentRow.cells[j];
-                currentCell.textContent = '';
-                currentCell.style.backgroundColor = '#E6F7FF';
-                currentCell.dataset.color = '';
-                
-                const deleteBtn = currentCell.querySelector('.delete-button');
-                if (deleteBtn) {
-                    currentCell.removeChild(deleteBtn);
-                }
-            }
-        }
-        
-        selectedCourses = {};
-        cellColors = {};
-        excelCellColors = {};
-        excelCellTexts = {};
-        totalCredits = 0;
-        if (typeof updateTotalCredits === 'function') {
-            updateTotalCredits();
-        }
-        
-        localStorage.removeItem('savedCourses');
-        localStorage.removeItem('savedCellColors');
-        localStorage.removeItem('savedExcelColors');
-        localStorage.removeItem('savedExcelTexts');
-        localStorage.removeItem('savedTotalCredits');
-        
-        alert('Horario guardado limpiado exitosamente');
-    }
-
-    function colNumToLetter(colNum) {
-        let letter = '';
-        while (colNum > 0) {
-            let modulo = (colNum) % 26;
-            letter = String.fromCharCode(modulo + 65) + letter;
-            colNum = Math.floor((colNum - modulo - 1) / 26);
-        }
-        return letter;
-    }
-
-    // Función para eliminar un horario
-    function deleteSchedule(cell) {
-        const courseInfo = cell.textContent.trim().split('-');
-        const selectedSubject = courseInfo[0].trim();
-        const selectedSection = courseInfo[1].trim();
-        
-        const courseKey = `${selectedSubject}-${selectedSection}`;
-
-        if (selectedCourses[courseKey]) {
-            const selectedCourse = selectedCourses[courseKey];
-            const selectedCredits = selectedCourse.credits;
-                                    
-            totalCredits -= selectedCredits;
-            updateTotalCredits(); 
-
-            delete selectedCourses[courseKey];
-
-            const scheduleTable = document.getElementById('schedule-table');
-            for (let i = 1; i < scheduleTable.rows.length ; i++) { 
-                const currentRow = scheduleTable.rows[i];
-            
-                for (let j = 1; j < currentRow.cells.length; j++) { 
-                    const currentCell = currentRow.cells[j];
-            
-                    if (currentCell.textContent.includes(selectedSubject) && currentCell.textContent.includes(selectedSection)) {
-                        currentCell.textContent = '';
-                        
-                        currentCell.style.backgroundColor = '#E6F7FF'; 
-                        currentCell.dataset.color = ''; 
-                        const hour = i + 8; 
-
-                        const dayIndex = j - 1; 
-                        
-                        const cellId = `${dayIndex}-${hour}`;
-                        if (cellColors[cellId]) {
-                            delete cellColors[cellId]; 
-                        }
-                        
-                        const excelId = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;
-                        if (excelCellColors[excelId]) {
-                            delete excelCellColors[excelId];
-                        }
-                        if (excelCellTexts[excelId]) {
-                            delete excelCellTexts[excelId];
-                        }
-
-                        const deleteBtn = currentCell.querySelector('.delete-button');
-                        if (deleteBtn) {
-                            currentCell.removeChild(deleteBtn);
-                        }
-                    }
-                }
-            }
-            
-            saveCoursesToLocalStorage();
-        }
-    }
-
-    clearScheduleBtn.addEventListener('click', clearCompleteSchedule);
 
     fetch('data/Fisi.json')
         .then(response => response.json())
         .then(horariosData => {
 
-            let isProcessing = false;
-
             async function mergePdfData() {
-                        // Verificar si ya se está procesando
-                        if (isProcessing) {
-                            alert("Ya se está procesando una solicitud. Por favor espera.");
-                            return;
-                        }
-
                         const file = uploadInput.files[0];
                         if (!file) {
                             alert("¡Por favor, sube un PDF primero!");
                             return;
                         }
             
-                        // Bloquear el botón y cambiar texto
-                        isProcessing = true;
-                        sendButton.disabled = true;
-                        sendButton.textContent = "Enviando...";
-
                         const formData = new FormData();
                         formData.append("pdf", file);
             
                         try {
-                            const respuesta = await fetch("http://Cicilis.pythonanywhere.com/upload", {
+                            const respuesta = await fetch("https://Cicilis.pythonanywhere.com/upload", {
                                 method: "POST",
                                 body: formData
                             });
@@ -285,11 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         } catch (error) {
                             console.error("Error al enviar el PDF:", error);
                             alert("Error de conexión con el servidor. Revisa la consola para más detalles.");
-                        } finally {
-                            // Rehabilitar el botón
-                            isProcessing = false;
-                            sendButton.disabled = false;
-                            sendButton.textContent = "Enviar";
                         }
                     }
 
@@ -361,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
             subjectSelect.innerHTML = '';
             sectionSelect.innerHTML = '';
             totalCredits = 0;
-            careerData = {};
+            careerData = {};  
         }
         function initializeSchedulePage(horariosData) {
             clearScheduleData(); 
@@ -386,23 +167,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 addScheduleBtn.disabled = !(cycleSelect.value && subjectSelect.value && sectionSelect.value);
             });
 
-            // No necesitamos agregar el event listener aquí porque ya se agregó arriba
-            // colorPicker.addEventListener('input', () => {
-            //     const selectedColor = colorPicker.value;
-            // });
+            colorPicker.addEventListener('input', () => {
+                const selectedColor = colorPicker.value;
+            });
 
             addScheduleBtn.addEventListener('click', addSchedule);
 
             exportImageBtn.addEventListener('click', exportToImage);
             exportExcelBtn.addEventListener('click', exportToExcel);
+            clearScheduleBtn.addEventListener('click', clearAllSchedule);
             createScheduleTable();
             totalCredits = 0;
         }
+        let totalCredits = 0;
         initializeSchedulePage(horariosData);
-        
-        setTimeout(() => {
-            loadCoursesFromLocalStorage();
-        }, 500);
 
         function updateYears() {
             const selectedCareer = careerSelect.value;
@@ -524,6 +302,18 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
     
+        let cellColors = {};  
+
+        function colNumToLetter(colNum) {
+            let letter = '';
+            while (colNum > 0) {
+                let modulo = (colNum ) % 26;
+                letter = String.fromCharCode(modulo + 65) + letter;
+                colNum = Math.floor((colNum - modulo-1) / 26);
+            }
+            return letter;
+        }
+        
         function addSchedule() {
             const selectedCareer = careerSelect.value;
             const selectedYear = yearSelect.value;
@@ -613,23 +403,15 @@ document.addEventListener('DOMContentLoaded', function () {
         
                                 for (let hour = startTime; hour < endTime; hour++) {
                                     const cell = scheduleTable.rows[hour - 8].cells[dayIndex + 1];
-        
-                                    // Guardar el color en ambos formatos
-                                    // Formato simple para lógica interna
-                                    const cellPosition = `${dayIndex}-${hour}`;  // Ejemplo: "0-9" para Lunes 9:00
+
+                                    const cellPosition = `${colNumToLetter(dayIndex + 1)}${hour - 7}`;
                                     cellColors[cellPosition] = selectedColor;
-                                    
-                                    // Formato Excel para exportación
-                                    const excelPosition = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;  // Corrección: hour - 7 para filas correctas
-                                    excelCellColors[excelPosition] = selectedColor;
-                                    excelCellTexts[excelPosition] = `${selectedSubject} - ${selectedSection}`;
-        
+                                    console.log("Guardando color para la celda:", cellPosition, "Color:", selectedColor);
+
                                     cell.textContent = `${selectedSubject} - ${selectedSection}`;
                                     cell.classList.add('schedule-cell');
                                     cell.style.backgroundColor = selectedColor;
-                                    cell.dataset.color = selectedColor;
-        
-                                    if (cell.textContent.trim().length > 0) {
+                                    cell.dataset.color = selectedColor;                                    if (cell.textContent.trim().length > 0) {
                                         const deleteBtn = document.createElement('button');
                                         deleteBtn.classList.add('delete-button');
                                         deleteBtn.innerHTML = 'X';
@@ -643,8 +425,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 });
             }
-            
-            saveCoursesToLocalStorage();
         }
         
         
@@ -670,59 +450,42 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.body.removeChild(link);
                 });
             }
+            function updateTotalCredits() {
+                const totalCreditsElement = document.getElementById('total-credits');
+                totalCreditsElement.textContent = `Total de Créditos: ${totalCredits}`;
+            }
             
             
-
-                                    
 
 
                         
             function exportToExcel() {
-                if (Object.keys(excelCellColors).length === 0) {
-                    alert('No hay cursos con colores para exportar');
-                    return;
-                }
-
                 const wb = XLSX.utils.table_to_book(scheduleTable, { sheet: 'Horarios' });
-            
                 const excelFile = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
-            
                 const formData = new FormData();
                 formData.append('file', new Blob([excelFile], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }), 'horarios_sin_colores.xlsx');
+                formData.append('cellColors', JSON.stringify(cellColors)); 
             
-                formData.append('cellColors', JSON.stringify(excelCellColors)); 
-                formData.append('cellTexts', JSON.stringify(excelCellTexts)); 
-                
-                console.log('Enviando colores Excel:', excelCellColors);
-                console.log('Enviando textos Excel:', excelCellTexts);
-            
-                fetch('https://cicilis.pythonanywhere.com/excel', {  
+                fetch('http://Cicilis.pythonanywhere.com/excel', {
                     method: 'POST',
                     body: formData
                 })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.blob();
-                })  
+                .then(response => response.blob())
                 .then(blob => {
                     const link = document.createElement('a');
-                    link.href = URL.createObjectURL(blob);  
-                    link.download = 'horarios_con_colores.xlsx';  
-                    link.click();  
+                    link.href = URL.createObjectURL(blob);
+                    link.download = 'horarios_con_colores.xlsx';
+                    link.click();
                 })
                 .catch(error => {
                     console.error('Error al enviar el archivo:', error);
-                    alert('Error al exportar a Excel. Intenta de nuevo.');
                 });
             }
 
             
 
             function createScheduleTable() {
-                const scheduleTable = document.getElementById('schedule-table');  
-    
+                const scheduleTable = document.getElementById('schedule-table');
                 scheduleTable.innerHTML = '';
                 const intervals = Array.from({ length: 14 }, (_, i) => i + 8);
             
@@ -761,6 +524,80 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             
 
+            function clearAllSchedule() {
+                selectedCourses = {};
+                cellColors = {};
+                totalCredits = 0;
+                updateTotalCredits();
+                
+                for (let i = 1; i < scheduleTable.rows.length; i++) {
+                    const currentRow = scheduleTable.rows[i];
+                    
+                    for (let j = 1; j < currentRow.cells.length; j++) {
+                        const currentCell = currentRow.cells[j];
+                        
+                        currentCell.textContent = '';
+                        currentCell.style.backgroundColor = '';
+                        currentCell.removeAttribute('style');
+                        currentCell.removeAttribute('data-color');
+                        
+                        const deleteBtn = currentCell.querySelector('.delete-button');
+                        if (deleteBtn) {
+                            currentCell.removeChild(deleteBtn);
+                        }
+                    }
+                }
+            }
+
+            function deleteSchedule(cell) {
+                const courseInfo = cell.textContent.trim().split('-');
+                const selectedSubject = courseInfo[0].trim();
+                const selectedSection = courseInfo[1].trim();
+                
+                const courseKey = `${selectedSubject}-${selectedSection}`;
+            
+                const selectedCourse = selectedCourses[courseKey];
+                const selectedCredits = selectedCourse.credits;
+                                        
+                totalCredits -= selectedCredits;
+                updateTotalCredits(); 
+            
+                delete selectedCourses[courseKey];
+            
+                for (let i = 1; i < scheduleTable.rows.length; i++) { 
+                    const currentRow = scheduleTable.rows[i];
+                
+                    for (let j = 1; j < currentRow.cells.length; j++) { 
+                        const currentCell = currentRow.cells[j];
+                
+                        if (currentCell.textContent.includes(selectedSubject) && currentCell.textContent.includes(selectedSection)) {
+                            currentCell.textContent = '';
+                            currentCell.style.backgroundColor = '';
+                            currentCell.removeAttribute('style');
+                            currentCell.removeAttribute('data-color');
+
+                            const colLetter = colNumToLetter(j); 
+                            const rowNumber = i+1; 
+                            const cellId = `${colLetter}${rowNumber}`; 
+                            
+                            if (cellColors[cellId]) {
+                                delete cellColors[cellId]; 
+                            }
+
+                            const deleteBtn = currentCell.querySelector('.delete-button');
+                            if (deleteBtn) {
+                                currentCell.removeChild(deleteBtn);
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+            
+            
+            
+            
         })
         .catch(error => console.error('Error al cargar el archivo JSON:', error));
 });
