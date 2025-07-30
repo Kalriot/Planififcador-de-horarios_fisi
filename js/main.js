@@ -25,193 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let careerData = {};
     let selectedCourses = {};
-    let cellColors = {}; 
-    let excelCellColors = {};  
-    let excelCellTexts = {};  
-    let totalCredits = 0; 
     const days = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
-
-    // Cargar el color guardado en localStorage o usar el color por defecto
-    const savedColor = localStorage.getItem('selectedColor') || '#90EE90';
-    colorPicker.value = savedColor;
-
-    // Guardar el color seleccionado en localStorage cuando cambie
-    colorPicker.addEventListener('input', function() {
-        const selectedColor = colorPicker.value;
-        localStorage.setItem('selectedColor', selectedColor);
-    });
-
-    // Función para actualizar el total de créditos
-    function updateTotalCredits() {
-        const totalCreditsElement = document.getElementById('total-credits');
-        if (totalCreditsElement) {
-            totalCreditsElement.textContent = `Total de Créditos: ${totalCredits}`;
-        }
-    }
-
-    // Función para convertir número de columna a letra de Excel
-    function colNumToLetter(colNum) {
-        let letter = '';
-        while (colNum > 0) {
-            colNum--; // Ajustar para base 0
-            letter = String.fromCharCode((colNum % 26) + 65) + letter;
-            colNum = Math.floor(colNum / 26);
-        }
-        return letter;
-    }
-
-    // Función para eliminar un horario - definida temprano para que esté disponible
-    function deleteSchedule(cell) {
-        const courseInfo = cell.textContent.trim().split('-');
-        const selectedSubject = courseInfo[0].trim();
-        const selectedSection = courseInfo[1].trim();
-        
-        const courseKey = `${selectedSubject}-${selectedSection}`;
-
-        if (selectedCourses[courseKey]) {
-            const selectedCourse = selectedCourses[courseKey];
-            const selectedCredits = selectedCourse.credits;
-                                    
-            totalCredits -= selectedCredits;
-            updateTotalCredits(); 
-
-            delete selectedCourses[courseKey];
-
-            const scheduleTable = document.getElementById('schedule-table');
-            for (let i = 1; i < scheduleTable.rows.length; i++) { 
-                const currentRow = scheduleTable.rows[i];
-            
-                for (let j = 1; j < currentRow.cells.length; j++) { 
-                    const currentCell = currentRow.cells[j];
-            
-                    if (currentCell.textContent.includes(selectedSubject) && currentCell.textContent.includes(selectedSection)) {
-                        currentCell.textContent = '';
-                        currentCell.style.backgroundColor = '';
-                        currentCell.removeAttribute('style');
-                        currentCell.removeAttribute('data-color');
-
-                        const hour = i + 8; 
-                        const dayIndex = j - 1; 
-                        
-                        // Limpiar formato simple
-                        const cellId = `${dayIndex}-${hour}`;
-                        if (cellColors[cellId]) {
-                            delete cellColors[cellId]; 
-                        }
-                        
-                        // Limpiar formato Excel usando la misma lógica que addSchedule()
-                        const excelId = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;
-                        if (excelCellColors[excelId]) {
-                            delete excelCellColors[excelId];
-                        }
-                        if (excelCellTexts[excelId]) {
-                            delete excelCellTexts[excelId];
-                        }
-
-                        const deleteBtn = currentCell.querySelector('.delete-button');
-                        if (deleteBtn) {
-                            currentCell.removeChild(deleteBtn);
-                        }
-                    }
-                }
-            }
-            
-            // Guardar cambios en localStorage
-            saveCoursesToLocalStorage();
-        }
-    }
-
-    // Función para guardar cursos en localStorage
-    function saveCoursesToLocalStorage() {
-        localStorage.setItem('savedCourses', JSON.stringify(selectedCourses));
-        localStorage.setItem('savedCellColors', JSON.stringify(cellColors));
-        localStorage.setItem('savedExcelColors', JSON.stringify(excelCellColors));
-        localStorage.setItem('savedExcelTexts', JSON.stringify(excelCellTexts));
-        localStorage.setItem('savedTotalCredits', totalCredits.toString());
-    }
-
-    // Función para cargar cursos desde localStorage
-    function loadCoursesFromLocalStorage() {
-        const savedCourses = localStorage.getItem('savedCourses');
-        const savedCellColors = localStorage.getItem('savedCellColors');
-        const savedExcelColors = localStorage.getItem('savedExcelColors');
-        const savedExcelTexts = localStorage.getItem('savedExcelTexts');
-        const savedCredits = localStorage.getItem('savedTotalCredits');
-        
-        if (savedCourses) {
-            selectedCourses = JSON.parse(savedCourses);
-        }
-        if (savedCellColors) {
-            cellColors = JSON.parse(savedCellColors);
-        }
-        if (savedExcelColors) {
-            excelCellColors = JSON.parse(savedExcelColors);
-        }
-        if (savedExcelTexts) {
-            excelCellTexts = JSON.parse(savedExcelTexts);
-        }
-        if (savedCredits) {
-            totalCredits = parseInt(savedCredits) || 0;
-        } else {
-            totalCredits = 0; // Asegurar que sea 0 si no hay datos guardados
-        }
-        
-        // Actualizar la visualización de créditos
-        updateTotalCredits();
-        
-        // Restaurar la visualización del horario después de cargar los datos
-        setTimeout(() => {
-            restoreVisualSchedule();
-        }, 100);
-    }
-
-    // Función para restaurar la visualización del horario
-    function restoreVisualSchedule() {
-        for (const excelPosition in excelCellTexts) {
-            const courseText = excelCellTexts[excelPosition];
-            const color = excelCellColors[excelPosition];
-            
-            if (courseText && color) {
-                // Convertir posición Excel (ej: "B2") a índices de tabla
-                const colLetter = excelPosition.match(/[A-Z]+/)[0];
-                const rowNumber = parseInt(excelPosition.match(/\d+/)[0]);
-                
-                // Convertir letra de columna a número
-                let colNum = 0;
-                for (let i = 0; i < colLetter.length; i++) {
-                    colNum = colNum * 26 + (colLetter.charCodeAt(i) - 65 + 1);
-                }
-                
-                // Corregir el cálculo: cuando se guardó se usó dayIndex + 2, 
-                // entonces para recuperar dayIndex necesitamos colNum - 2
-                const dayIndex = colNum - 2; 
-                const hour = rowNumber + 7; 
-                
-                if (dayIndex >= 0 && dayIndex < days.length && hour >= 8 && hour <= 21) {
-                    const rowIndex = hour - 8;
-                    // El colIndex debe ser dayIndex + 1 para la tabla (columna 0 es para las horas)
-                    const colIndex = dayIndex + 1;
-                    
-                    if (scheduleTable && scheduleTable.rows[rowIndex] && scheduleTable.rows[rowIndex].cells[colIndex]) {
-                        const cell = scheduleTable.rows[rowIndex].cells[colIndex];
-                        
-                        if (!cell.textContent.trim()) {
-                            cell.textContent = courseText;
-                            cell.classList.add('schedule-cell');
-                            cell.style.backgroundColor = color;
-                            cell.dataset.color = color;
-                            
-                            const deleteBtn = document.createElement('button');
-                            deleteBtn.classList.add('delete-button');
-                            deleteBtn.innerHTML = 'X';
-                            deleteBtn.addEventListener('click', () => deleteSchedule(cell));
-                            cell.appendChild(deleteBtn);
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     fetch('data/Fisi.json')
         .then(response => response.json())
@@ -328,7 +142,6 @@ document.addEventListener('DOMContentLoaded', function () {
             subjectSelect.innerHTML = '';
             sectionSelect.innerHTML = '';
             totalCredits = 0;
-            updateTotalCredits();
             careerData = {};  
         }
         function initializeSchedulePage(horariosData) {
@@ -366,12 +179,8 @@ document.addEventListener('DOMContentLoaded', function () {
             createScheduleTable();
             totalCredits = 0;
         }
+        let totalCredits = 0;
         initializeSchedulePage(horariosData);
-        
-        // Cargar datos guardados después de inicializar la página
-        setTimeout(() => {
-            loadCoursesFromLocalStorage();
-        }, 500);
 
         function updateYears() {
             const selectedCareer = careerSelect.value;
@@ -493,7 +302,18 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
     
+        let cellColors = {};  
 
+        function colNumToLetter(colNum) {
+            let letter = '';
+            while (colNum > 0) {
+                let modulo = (colNum ) % 26;
+                letter = String.fromCharCode(modulo + 65) + letter;
+                colNum = Math.floor((colNum - modulo-1) / 26);
+            }
+            return letter;
+        }
+        
         function addSchedule() {
             const selectedCareer = careerSelect.value;
             const selectedYear = yearSelect.value;
@@ -584,27 +404,19 @@ document.addEventListener('DOMContentLoaded', function () {
                                 for (let hour = startTime; hour < endTime; hour++) {
                                     const cell = scheduleTable.rows[hour - 8].cells[dayIndex + 1];
 
-                                    // Guardar el color en ambos formatos
-                                    const cellPosition = `${dayIndex}-${hour}`;  // Formato simple para lógica interna
+                                    const cellPosition = `${colNumToLetter(dayIndex + 1)}${hour - 7}`;
                                     cellColors[cellPosition] = selectedColor;
-                                    
-                                    // Formato Excel para exportación
-                                    const excelPosition = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;
-                                    excelCellColors[excelPosition] = selectedColor;
-                                    excelCellTexts[excelPosition] = `${selectedSubject} - ${selectedSection}`;
-
                                     console.log("Guardando color para la celda:", cellPosition, "Color:", selectedColor);
 
                                     cell.textContent = `${selectedSubject} - ${selectedSection}`;
                                     cell.classList.add('schedule-cell');
                                     cell.style.backgroundColor = selectedColor;
-                                    cell.dataset.color = selectedColor;
-                                    if (cell.textContent.trim().length > 0) {
+                                    cell.dataset.color = selectedColor;                                    if (cell.textContent.trim().length > 0) {
                                         const deleteBtn = document.createElement('button');
                                         deleteBtn.classList.add('delete-button');
                                         deleteBtn.innerHTML = 'X';
                                         deleteBtn.addEventListener('click', () => deleteSchedule(cell));
-
+        
                                         cell.appendChild(deleteBtn);
                                     }
                                 }
@@ -613,9 +425,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 });
             }
-            
-            // Guardar datos después de agregar el curso
-            saveCoursesToLocalStorage();
         }
         
         
@@ -641,36 +450,27 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.body.removeChild(link);
                 });
             }
+            function updateTotalCredits() {
+                const totalCreditsElement = document.getElementById('total-credits');
+                totalCreditsElement.textContent = `Total de Créditos: ${totalCredits}`;
+            }
+            
             
 
 
                         
             function exportToExcel() {
-                if (Object.keys(excelCellColors).length === 0) {
-                    alert('No hay cursos con colores para exportar');
-                    return;
-                }
-
                 const wb = XLSX.utils.table_to_book(scheduleTable, { sheet: 'Horarios' });
                 const excelFile = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
                 const formData = new FormData();
                 formData.append('file', new Blob([excelFile], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }), 'horarios_sin_colores.xlsx');
-                formData.append('cellColors', JSON.stringify(excelCellColors)); 
-                formData.append('cellTexts', JSON.stringify(excelCellTexts)); 
-                
-                console.log('Enviando colores Excel:', excelCellColors);
-                console.log('Enviando textos Excel:', excelCellTexts);
-
-                fetch('https://Cicilis.pythonanywhere.com/excel', {
+                formData.append('cellColors', JSON.stringify(cellColors)); 
+            
+                fetch('http://Cicilis.pythonanywhere.com/excel', {
                     method: 'POST',
                     body: formData
                 })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.blob();
-                })
+                .then(response => response.blob())
                 .then(blob => {
                     const link = document.createElement('a');
                     link.href = URL.createObjectURL(blob);
@@ -679,9 +479,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 })
                 .catch(error => {
                     console.error('Error al enviar el archivo:', error);
-                    alert('Error al exportar a Excel. Intenta de nuevo.');
                 });
-            }            
+            }
+
+            
 
             function createScheduleTable() {
                 const scheduleTable = document.getElementById('schedule-table');
@@ -724,7 +525,11 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
             function clearAllSchedule() {
-                // Limpiar la tabla visual
+                selectedCourses = {};
+                cellColors = {};
+                totalCredits = 0;
+                updateTotalCredits();
+                
                 for (let i = 1; i < scheduleTable.rows.length; i++) {
                     const currentRow = scheduleTable.rows[i];
                     
@@ -742,24 +547,52 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     }
                 }
-                
-                // Limpiar todas las variables
-                selectedCourses = {};
-                cellColors = {};
-                excelCellColors = {};
-                excelCellTexts = {};
-                totalCredits = 0;
-                updateTotalCredits();
-                
-                // Limpiar localStorage
-                localStorage.removeItem('savedCourses');
-                localStorage.removeItem('savedCellColors');
-                localStorage.removeItem('savedExcelColors');
-                localStorage.removeItem('savedExcelTexts');
-                localStorage.removeItem('savedTotalCredits');
-                
-                alert('Horario limpiado exitosamente');
             }
+
+            function deleteSchedule(cell) {
+                const courseInfo = cell.textContent.trim().split('-');
+                const selectedSubject = courseInfo[0].trim();
+                const selectedSection = courseInfo[1].trim();
+                
+                const courseKey = `${selectedSubject}-${selectedSection}`;
+            
+                const selectedCourse = selectedCourses[courseKey];
+                const selectedCredits = selectedCourse.credits;
+                                        
+                totalCredits -= selectedCredits;
+                updateTotalCredits(); 
+            
+                delete selectedCourses[courseKey];
+            
+                for (let i = 1; i < scheduleTable.rows.length; i++) { 
+                    const currentRow = scheduleTable.rows[i];
+                
+                    for (let j = 1; j < currentRow.cells.length; j++) { 
+                        const currentCell = currentRow.cells[j];
+                
+                        if (currentCell.textContent.includes(selectedSubject) && currentCell.textContent.includes(selectedSection)) {
+                            currentCell.textContent = '';
+                            currentCell.style.backgroundColor = '';
+                            currentCell.removeAttribute('style');
+                            currentCell.removeAttribute('data-color');
+
+                            const colLetter = colNumToLetter(j); 
+                            const rowNumber = i+1; 
+                            const cellId = `${colLetter}${rowNumber}`; 
+                            
+                            if (cellColors[cellId]) {
+                                delete cellColors[cellId]; 
+                            }
+
+                            const deleteBtn = currentCell.querySelector('.delete-button');
+                            if (deleteBtn) {
+                                currentCell.removeChild(deleteBtn);
+                            }
+                        }
+                    }
+                }
+            }
+            
 
             
             
