@@ -1,4 +1,59 @@
 document.addEventListener('DOMContentLoaded', function () {
+    console.log(`
+%%##%#%%##%##%%#%##%%#%%#%%#%%#%%#%%#%%##%##%#####%##%##%%#%%#%%#%%##%#%%#%%##%##%##%%#%%#%##%%#
+####%##%#####%##%######%#%######%#%%#####%++++++*#%##%########%##%###%#%######%##%########%#####
+##%#%##%#%###%##++++++*%#%######%#%##%#%#%*+++++##%##%######%#%######%#%##%#%#%##%#****###%#####
+%#%#%##%#%#%#%%#++++++*%#%#%%#%#%#%%#%#%#%##*+*#%#%%#%#%####*+*+#%#%#%#%%#%#%#%##%##**#%%#%#%###
+%#%#%#%%#%#%#%%#%*++*##%#%#%%#%#%#%%#%#%#%##%#%#%#%%#%#%#%###==*#%#%#%#%%#%#%#%##%#%###%%#%#%##%
+##%#%##%#%#%#%##%#%####%#%####*#%#%##%#%#%##%#%#%#%##%#%####%#%####%#%#%##%#%#%##%#%#%##%#%#%###
+##%#%##%#%#%#%##%#%####%#%#****#%#%##%#%#%##%#%#%#%##%#%####%#%####%#%#%##%#%#%##%#%####%#%#%###
+%#%#%##%#%#%#%##%#%#%##%#%######%#%%#%#%%%@@@%@@@@@@@@%@%%##%#%##%###%#%%%@@@@%@@@@@#%#%%#%#%###
+%#%#%**#*##%#%%#%#%#%#%%#%#%%%%#%%@@@%@=@++#=@=#*+@=%=+*#@@@@%%##%#%#%#%%@@@@@@@@@@@%%#%%#%#%%%#
+####%#***####%##%########%##%%@@#++++*+#+**+#+*++*+#+*+=*+*++*@@@%%##%#%#%%%%%%%%%%%###%##%#####
+######################%##%@@#+#=%=#+=%=%=#*=@=%++#=%=#+=#=%=#+=#=@%@@%######+++++*###########%##
+#%#%#%#%%#%#%%#%#%#%#%@@@*++==++*=+=+*+*++++*+*++++*++==+=+++==++*+++@@%%%#%#*+*##%#%#%%#%#%#%%#
+#%#%#%#%%#%#%%#%#%#%@@#=%=%=*#=%=%=**=%=%+*#=@+#*+%=%=**=%=%=**=%=%+*#+@@%#%#%%#%#%#%#%%#%######
+#%#%####%#%#%####%@@***+#@@*+*+#+#=+*+#+#+*#+%+**+%+#++*=#+#++*+#+#+**+%+@@%#%####%#%##%#++++++*
+#%#%####%#%#%####@@*%++@+%=#+=#=%=#++#=@=#*+%=%+*#=@=#++#=%=#=+#=%=#*+%=%+*@@%####%#%####*+++++#
+#%#%#*++++++#%#%%@@=%**#=%+@+=#=%=#++@#@=#*+@=%+*#=@=#++#=%=#=+#=%=#*@%=@=*#%@%###%#%#%%#%#*+###
+#%#%##+++++*%%%@##@%***+#*@++++*+*=+*@#**++**#***+#+*++++#+*++++*+*++#@#***+#@@%%#%#%#%%#%#%#%%#
+#%#%####++##%@@**@=@+##+@@@+#%=@=@=#@#@=@+#%=@=##+@=@=#%=@=@=%#+@=@+###@=%*+@=@@@#%#%####%#%#%##
+#%########%#@@##@*#*****#%******#**@@**#****#******#***+**#***+**#****#@#****#%@@###%########%##
+%%#%%##%##%%@@+#%+@=%*%@@@=%*+@=@=#%@%=@*@#+@=%**%=@=%*+@=@=%+*%=@=%*+@@@+#%=@=@@%##%#%%##%%#%%#
+%%%%%%%%%%%%@@+%@+@=@+*@+%=#++#=@=@@#@+@+#*+%=%+*%=@=#++#=@=%++#=@*@*+%%@+*#+@=%@@%%%%%%%%%%%%%%
+*===###%##%@%*%*#%+%+#%@%+%+##+%+%@@#+%+%*##+%+##+%+%+##+%+%+%*+%+%**#+@@@**%+%+%%@%######%#####
+##+####%##@%%+%@#%+%*#@@%+%+##+%+@=@#+%+%*##+%+##+%+%+##+%+%+##*%+%*##+%@@#*%+%+%@@%######%#####
+%#%#%##%#%@@+%%@#+@+%#@%+@+%**%+@@=@#%+@+##*%+%**%=@+%**%+@+%**%+@+%**%+@%@#+@+%*@@%#%#%%#%#%###
+%#%#%#%%#%@@+@@%#+@#@@@@=@=@*+@=@#=@#@=@=%#+@=@**%=@=@**@=@=@+*%=@=%**@+@%@%=@=@*@@%#%#%%#%#%##%
+##%#%##%@@@@@@@@@@@*%@@%*%*%%%%*@==@%%*%*##*%*%###*%*%#%%*%*%##%*%*###%*@+@#*%*%#%@@@%##%#%#%###
+##%#%#%@+#%+@=%@@==%@@#+@=@+#%+@@+=%@%@@@@@@@@%%#*%*##%%%%%%@@@@@@@@@%+@@+@*@=@+%@%@%@##%#%#%###
+%#%#%@@@#####*##*@*===#@@@###%@*+*%=#@@%++=+*%#+===========++@@#*+==*@@%=%%##*###@@@@@@#####%###
+%%@@*=%%@#*@=@+#%=@@=====%@@+==+%=@@@#=@@==+@%==============++%===%@*=#@@+%@%@=@#@+=@@@#**##%%%%
+%@====@%@%#@=@*%@+*@@#====+@@=#+#@@+==@@@*=@+*#==============@@#=#*@%*=+@@=#@@@@@@===+@@##%#####
+#%@@*=@@#%%*%*%#@#=@@@@%=#@+=%+@@@===*@*#%@%*%@==============@##@@#**@==#@@%@@@@@@#====+@@%#####
+#%#%@@@@+#%+@=%*@%=*@@@@@@+==+*@@====#@*%%@%*@@==============@#*@@%*#@===@@@@@@@*@%@+=====@@@%##
+#*+++%@#%%#%*%#%@@==@%===#==++#@#====*%#****##*==============@#*##***@===#@@@%*@#@@#@%====+@@%%#
+#%*+#@@+@%*@=@*%@@==@@**+======++#====%@****@#================@%***#%%====#@#@*@#+@+@%@##@@%#%##
+#%#%@%@#@%%%#%#%@@==#@+==%============================================+++=#@#%#@%=@%@#@@@%##===+
+#%#%#@%@*#%+@+@##@+==@#=+*================================================#@@+@#%=@@+@*%@@#%#+##
+#%#@#@#@%@%#%*%#%@#==@@===***=============================================*@@*%#%=%@#@#@@@#%#%%#
+#%#%#@@%@%#@+@*%@@%==#@=====@=============================================*@%@+@%=+@@*@%%@#%#%##
+#%@#%@@@@%#@+@*%%@@==*@*===========================@=#+%==================#@*@*@@==@@*@%%@%##%##
+#%@=@@@@%%@#@#%%%@@==+@@===========================*%##*=================%@@%#@%@==@%@%@@@@*#%##
+%%@+@@+@##@+@=@#*@@+==%@@@@@@@@@@@@====================================*@@@#@=@*@==%#@*%@@@##%%%
+%@%@@%%%@%%%%%%%%%@#==#@@@@@@@@@@@@@@@@#+===========================*@@@@@@@%%%@@+=*@%@@@@@@#%%#
+%@@%@*@#@%#@+@#%@*@%==+@@@@@@@@@@@@@@@@@@*==*=*================+#@@@@@@@@@@@*@*@@+==@*@%%@*@%###
+@@@%@%@%@@%@#@%@@#@@===@@@@@@@@@@@@@@@@@@*===========###%@@@@@@@@@@@@@@@@@@@@@#@@===@%@@@@%@@@@%
+@%@@#@*@%%@*@*@%%@@@===#@@@@@@@@@@@%@#@@*@@%=#=+==*+@%@@@@@@@@@@@@@@@@@@@@@@@*@#@*==%@#@@#@*@#@@
+@%@@#@*@%%@*@*@%%@*@+==+@@@@@@@@%#%@*=@@===+@@@##%@@@=+@@@@@@@@@@@@@@@@@@@@@@#@#@%==#@#@@#@*@%@@
+%@@@@#@%@@%@#@%@@%@@#===@@@@@@#=#@%==+*@*=======+@#====#@%%@@@@@@@@@@@@@@@@@@@#@@%==+@@@@@%@%@@%
+@@@%@#@%@@%@*@#@@#@@#===#@@@%=+%@*+==*=@@+======%@@@*==+@@#+@@+@@@@@@@@@@@@@@@*@@@===@@@@@#@#@@%
+=#@@@@%@@@@%@%@@@@%@%====@@#==#@*+===+++@@+===#@@@@@@@@@@%=+#@*+@@@@@@@@@@@@@%@@@@===@@@@@@%@@@@
+====+@@@%%@*@*@%#@+@@====%@=++@@+%=+*=%=%@@@@@+%@@@@@+==@%=%=@@=@@@@@@@@@@%#@+@#@@===@@@@#@*@%@@
+=====*@@@@@%@%@@@@%@@+++=%#===#@@#==+=*+*%@#====@@@@@@+%@*=++@@++*@@@@%%@%%%%%@%%%===*%%@%#%%%%@
+=====*@@@@%@#@%@@#@#@@*%##=+==+=*=+==*=#=*%@%=+@@@@@@@@@@=*=+%%*=##@%==+=+++*+**+******#*#*+*=*%
+    `);
+    
     const cycleSelect = document.getElementById('cycle-select');
     const subjectSelect = document.getElementById('subject-select');
     const sectionSelect = document.getElementById('section-select');
@@ -15,33 +70,30 @@ document.addEventListener('DOMContentLoaded', function () {
     const sendButton = document.getElementById("send-button");
     const contenedor = document.getElementById("contenedorDatos");
     const clearScheduleBtn = document.getElementById('clear-schedule-btn');
-        uploadInput.addEventListener('change', () => {
+    
+    uploadInput.addEventListener('change', () => {
             if (uploadInput.files.length > 0) {
                 const fileName = uploadInput.files[0].name;
                 uploadLabel.textContent = `📄 ${fileName}`;
             }
-        });
-    
+    });
 
     let careerData = {};
     let selectedCourses = {};
-    let cellColors = {}; 
+    let cellColors = {};
     let excelCellColors = {};  
     let excelCellTexts = {};  
-    let totalCredits = 0; 
+    let totalCredits = 0;
     const days = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
-    // Cargar el color guardado en localStorage o usar el color por defecto
     const savedColor = localStorage.getItem('selectedColor') || '#90EE90';
     colorPicker.value = savedColor;
 
-    // Guardar el color seleccionado en localStorage cuando cambie
     colorPicker.addEventListener('input', function() {
         const selectedColor = colorPicker.value;
         localStorage.setItem('selectedColor', selectedColor);
     });
 
-    // Función para actualizar el total de créditos
     function updateTotalCredits() {
         const totalCreditsElement = document.getElementById('total-credits');
         if (totalCreditsElement) {
@@ -49,18 +101,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Función para convertir número de columna a letra de Excel
     function colNumToLetter(colNum) {
         let letter = '';
         while (colNum > 0) {
-            colNum--; // Ajustar para base 0
+            colNum--;
             letter = String.fromCharCode((colNum % 26) + 65) + letter;
             colNum = Math.floor(colNum / 26);
         }
         return letter;
     }
 
-    // Función para eliminar un horario - definida temprano para que esté disponible
     function deleteSchedule(cell) {
         const courseInfo = cell.textContent.trim().split('-');
         const selectedSubject = courseInfo[0].trim();
@@ -91,15 +141,13 @@ document.addEventListener('DOMContentLoaded', function () {
                         currentCell.removeAttribute('data-color');
 
                         const hour = i + 8; 
-                        const dayIndex = j - 1; 
+                        const dayIndex = j - 1;
                         
-                        // Limpiar formato simple
                         const cellId = `${dayIndex}-${hour}`;
                         if (cellColors[cellId]) {
-                            delete cellColors[cellId]; 
+                            delete cellColors[cellId];
                         }
                         
-                        // Limpiar formato Excel usando la misma lógica que addSchedule()
                         const excelId = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;
                         if (excelCellColors[excelId]) {
                             delete excelCellColors[excelId];
@@ -153,13 +201,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (savedCredits) {
             totalCredits = parseInt(savedCredits) || 0;
         } else {
-            totalCredits = 0; // Asegurar que sea 0 si no hay datos guardados
+            totalCredits = 0;
         }
         
-        // Actualizar la visualización de créditos
         updateTotalCredits();
         
-        // Restaurar la visualización del horario después de cargar los datos
         setTimeout(() => {
             restoreVisualSchedule();
         }, 100);
@@ -182,14 +228,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     colNum = colNum * 26 + (colLetter.charCodeAt(i) - 65 + 1);
                 }
                 
-                // Corregir el cálculo: cuando se guardó se usó dayIndex + 2, 
-                // entonces para recuperar dayIndex necesitamos colNum - 2
                 const dayIndex = colNum - 2; 
                 const hour = rowNumber + 7; 
                 
                 if (dayIndex >= 0 && dayIndex < days.length && hour >= 8 && hour <= 21) {
                     const rowIndex = hour - 8;
-                    // El colIndex debe ser dayIndex + 1 para la tabla (columna 0 es para las horas)
                     const colIndex = dayIndex + 1;
                     
                     if (scheduleTable && scheduleTable.rows[rowIndex] && scheduleTable.rows[rowIndex].cells[colIndex]) {
@@ -238,7 +281,6 @@ document.addEventListener('DOMContentLoaded', function () {
                             });
             
                             if (!respuesta.ok) {
-                                console.error("Error en la respuesta:", respuesta.status, respuesta.statusText);
                                 alert("Hubo un error al enviar el PDF. Código: " + respuesta.status);
                                 return;
                             }
@@ -250,16 +292,13 @@ document.addEventListener('DOMContentLoaded', function () {
             
                                 horariosData = mergeData(horariosData, data); 
             
-                                console.log("Datos combinados:", horariosData);
                                  careerData = {};
                                  selectedCourses = {};   
                                 initializeSchedulePage(horariosData);  
                             } else {
-                                console.error("Error en el procesamiento del PDF:", data.error || "Error desconocido");
                                 alert("Hubo un error al procesar el PDF: " + (data.error || "Error desconocido"));
                             }
                         } catch (error) {
-                            console.error("Error al enviar el PDF:", error);
                             alert("Error de conexión con el servidor. Revisa la consola para más detalles.");
                         } finally {
                             // Reactivar el botón de enviar al finalizar (éxito o error)
@@ -522,7 +561,6 @@ document.addEventListener('DOMContentLoaded', function () {
                             storedCourse = selectedCourses[courseKey];
         
                             if (storedCourse.asig === courseInfo['Asignatura'].match(/-(.+)/)[1].trim()) {
-                                console.error('Este curso ya ha sido agregado', storedCourse.asig);
                                 alert(`Este curso ya ha sido agregado`);
                                 conflictoEncontrado = true;
         
@@ -551,7 +589,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                         const cell = scheduleTable.rows[hour - 8].cells[dayIndex + 1];
         
                                         if (cell.textContent.trim().length > 0) {
-                                            console.error(`Conflicto de horarios. No se pudo agregar el horario para ${selectedSubject} - ${selectedSection} el ${days[dayIndex]} a las ${hour}:00.`);
                                             alert(`Conflicto de horarios. No se pudo agregar el horario para ${selectedSubject} - ${selectedSection} el ${days[dayIndex]} a las ${hour}:00.`);
                                             conflictoEncontrado = true;
                                             if (auxiliarvar == true) {
@@ -566,7 +603,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                     }
         
                                 } else {
-                                    console.error('Día no válido en el horario:', schedule.Día);
                                     alert(`Error al agregar el horario. Día no válido: ${schedule.Día}`);
                                     return;
                                 }
@@ -592,16 +628,12 @@ document.addEventListener('DOMContentLoaded', function () {
                                 for (let hour = startTime; hour < endTime; hour++) {
                                     const cell = scheduleTable.rows[hour - 8].cells[dayIndex + 1];
 
-                                    // Guardar el color en ambos formatos
-                                    const cellPosition = `${dayIndex}-${hour}`;  // Formato simple para lógica interna
+                                    const cellPosition = `${dayIndex}-${hour}`;
                                     cellColors[cellPosition] = selectedColor;
                                     
-                                    // Formato Excel para exportación
                                     const excelPosition = `${colNumToLetter(dayIndex + 2)}${hour - 7}`;
                                     excelCellColors[excelPosition] = selectedColor;
                                     excelCellTexts[excelPosition] = `${selectedSubject} - ${selectedSection}`;
-
-                                    console.log("Guardando color para la celda:", cellPosition, "Color:", selectedColor);
 
                                     cell.textContent = `${selectedSubject} - ${selectedSection}`;
                                     cell.classList.add('schedule-cell');
@@ -664,10 +696,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const formData = new FormData();
                 formData.append('file', new Blob([excelFile], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }), 'horarios_sin_colores.xlsx');
                 formData.append('cellColors', JSON.stringify(excelCellColors)); 
-                formData.append('cellTexts', JSON.stringify(excelCellTexts)); 
-                
-                console.log('Enviando colores Excel:', excelCellColors);
-                console.log('Enviando textos Excel:', excelCellTexts);
+                formData.append('cellTexts', JSON.stringify(excelCellTexts));
 
                 fetch('https://Cicilis.pythonanywhere.com/excel', {
                     method: 'POST',
@@ -686,7 +715,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     link.click();
                 })
                 .catch(error => {
-                    console.error('Error al enviar el archivo:', error);
                     alert('Error al exportar a Excel. Intenta de nuevo.');
                 });
             }            
@@ -774,6 +802,6 @@ document.addEventListener('DOMContentLoaded', function () {
             
             
         })
-        .catch(error => console.error('Error al cargar el archivo JSON:', error));
+        .catch(error => alert('Error al cargar el archivo JSON'));
 });
 
