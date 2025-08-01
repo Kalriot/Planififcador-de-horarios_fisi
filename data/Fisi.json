@@ -4906,1242 +4906,1343 @@
         }
     ]
     }
-        ,"Ciencias De La Computación": {
-            "CICLO 1": [
-                {
-                    "Asignatura": "INE002 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "1",
-                    "Docente": "0A0037 - HUAYNA DUEÑAS, ANA MARIA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "11:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "11:00",
-                            "Fin": "13:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INE002 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "2",
-                    "Docente": "0A0182 - RUIZ RIVERA, MARIA ELENA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "15:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "15:00",
-                            "Fin": "17:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INE002 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "3",
-                    "Docente": "07240690 - DAMASO RIOS, MARIA ROSA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "11:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "11:00",
-                            "Fin": "13:00",
-                            "Día": "MARTES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INE002 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "4",
-                    "Docente": "0A0182 - RUIZ RIVERA, MARIA ELENA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "11:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "11:00",
-                            "Fin": "13:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INE002 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "5",
-                    "Docente": "085774 - VERA POMALAZA, VIRGINIA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "11:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "11:00",
-                            "Fin": "13:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INE002 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "6",
-                    "Docente": "10645375 - USCUCHAGUA FLORES, GELBER CHRISTIAN",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "11:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "11:00",
-                            "Fin": "13:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INE002 - PROGRAMACIÓN Y COMPUTACIÓN",
-                    "Créd.": "2",
-                    "Sec.": "7",
-                    "Docente": "07240690 - DAMASO RIOS, MARIA ROSA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "11:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "11:00",
-                            "Fin": "13:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "1",
-                    "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "2",
-                    "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "3",
-                    "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "LUNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "4",
-                    "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "LUNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "5",
-                    "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "16:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "16:00",
-                            "Fin": "18:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO101 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I",
-                    "Créd.": "3",
-                    "Sec.": "6",
-                    "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "1",
-                    "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "11:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "11:00",
-                            "Fin": "13:00",
-                            "Día": "MARTES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "2",
-                    "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "11:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "11:00",
-                            "Fin": "13:00",
-                            "Día": "MARTES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "3",
-                    "Docente": "09620253 - COLCA GARCIA, HEDDY LILIANA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "09:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "09:00",
-                            "Fin": "11:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "4",
-                    "Docente": "06122577 - FANOLA MERINO, PETRONILA MERIDA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "09:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "09:00",
-                            "Fin": "11:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "5",
-                    "Docente": "09620253 - COLCA GARCIA, HEDDY LILIANA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "15:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "15:00",
-                            "Fin": "17:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO102 - MÉTODOS DE ESTUDIO UNIVERSITARIO",
-                    "Créd.": "2",
-                    "Sec.": "6",
-                    "Docente": "06326376 - COSME FÉLIX, MIRYAM MILAGROS",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "15:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "15:00",
-                            "Fin": "17:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "1",
-                    "Docente": "45286733 - MELGAREJO SOLIS, RONALD ALONSO",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "15:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "15:00",
-                            "Fin": "17:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "2",
-                    "Docente": "10275035 - ORELLANA MANRIQUE, YOLANDA OLIVIA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "09:00",
-                            "Fin": "11:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "11:00",
-                            "Fin": "12:00",
-                            "Día": "LUNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "3",
-                    "Docente": "09620253 - COLCA GARCIA, HEDDY LILIANA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "11:00",
-                            "Fin": "12:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "4",
-                    "Docente": "06122577 - FANOLA MERINO, PETRONILA MERIDA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "11:00",
-                            "Fin": "12:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "5",
-                    "Docente": "10275035 - ORELLANA MANRIQUE, YOLANDA OLIVIA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "09:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "09:00",
-                            "Fin": "11:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO103 - DESARROLLO PERSONAL Y LIDERAZGO",
-                    "Créd.": "2",
-                    "Sec.": "6",
-                    "Docente": "41388541 - AGUILAR CORONEL, JHONATHAN",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "09:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "09:00",
-                            "Fin": "11:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "1",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "2",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "3",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "4",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "5",
-                    "Docente": "0A2021 - LLERENA LUCERO, TEODORO ALFREDO",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO104 - CÁLCULO I",
-                    "Créd.": "4",
-                    "Sec.": "6",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "14:00",
-                            "Fin": "18:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "1",
-                    "Docente": "43091255 - HUAMAN TINCO, BORJA LUIS",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "LUNES",
-                            "Tipo": "Práctica"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "LUNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "2",
-                    "Docente": "08458590 - ARIAS RAMIREZ, ANGELA RENEE",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "16:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "14:00",
-                            "Fin": "16:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "16:00",
-                            "Fin": "18:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "3",
-                    "Docente": "43091255 - HUAMAN TINCO, BORJA LUIS",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Práctica"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "4",
-                    "Docente": "43368044 - ACUÑA TARAZONA, MARGOTH ELIZABETH",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Práctica"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "5",
-                    "Docente": "43091255 - HUAMAN TINCO, BORJA LUIS",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "MARTES",
-                            "Tipo": "Práctica"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "MARTES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO105 - BIOLOGÍA PARA CIENCIAS E INGENIERÍA",
-                    "Créd.": "4",
-                    "Sec.": "6",
-                    "Docente": "08458590 - ARIAS RAMIREZ, ANGELA RENEE",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "MARTES",
-                            "Tipo": "Práctica"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "MARTES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "1",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "2",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "3",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "4",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "5",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
-                    "Créd.": "4",
-                    "Sec.": "6",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "08:00",
-                            "Fin": "12:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "1",
-                    "Docente": "06122577 - FANOLA MERINO, PETRONILA MERIDA",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "16:00",
-                            "Día": "SABADO",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "16:00",
-                            "Fin": "18:00",
-                            "Día": "SABADO",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "2",
-                    "Docente": "45286733 - MELGAREJO SOLIS, RONALD ALONSO",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "MIERCOLES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "3",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "16:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "16:00",
-                            "Fin": "18:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "4",
-                    "Docente": "07493618 - INGA ALVA, ALEXANDER EDUARDO",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "16:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "16:00",
-                            "Fin": "18:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "5",
-                    "Docente": "45286733 - MELGAREJO SOLIS, RONALD ALONSO",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "LUNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "INO107 - MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE",
-                    "Créd.": "3",
-                    "Sec.": "6",
-                    "Docente": "07493618 - INGA ALVA, ALEXANDER EDUARDO",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "12:00",
-                            "Fin": "14:00",
-                            "Día": "LUNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                }
-            ],
-            "CICLO 3": [
-                {
-                    "Asignatura": "203230301 - INTRODUCCIÓN A LA CIENCIA DE LA COMPUTACIÓN",
-                    "Créd.": "4",
-                    "Sec.": "1",
-                    "Docente": "08803A - ROMERO NAUPARI, PABLO JESUS",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "14:00",
-                            "Día": "JUEVES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "203230302 - PROGRAMACIÓN DE COMPUTADORAS I",
-                    "Créd.": "4",
-                    "Sec.": "1",
-                    "Docente": "094315 - ESPINOZA DOMINGUEZ, ROBERT ELIAS",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "MARTES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "14:00",
-                            "Día": "MARTES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "203230303 - DESARROLLO BASADO EN PLATAFORMAS",
-                    "Créd.": "3",
-                    "Sec.": "1",
-                    "Docente": "095729 - CHÁVEZ SOTO, JORGE LUIS",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "VIERNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "203230304 - ESTRUCTURAS DISCRETAS",
-                    "Créd.": "4",
-                    "Sec.": "1",
-                    "Docente": "0A1610 - MOQUILLAZA HENRIQUEZ, SANTIAGO DOMINGO",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "14:00",
-                            "Fin": "16:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "16:00",
-                            "Fin": "20:00",
-                            "Día": "LUNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                },
-                {
-                    "Asignatura": "203230305 - SERIES Y ECUACIONES DIFERENCIALES",
-                    "Créd.": "3",
-                    "Sec.": "1",
-                    "Docente": "--",
-                    "Horarios": [
-                        {
-                            "Horario": "1",
-                            "Inicio": "08:00",
-                            "Fin": "10:00",
-                            "Día": "LUNES",
-                            "Tipo": "Teoría"
-                        },
-                        {
-                            "Horario": "2",
-                            "Inicio": "10:00",
-                            "Fin": "12:00",
-                            "Día": "LUNES",
-                            "Tipo": "Práctica"
-                        }
-                    ]
-                }
-            ]
+            ,"Ciencias De La Computación": {
+    "CICLO 1": [
+        {
+        "Asignatura": "INE002 - PROGRAMACIÓN Y COMPUTACIÓN",
+        "Créd.": "2",
+        "Docente": "0A0182 - RUIZ RIVERA, MARIA ELENA",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "10:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INE013 - EMPRENDIMIENTO E INNOVACIÓN",
+        "Créd.": "2",
+        "Docente": "10275035 - ORELLANA MANRIQUE, YOLANDA OLIVIA",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "10:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INE013 - EMPRENDIMIENTO E INNOVACIÓN",
+        "Créd.": "2",
+        "Docente": "41388541 - AGUILAR CORONEL, JHONATHAN",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "2"
+        },
+        {
+        "Asignatura": "INE013 - EMPRENDIMIENTO E INNOVACIÓN",
+        "Créd.": "2",
+        "Docente": "43091255 - HUAMAN TINCO, BORJA LUIS",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "3"
+        },
+        {
+        "Asignatura": "INE013 - EMPRENDIMIENTO E INNOVACIÓN",
+        "Créd.": "2",
+        "Docente": "10275035 - ORELLANA MANRIQUE, YOLANDA OLIVIA",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "4"
+        },
+        {
+        "Asignatura": "INE013 - EMPRENDIMIENTO E INNOVACIÓN",
+        "Créd.": "2",
+        "Docente": "45286733 - MELGAREJO SOLIS, RONALD ALONSO",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MARTES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "5"
+        },
+        {
+        "Asignatura": "INE013 - EMPRENDIMIENTO E INNOVACIÓN",
+        "Créd.": "2",
+        "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MARTES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "6"
+        },
+        {
+        "Asignatura": "INO104 - CÁLCULO I",
+        "Créd.": "4",
+        "Docente": "40764399 - MARAVI PERCCA, EDWIN",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "08:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INO106 - ÁLGEBRA Y GEOMETRÍA ANALÍTICA",
+        "Créd.": "4",
+        "Docente": "21571331 - BARBOZA CARAPE, LUIS LEONCIO",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "14:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
         }
+    ],
+    "CICLO 2": [
+        {
+        "Asignatura": "INO201 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA II",
+        "Créd.": "3",
+        "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
+        "Horarios": [
+            {
+            "Día": "JUEVES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INO201 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA II",
+        "Créd.": "3",
+        "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "2"
+        },
+        {
+        "Asignatura": "INO201 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA II",
+        "Créd.": "3",
+        "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
+        "Horarios": [
+            {
+            "Día": "VIERNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "VIERNES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "3"
+        },
+        {
+        "Asignatura": "INO201 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA II",
+        "Créd.": "3",
+        "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "4"
+        },
+        {
+        "Asignatura": "INO201 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA II",
+        "Créd.": "3",
+        "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MARTES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "5"
+        },
+        {
+        "Asignatura": "INO201 - REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA II",
+        "Créd.": "3",
+        "Docente": "15584946 - DIONICIO MEJÍA, CARMEN VIOLETA",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MARTES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "6"
+        },
+        {
+        "Asignatura": "INO202 - INVESTIGACIÓN FORMATIVA",
+        "Créd.": "3",
+        "Docente": "42229911 - RIOS DELGADO, JHOHANNA",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INO202 - INVESTIGACIÓN FORMATIVA",
+        "Créd.": "3",
+        "Docente": "45286733 - MELGAREJO SOLIS, RONALD ALONSO",
+        "Horarios": [
+            {
+            "Día": "JUEVES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "2"
+        },
+        {
+        "Asignatura": "INO202 - INVESTIGACIÓN FORMATIVA",
+        "Créd.": "3",
+        "Docente": "44752092 - LUCIO PONCE, PILAR",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "3"
+        },
+        {
+        "Asignatura": "INO202 - INVESTIGACIÓN FORMATIVA",
+        "Créd.": "3",
+        "Docente": "44752092 - LUCIO PONCE, PILAR",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "4"
+        },
+        {
+        "Asignatura": "INO202 - INVESTIGACIÓN FORMATIVA",
+        "Créd.": "3",
+        "Docente": "45286733 - MELGAREJO SOLIS, RONALD ALONSO",
+        "Horarios": [
+            {
+            "Día": "VIERNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "VIERNES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "5"
+        },
+        {
+        "Asignatura": "INO202 - INVESTIGACIÓN FORMATIVA",
+        "Créd.": "3",
+        "Docente": "44752092 - LUCIO PONCE, PILAR",
+        "Horarios": [
+            {
+            "Día": "VIERNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "VIERNES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "6"
+        },
+        {
+        "Asignatura": "INO203 - REALIDAD NACIONAL Y MUNDIAL",
+        "Créd.": "2",
+        "Docente": "09620253 - COLCA GARCIA, HEDDY LILIANA",
+        "Horarios": [
+            {
+            "Día": "SABADO",
+            "Fin": "09:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "SABADO",
+            "Fin": "11:00",
+            "Horario": "2",
+            "Inicio": "09:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INO203 - REALIDAD NACIONAL Y MUNDIAL",
+        "Créd.": "2",
+        "Docente": "10275035 - ORELLANA MANRIQUE, YOLANDA OLIVIA",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "10:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MARTES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "2"
+        },
+        {
+        "Asignatura": "INO203 - REALIDAD NACIONAL Y MUNDIAL",
+        "Créd.": "2",
+        "Docente": "06326376 - COSME FÉLIX, MIRYAM MILAGROS",
+        "Horarios": [
+            {
+            "Día": "SABADO",
+            "Fin": "09:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "SABADO",
+            "Fin": "11:00",
+            "Horario": "2",
+            "Inicio": "09:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "3"
+        },
+        {
+        "Asignatura": "INO203 - REALIDAD NACIONAL Y MUNDIAL",
+        "Créd.": "2",
+        "Docente": "41388541 - AGUILAR CORONEL, JHONATHAN",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "10:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MARTES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "4"
+        },
+        {
+        "Asignatura": "INO203 - REALIDAD NACIONAL Y MUNDIAL",
+        "Créd.": "2",
+        "Docente": "06326376 - COSME FÉLIX, MIRYAM MILAGROS",
+        "Horarios": [
+            {
+            "Día": "SABADO",
+            "Fin": "12:00",
+            "Horario": "1",
+            "Inicio": "11:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "SABADO",
+            "Fin": "14:00",
+            "Horario": "2",
+            "Inicio": "12:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "5"
+        },
+        {
+        "Asignatura": "INO203 - REALIDAD NACIONAL Y MUNDIAL",
+        "Créd.": "2",
+        "Docente": "41388541 - AGUILAR CORONEL, JHONATHAN",
+        "Horarios": [
+            {
+            "Día": "VIERNES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "VIERNES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "6"
+        },
+        {
+        "Asignatura": "INO204 - CÁLCULO II",
+        "Créd.": "4",
+        "Docente": "47661582 - CUBAS BECERRA, RICHARD JAVIER",
+        "Horarios": [
+            {
+            "Día": "VIERNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "18:00",
+            "Horario": "2",
+            "Inicio": "14:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INO204 - CÁLCULO II",
+        "Créd.": "4",
+        "Docente": "40764399 - MARAVI PERCCA, EDWIN",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "18:00",
+            "Horario": "2",
+            "Inicio": "14:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "2"
+        },
+        {
+        "Asignatura": "INO204 - CÁLCULO II",
+        "Créd.": "4",
+        "Docente": "40667934 - TERREROS NAVARRO, HELLEN GLORIA",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "16:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "18:00",
+            "Horario": "2",
+            "Inicio": "14:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "3"
+        },
+        {
+        "Asignatura": "INO204 - CÁLCULO II",
+        "Créd.": "4",
+        "Docente": "40667934 - TERREROS NAVARRO, HELLEN GLORIA",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "18:00",
+            "Horario": "2",
+            "Inicio": "14:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "4"
+        },
+        {
+        "Asignatura": "INO204 - CÁLCULO II",
+        "Créd.": "4",
+        "Docente": "026182 - FLORES DIONICIO, JULIO",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "16:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "18:00",
+            "Horario": "2",
+            "Inicio": "14:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "5"
+        },
+        {
+        "Asignatura": "INO204 - CÁLCULO II",
+        "Créd.": "4",
+        "Docente": "026182 - FLORES DIONICIO, JULIO",
+        "Horarios": [
+            {
+            "Día": "JUEVES",
+            "Fin": "13:00",
+            "Horario": "1",
+            "Inicio": "11:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "18:00",
+            "Horario": "2",
+            "Inicio": "14:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "6"
+        },
+        {
+        "Asignatura": "INO205 - FÍSICA I",
+        "Créd.": "4",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "JUEVES",
+            "Fin": "17:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "VIERNES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INO205 - FÍSICA I",
+        "Créd.": "4",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "2"
+        },
+        {
+        "Asignatura": "INO205 - FÍSICA I",
+        "Créd.": "4",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "3"
+        },
+        {
+        "Asignatura": "INO205 - FÍSICA I",
+        "Créd.": "4",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "JUEVES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "4"
+        },
+        {
+        "Asignatura": "INO205 - FÍSICA I",
+        "Créd.": "4",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "5"
+        },
+        {
+        "Asignatura": "INO205 - FÍSICA I",
+        "Créd.": "4",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "6"
+        },
+        {
+        "Asignatura": "INO206 - QUÍMICA GENERAL",
+        "Créd.": "4",
+        "Docente": "06122577 - FANOLA MERINO, PETRONILA MERIDA",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MARTES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INO206 - QUÍMICA GENERAL",
+        "Créd.": "4",
+        "Docente": "06122577 - FANOLA MERINO, PETRONILA MERIDA",
+        "Horarios": [
+            {
+            "Día": "SABADO",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "SABADO",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "2"
+        },
+        {
+        "Asignatura": "INO206 - QUÍMICA GENERAL",
+        "Créd.": "4",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "MARTES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MARTES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "3"
+        },
+        {
+        "Asignatura": "INO206 - QUÍMICA GENERAL",
+        "Créd.": "4",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "SABADO",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "SABADO",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "4"
+        },
+        {
+        "Asignatura": "INO206 - QUÍMICA GENERAL",
+        "Créd.": "4",
+        "Docente": "06122577 - FANOLA MERINO, PETRONILA MERIDA",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "5"
+        },
+        {
+        "Asignatura": "INO206 - QUÍMICA GENERAL",
+        "Créd.": "4",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "6"
+        },
+        {
+        "Asignatura": "INO207 - INTRODUCCIÓN A LAS CIENCIAS E INGENIERÍA",
+        "Créd.": "2",
+        "Docente": "07578149 - CANDELA ARCE, DAVID FELIX",
+        "Horarios": [
+            {
+            "Día": "VIERNES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "VIERNES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "INO207 - INTRODUCCIÓN A LAS CIENCIAS E INGENIERÍA",
+        "Créd.": "2",
+        "Docente": "07578149 - CANDELA ARCE, DAVID FELIX",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "2"
+        },
+        {
+        "Asignatura": "INO207 - INTRODUCCIÓN A LAS CIENCIAS E INGENIERÍA",
+        "Créd.": "2",
+        "Docente": "07493618 - INGA ALVA, ALEXANDER EDUARDO",
+        "Horarios": [
+            {
+            "Día": "VIERNES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "VIERNES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "3"
+        },
+        {
+        "Asignatura": "INO207 - INTRODUCCIÓN A LAS CIENCIAS E INGENIERÍA",
+        "Créd.": "2",
+        "Docente": "07493618 - INGA ALVA, ALEXANDER EDUARDO",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "4"
+        },
+        {
+        "Asignatura": "INO207 - INTRODUCCIÓN A LAS CIENCIAS E INGENIERÍA",
+        "Créd.": "2",
+        "Docente": "07578149 - CANDELA ARCE, DAVID FELIX",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "5"
+        },
+        {
+        "Asignatura": "INO207 - INTRODUCCIÓN A LAS CIENCIAS E INGENIERÍA",
+        "Créd.": "2",
+        "Docente": "06326376 - COSME FÉLIX, MIRYAM MILAGROS",
+        "Horarios": [
+            {
+            "Día": "JUEVES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "6"
+        }
+    ],
+    "CICLO 3": [
+        {
+        "Asignatura": "203230302 - PROGRAMACIÓN DE COMPUTADORAS I",
+        "Créd.": "4",
+        "Docente": "08803A - ROMERO NAUPARI, PABLO JESUS",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "14:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "203230304 - ESTRUCTURAS DISCRETAS",
+        "Créd.": "4",
+        "Docente": "0A5230 - RODRÍGUEZ RODRÍGUEZ , CIRO",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "16:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "20:00",
+            "Horario": "2",
+            "Inicio": "16:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "203230307 - ÓPTICA Y ELECTRO- MAGNETISMO",
+        "Créd.": "3",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        }
+    ],
+    "CICLO 4": [
+        {
+        "Asignatura": "203230401 - ALGORITMOS Y ESTRUCTURAS DE DATOS",
+        "Créd.": "4",
+        "Docente": "0A5292 - PAUCAR CURASMA , HERMINIO",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "16:00",
+            "Horario": "1",
+            "Inicio": "14:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "20:00",
+            "Horario": "2",
+            "Inicio": "16:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "203230402 - TEORÍA DE LA COMPUTACIÓN",
+        "Créd.": "4",
+        "Docente": "095702 - BUSTAMANTE OLIVERA, VÍCTOR HUGO",
+        "Horarios": [
+            {
+            "Día": "LUNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "LUNES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "10:00",
+            "Horario": "2",
+            "Inicio": "08:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "203230403 - BASE DE DATOS I",
+        "Créd.": "3",
+        "Docente": "0A6226 - HERRERA QUISPE, JOSÉ ALFREDO",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "11:00",
+            "Horario": "1",
+            "Inicio": "09:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "13:00",
+            "Horario": "2",
+            "Inicio": "11:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "203230404 - ARQUITECTURA DE COMPUTADORES",
+        "Créd.": "3",
+        "Docente": "051934 - PARIONA QUISPE, JAIME RUBEN",
+        "Horarios": [
+            {
+            "Día": "VIERNES",
+            "Fin": "10:00",
+            "Horario": "1",
+            "Inicio": "08:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "VIERNES",
+            "Fin": "12:00",
+            "Horario": "2",
+            "Inicio": "10:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "203230405 - ESTADÍSTICA Y PROBABILIDADES",
+        "Créd.": "3",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "JUEVES",
+            "Fin": "12:00",
+            "Horario": "1",
+            "Inicio": "10:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "JUEVES",
+            "Fin": "14:00",
+            "Horario": "2",
+            "Inicio": "12:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        },
+        {
+        "Asignatura": "203230406 - ANÁLISIS NUMÉRICO",
+        "Créd.": "3",
+        "Docente": "--",
+        "Horarios": [
+            {
+            "Día": "MIERCOLES",
+            "Fin": "15:00",
+            "Horario": "1",
+            "Inicio": "13:00",
+            "Tipo": "Teoría"
+            },
+            {
+            "Día": "MIERCOLES",
+            "Fin": "17:00",
+            "Horario": "2",
+            "Inicio": "15:00",
+            "Tipo": "Práctica"
+            }
+        ],
+        "Sec.": "1"
+        }
+    ]
+    }
 },
 "2018": {
     "Ingeniería De Sistemas": {
