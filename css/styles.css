@@ -162,7 +162,8 @@ body {
 .options-container label,
 .options-container select,
 .options-container button,
-.color-picker-container {
+.color-picker-container,
+.teacher-display {
     color: white;
     margin-bottom: 15px;
     margin-right: 10px;
@@ -190,6 +191,19 @@ select:focus {
     outline: none;
     border-color: #6f6f6f;
     box-shadow: 0 0 0 3px rgba(111, 111, 111, 0.3);
+}
+
+.teacher-display {
+    padding: 12px 15px;
+    min-width: 160px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #383838;
+    background: #2c2c2c;
+    color: #e0e6ed;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
 }
 
 button {
@@ -546,12 +560,13 @@ footer a:hover {
     .options-container label,
     .options-container select,
     .options-container button,
-    .color-picker-container {
+    .color-picker-container,
+    .teacher-display {
         margin-bottom: 20px;
         margin-right: 0;
     }
 
-    select, button {
+    select, button, .teacher-display {
         width: 100%;
         padding: 15px 20px;
         font-size: 16px;
@@ -651,7 +666,7 @@ footer a:hover {
         padding: 15px;
     }
     
-    select, button {
+    select, button, .teacher-display {
         padding: 12px 15px;
         font-size: 14px;
     }

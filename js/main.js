@@ -376,6 +376,7 @@ document.addEventListener('DOMContentLoaded', function () {
             sectionSelect.innerHTML = '';
             totalCredits = 0;
             updateTotalCredits();
+            updateTeacher(); // Limpiar el docente al limpiar datos
             careerData = {};  
         }
         function initializeSchedulePage(horariosData) {
@@ -399,6 +400,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             sectionSelect.addEventListener('change', () => {
                 addScheduleBtn.disabled = !(cycleSelect.value && subjectSelect.value && sectionSelect.value);
+                updateTeacher(); // Actualizar el docente cuando se cambie la sección
             });
 
             colorPicker.addEventListener('input', () => {
@@ -424,6 +426,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const selectedCareer = careerSelect.value;
         
             yearSelect.innerHTML = '';  
+            updateTeacher(); // Limpiar el docente al cambiar años
         
             if (selectedCareer) {
                 const uniqueYears = [...new Set(Object.keys(horariosData[selectedCareer]).filter(year => year !== 'Año'))];
@@ -453,6 +456,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             subjectSelect.innerHTML = ''; 
             sectionSelect.innerHTML = '';  
+            updateTeacher(); // Limpiar el docente al cambiar ciclos
         
             if (selectedCareerData && selectedYear && selectedCareerData[selectedYear]) {
                 const uniqueCycles = new Set();  
@@ -477,6 +481,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
             subjectSelect.innerHTML = '';
             sectionSelect.innerHTML = '';
+            updateTeacher(); // Limpiar el docente al cambiar materias
         
             const subjectsSet = new Set();
         
@@ -512,6 +517,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const selectedSubject = subjectSelect.value;
             
             sectionSelect.innerHTML = '';  
+            updateTeacher(); // Limpiar el docente al cambiar secciones
         
             const sectionsSet = new Set();
         
@@ -532,10 +538,60 @@ document.addEventListener('DOMContentLoaded', function () {
                         sectionOption.textContent = section;
                         sectionSelect.appendChild(sectionOption);
                     });
+                    
+                    // Si hay secciones disponibles, actualizar el docente para la primera sección
+                    if (sectionsSet.size > 0) {
+                        updateTeacher();
+                    }
                 }
             }
         
             addScheduleBtn.disabled = !(selectedYear && selectedCycle && selectedSubject && sectionSelect.value);
+        }
+        
+        function updateTeacher() {
+            const selectedCareer = careerSelect.value;
+            const selectedYear = yearSelect.value;
+            const selectedCycle = cycleSelect.value;
+            const selectedSubject = subjectSelect.value;
+            const selectedSection = sectionSelect.value;
+            const teacherDisplay = document.getElementById('teacher-display');
+            
+            if (!teacherDisplay) return;
+            
+            if (selectedCareer && selectedYear && selectedCycle && selectedSubject && selectedSection) {
+                const coursesInCycle = careerData[selectedCareer][selectedYear][selectedCycle];
+                
+                if (coursesInCycle) {
+                    let teacherName = 'Sin docente';
+                    
+                    coursesInCycle.forEach(courseSection => {
+                        const subjectName = courseSection['Asignatura'].match(/-(.+)/)[1].trim();
+                        if (subjectName === selectedSubject && courseSection['Sec.'] === selectedSection) {
+                            // Buscar el nombre del docente en los datos del curso
+                            const docenteField = courseSection['Docente'] || courseSection['DOCENTE'] || courseSection['docente'] || courseSection['Profesor'] || courseSection['PROFESOR'] || courseSection['profesor'];
+                            
+                            if (docenteField && docenteField !== '--') {
+                                // Extraer solo el nombre después del " - "
+                                const dashIndex = docenteField.indexOf(' - ');
+                                if (dashIndex !== -1) {
+                                    teacherName = docenteField.substring(dashIndex + 3).trim();
+                                } else {
+                                    teacherName = docenteField;
+                                }
+                            } else {
+                                teacherName = 'Sin docente';
+                            }
+                        }
+                    });
+                    
+                    teacherDisplay.textContent = teacherName;
+                } else {
+                    teacherDisplay.textContent = 'Sin docente';
+                }
+            } else {
+                teacherDisplay.textContent = '---';
+            }
         }
             
 
