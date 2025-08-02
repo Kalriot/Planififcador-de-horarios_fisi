@@ -64,17 +64,16 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     margin-bottom: 30px;
-    max-width: 60%;
-    width: 100%;
+    max-width: 800px;
+    width: 90%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     gap: 20px;
-    text-align: left;
+    text-align: center;
     backdrop-filter: blur(10px);
     border: 1px solid #535353;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex-wrap: wrap;
     box-sizing: border-box;
 }
 
@@ -86,9 +85,18 @@ body {
 /* Títulos dentro del bloque */
 .pdf-upload-block h2 {
     color: white;
-    margin: 0;
+    margin: 0 0 15px 0;
     font-size: 20px;
     font-weight: 600;
+}
+
+/* Contenedor para los botones */
+.pdf-upload-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Estilos para el botón de carga */
@@ -171,7 +179,7 @@ body {
     font-size: 17px;
 }
 
-select, button {
+select, button, .teacher-display {
     padding: 12px 15px;
     min-width: 160px;
     font-size: 16px;
@@ -194,16 +202,11 @@ select:focus {
 }
 
 .teacher-display {
-    padding: 12px 15px;
-    min-width: 160px;
-    font-size: 16px;
-    border-radius: 12px;
+    background: #1c1c1c;
+    color: white;
     border: 2px solid #383838;
-    background: #2c2c2c;
-    color: #e0e6ed;
-    font-weight: 500;
     text-align: center;
-    display: inline-block;
+    box-sizing: border-box;
 }
 
 button {
@@ -518,7 +521,7 @@ footer a:hover {
     
     .pdf-upload-block {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 15px;
         padding: 20px;
         width: 95%;
@@ -532,11 +535,11 @@ footer a:hover {
     }
     
     .upload-label, .send-button {
-        width: 100%;
         text-align: center;
         padding: 15px 20px;
         margin-bottom: 10px;
         min-width: auto;
+        flex: 0 1 auto;
     }
     
     #total-credits {
