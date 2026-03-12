@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,14 @@
     <link rel="icon" href="images/tuturus.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <div class="header">
         <h1>Planificador de Horarios</h1>
     </div>
     <div class="pdf-upload-block">
-        <h2>En caso sea otra facultad, insertar su Programación de Asignaturas:</h2>
+        <h2>En caso sea otra facultad, insertar su Programación de Asignaturas generador por el Sum:</h2>
         <div class="pdf-upload-buttons">
             <label class="upload-label" for="upload-pdf">
                 Subir PDF
@@ -23,40 +25,40 @@
             <button class="send-button" id="send-button">Enviar</button>
         </div>
     </div>
-    
-    
+
+
     <div class="options-container">
         <!-- Los select y sus etiquetas están arriba -->
         <label for="career-select">Plan de estudios:</label>
         <select id="career-select"></select>
-    
-        <label for="year-select">Carrera:</label> 
-        <select id="year-select"></select> 
-    
+
+        <label for="year-select">Carrera:</label>
+        <select id="year-select"></select>
+
         <label for="cycle-select">Ciclo:</label>
         <select id="cycle-select"></select>
-    
+
         <label for="subject-select">Asignatura:</label>
         <select id="subject-select"></select>
-    
+
         <label for="section-select">Sección:</label>
         <select id="section-select"></select>
-        
+
         <label for="teacher-display">Docente:</label>
         <div id="teacher-display" class="teacher-display">---</div>
-        
+
         <!-- Lo demás va abajo -->
         <label for="color-picker">Selector de color:</label>
         <div class="color-picker-container">
             <input type="color" id="color-picker" class="color-picker-btn" value="#90EE90">
         </div>
-        
-        <button id="add-schedule-btn" >Agregar Horario</button>
+
+        <button id="add-schedule-btn">Agregar Horario</button>
         <button id="clear-schedule-btn">Limpiar Horario Guardado</button>
         <button id="export-image-btn">Exportar a Imagen</button>
         <button id="export-excel-btn">Exportar a Excel</button>
     </div>
-    
+
     <div id="total-credits">Total de Créditos: 0</div>
     <div class="wrapper">
         <div class="container">
@@ -69,16 +71,17 @@
                 <p>Última actualización: 01/08/25 a las 01:00</p>
                 <p>Estado del plan de estudios: Falta Sistemas B18</p>
             </div>
-            
+
             <div class="contact-section">
                 <p>Contacto si deseas que agregue el de tu carrera:</p>
                 <a href="tel:973727288" class="contact-link">973727288</a>
             </div>
-            
+
             <div class="social-section">
                 <p>Sígueme en:</p>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/edu-joseph-sanchez-gotea-a14492267/" target="_blank" class="social-link">
+                    <a href="https://www.linkedin.com/in/edu-joseph-sanchez-gotea-a14492267/" target="_blank"
+                        class="social-link">
                         <img src="images/linkendin_image.jpg" alt="LinkedIn" class="social-icon">
                         LinkedIn
                     </a>
@@ -89,14 +92,14 @@
             </div>
         </div>
     </footer>
-    
-    
-    
-    
+
+
+
+
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
 </body>
-</html>
 
+</html>
